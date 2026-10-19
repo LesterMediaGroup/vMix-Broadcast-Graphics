@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Broadcast Graphics</title>
+<link rel="icon" href="data:," />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="frame">
+    <header class="masthead">
+      <div class="masthead-title">
+        <h1>BROADCAST GRAPHICS</h1>
+        <span class="version-tag" id="versionTag"></span>
+      </div>
+      <div class="masthead-right">
+        <div class="masthead-sub" id="masthead-sub"></div>
+        <button id="settingsBtn" class="btn btn-ghost btn-sm">Settings</button>
+      </div>
+    </header>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="teams">Teams</button>
+      <button class="tab" data-tab="conferences">Conferences</button>
+      <button class="tab" data-tab="game">Game setup</button>
+      <button class="tab" data-tab="top25">Top 25</button>
+      <button class="tab" data-tab="scores">Conference Scores</button>
+      <button class="tab" data-tab="impact">Impact Players</button>
+      <button class="tab" data-tab="keys">Keys to the Game</button>
+      <button class="tab" data-tab="stats">Team Stats</button>
+    </nav>
+
+    <section id="teamsPanel" class="panel-view">
+      <div class="panel-header">
+        <h2>Teams</h2>
+        <button id="addTeamBtn" class="btn btn-live">+ Add team</button>
+      </div>
+      <div id="teamsTable" class="table-wrap">Loading…</div>
+    </section>
+
+    <section id="conferencesPanel" class="panel-view" style="display:none;">
+      <div class="panel-header">
+        <h2>Conferences</h2>
+        <button id="addConfBtn" class="btn btn-live">+ Add conference</button>
+      </div>
+      <div id="confsTable" class="table-wrap">Loading…</div>
+    </section>
+
+    <!-- The current game; served at /out/game.json for single-game graphics -->
+    <section id="gamePanel" class="panel-view" style="display:none;">
+      <div class="panel-header">
+        <h2>Game setup</h2>
+        <div class="header-actions">
+          <span id="gameStatus" class="save-status"></span>
+          <button id="gameSwapBtn" class="btn btn-ghost btn-sm" title="Swap away and home">⇄ Swap sides</button>
+          <button id="gameNewBtn" class="btn btn-danger btn-sm" title="Clears the game, keeping sport and broadcast crew">New game</button>
+        </div>
+      </div>
+      <div class="graphic-meta">
+        <label class="field"><span>Sport</span><input data-g="sport" placeholder="Men's Basketball" /></label>
+        <label class="field"><span>Date</span><input data-g="date" type="date" /></label>
+        <label class="field"><span>Game time</span><input data-g="time" placeholder="7:00 PM" /></label>
+        <label class="field">
+          <span>Broadcast start <em id="gameStartClock" class="field-note"></em></span>
+          <input data-g="broadcastStart" placeholder="6:45 PM" />
+        </label>
+        <label class="field"><span>Venue</span><input data-g="venue" placeholder="Harbor Fieldhouse" /></label>
+        <label class="field"><span>Location</span><input data-g="location" placeholder="Harbor City" /></label>
+      </div>
+      <div class="graphic-meta">
+        <label class="field"><span>Event / game title</span><input data-g="event" placeholder="Homecoming · PVAC Quarterfinal" /></label>
+        <label class="field"><span>Series record</span><input data-g="series" placeholder="HSU leads 24-18" /></label>
+        <label class="field"><span>Last meeting</span><input data-g="lastMeeting" placeholder="W 78-71, Feb. 3, 2026" /></label>
+        <label class="field"><span>Attendance</span><input data-g="attendance" placeholder="1,250" /></label>
+        <label class="toggle"><input type="checkbox" id="gameConference" /> Conference game</label>
+      </div>
+      <div class="graphic-meta">
+        <div class="feed-link">
+          <span>vMix feed (one row)</span>
+          <a href="/out/game.json" target="_blank">/out/game.json</a>
+        </div>
+      </div>
+      <div id="gameWarnings" class="warnings"></div>
+      <div class="game-sides">
+        <div class="game-side" data-side="away"></div>
+        <div class="game-side" data-side="home"></div>
+        <div class="game-side game-people" data-list="crew">
+          <div class="side-head">
+            <h3>Broadcast crew</h3>
+            <div class="row-actions">
+              <button id="crewAllBtn" class="btn btn-ghost btn-sm" title="Adds a row for every role not listed yet">+ All roles</button>
+              <button class="btn btn-ghost btn-sm add-btn">+ Add</button>
+            </div>
+          </div>
+          <div class="people-rows"></div>
+        </div>
+        <div class="game-side game-people" data-list="officials" data-roles="officialRoles">
+          <div class="side-head"><h3>Officials</h3><button class="btn btn-ghost btn-sm add-btn">+ Add</button></div>
+          <div class="people-rows"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- vMix title SSN_9225_v5 — rank is the slot number (Team1..Team25) -->
+    <section id="top25Panel" class="panel-view" style="display:none;">
+      <div class="panel-header">
+        <h2>Top 25 <span class="title-tag">SSN_9225_v5</span></h2>
+        <div class="header-actions">
+          <span id="top25Status" class="save-status"></span>
+        </div>
+      </div>
+      <div class="graphic-meta">
+        <label class="field"><span>Preset (sport)</span><select id="top25Preset"></select></label>
+        <div class="meta-actions">
+          <button id="top25NewBtn" class="btn btn-ghost btn-sm">+ New</button>
+          <button id="top25RenameBtn" class="btn btn-ghost btn-sm">Rename</button>
+          <button id="top25DeleteBtn" class="btn btn-danger btn-sm">Delete</button>
+        </div>
+        <div class="live-box">
+          <span id="top25LiveBadge" class="live-badge"></span>
+          <button id="top25LiveBtn" class="btn btn-live btn-sm" title="Switches the vMix feed to this preset">Set live</button>
+        </div>
+      </div>
+      <div class="graphic-meta">
+        <label class="field"><span>As of</span><input id="top25AsOf" type="date" /></label>
+        <label class="field">
+          <span>Name field (all presets)</span>
+          <select id="top25NameFormat">
+            <option value="name">Team name</option>
+            <option value="nameUppercase">TEAM NAME UPPERCASE</option>
+            <option value="abbv">Team abbv</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Teams shown</span>
+          <select id="top25ShowCount"></select>
+        </label>
+        <div class="feed-link">
+          <span>vMix feed (serves the live preset)</span>
+          <a href="/out/graphics/SSN_9225_v5.json" target="_blank">/out/graphics/SSN_9225_v5.json</a>
+        </div>
+      </div>
+      <div id="top25Warnings" class="warnings"></div>
+      <div id="top25Table" class="table-wrap">Loading…</div>
+    </section>
+
+    <!-- vMix title SSN_5018_v3 — 6 games, G1..G6; T1 = away (top), T2 = home -->
+    <section id="scoresPanel" class="panel-view" style="display:none;">
+      <div class="panel-header">
+        <h2>Conference Scores <span class="title-tag">SSN_5018_v3</span></h2>
+        <div class="header-actions">
+          <span id="scoresStatus" class="save-status"></span>
+          <label class="field send-mode">
+            <span>Send to vMix</span>
+            <select id="scoresSendMode">
+              <option value="auto">Automatic</option>
+              <option value="manual">Manual</option>
+            </select>
+          </label>
+          <button id="scoresSendBtn" class="btn btn-live">Send to vMix</button>
+        </div>
+      </div>
+      <div class="graphic-meta">
+        <label class="field"><span>Preset (sport)</span><select id="scoresPreset"></select></label>
+        <div class="meta-actions">
+          <button id="scoresNewBtn" class="btn btn-ghost btn-sm">+ New</button>
+          <button id="scoresRenameBtn" class="btn btn-ghost btn-sm">Rename</button>
+          <button id="scoresDeleteBtn" class="btn btn-danger btn-sm">Delete</button>
+        </div>
+        <div class="live-box">
+          <span id="scoresLiveBadge" class="live-badge"></span>
+          <button id="scoresLiveBtn" class="btn btn-live btn-sm" title="Makes this the preset vMix shows (in Manual mode, once you Send to vMix)">Set live</button>
+        </div>
+      </div>
+      <div class="graphic-meta">
+        <label class="field"><span>Sport text (graphic)</span><input id="scoresSportLabel" placeholder="COLLEGE BASKETBALL" /></label>
+        <label class="field"><span>Heading text</span><input id="scoresHeading" placeholder="AROUND THE CONFERENCE" /></label>
+        <label class="field"><span>Colors from conference</span><select id="scoresConference"></select></label>
+        <label class="field">
+          <span>Name field (all presets)</span>
+          <select id="scoresNameFormat">
+            <option value="name">Team name</option>
+            <option value="nameUppercase">TEAM NAME UPPERCASE</option>
+            <option value="abbv">Team abbv</option>
+          </select>
+        </label>
+      </div>
+      <div class="graphic-meta">
+        <div class="feed-link">
+          <span>vMix feed (serves the live preset)</span>
+          <a href="/out/graphics/SSN_5018_v3.json" target="_blank">/out/graphics/SSN_5018_v3.json</a>
+        </div>
+        <div class="feed-link">
+          <span>Relay input (POST)</span>
+          <code>/api/graphics/SSN_5018_v3/relay</code>
+        </div>
+        <div class="feed-link">
+          <span>Last relay update</span>
+          <code id="scoresRelayAt">never</code>
+        </div>
+      </div>
+      <div class="graphic-meta presto-row">
+        <label class="field presto-url">
+          <span>PrestoSports scoreboard URL</span>
+          <input id="scoresPrestoUrl" placeholder="https://example.prestosports.com/sports/msoc/scoreboard" />
+        </label>
+        <label class="field">
+          <span>Check every</span>
+          <select id="scoresPollSeconds">
+            <option value="15">15 sec</option>
+            <option value="30">30 sec</option>
+            <option value="60">1 min</option>
+            <option value="120">2 min</option>
+          </select>
+        </label>
+        <label class="toggle" title="Saves immediately">
+          <input type="checkbox" id="scoresAutoUpdate" /> Auto-update Relay games
+        </label>
+        <div class="meta-actions">
+          <button id="scoresCheckBtn" class="btn btn-ghost btn-sm" title="Fetch the scoreboard once now (uses the saved URL)">Check now</button>
+          <button id="scoresImportBtn" class="btn btn-ghost btn-sm">Import games…</button>
+        </div>
+      </div>
+      <div id="scoresPrestoStatus" class="presto-status"></div>
+      <div id="scoresWarnings" class="warnings"></div>
+      <div id="scoresTable" class="table-wrap">Loading…</div>
+    </section>
+
+    <!-- vMix title SSN_9048_v3 — 4 players, P1..P4 -->
+    <section id="impactPanel" class="panel-view" style="display:none;">
+      <div class="panel-header">
+        <h2>Impact Players <span class="title-tag">SSN_9048_v3</span></h2>
+        <div class="header-actions">
+          <span id="impactStatus" class="save-status"></span>
+        </div>
+      </div>
+      <div class="graphic-meta">
+        <label class="field"><span>Title text</span><input id="impactTitle" placeholder="IMPACT PLAYERS" /></label>
+        <label class="field"><span>Sport (headshot folder)</span><input id="impactSport" /></label>
+        <div class="feed-link">
+          <span>vMix feed (row N = player N)</span>
+          <a href="/out/graphics/SSN_9048_v3.json" target="_blank">/out/graphics/SSN_9048_v3.json</a>
+        </div>
+      </div>
+      <div id="impactWarnings" class="warnings"></div>
+      <div id="impactTable" class="table-wrap">Loading…</div>
+    </section>
+
+    <!-- vMix title SSN_5006_v01 — 3 keys (Topic N / Stat N), both teams from Game setup -->
+    <section id="keysPanel" class="panel-view" style="display:none;">
+      <div class="panel-header">
+        <h2>Keys to the Game <span class="title-tag">SSN_5006_v01</span></h2>
+        <div class="header-actions">
+          <span id="keysStatus" class="save-status"></span>
+        </div>
+      </div>
+      <div class="graphic-meta">
+        <label class="field">
+          <span>Keys for (sent to vMix)</span>
+          <select id="keysSide"></select>
+        </label>
+        <label class="field"><span>Header</span><input id="keysHeader" placeholder="KEYS TO THE GAME" /></label>
+        <label class="field"><span>SubHeader</span><input id="keysSubHeader" /></label>
+        <div class="feed-link">
+          <span>vMix feed (one row)</span>
+          <a href="/out/graphics/SSN_5006_v01.json" target="_blank">/out/graphics/SSN_5006_v01.json</a>
+        </div>
+      </div>
+      <div id="keysWarnings" class="warnings"></div>
+      <div class="game-sides">
+        <div class="game-side keys-side" data-side="away"></div>
+        <div class="game-side keys-side" data-side="home"></div>
+      </div>
+    </section>
+
+    <!-- vMix title SSN_9120_v1 — home left (H*), away right (V*), 5 stat rows -->
+    <section id="statsPanel" class="panel-view" style="display:none;">
+      <div class="panel-header">
+        <h2>Team Stats <span class="title-tag">SSN_9120_v1</span></h2>
+        <div class="header-actions">
+          <span id="statsStatus" class="save-status"></span>
+        </div>
+      </div>
+      <div class="graphic-meta">
+        <label class="field"><span>Header</span><input id="statsHeader" placeholder="TEAM STATS" /></label>
+        <label class="field"><span>Subheader</span><input id="statsSubHeader" list="statsMoments" placeholder="HALFTIME" /></label>
+        <label class="field"><span>Center logo</span><select id="statsCenterLogo"></select></label>
+        <div class="feed-link">
+          <span>vMix feed (one row)</span>
+          <a href="/out/graphics/SSN_9120_v1.json" target="_blank">/out/graphics/SSN_9120_v1.json</a>
+        </div>
+      </div>
+      <div id="statsWarnings" class="warnings"></div>
+      <div id="statsTable" class="table-wrap">Loading…</div>
+    </section>
+  </div>
+
+  <!-- Edit/add modal, shared by teams and conferences -->
+  <div id="editModal" class="modal-backdrop" style="display:none;">
+    <div class="modal">
+      <h2 id="modalTitle">Edit team</h2>
+      <div class="modal-grid">
+        <label class="field"><span>Abbreviation (unique key)</span><input id="f-abbv" placeholder="HSU" /></label>
+        <label class="field"><span>Name (uppercase)</span><input id="f-nameUppercase" placeholder="HARBOR STATE" /></label>
+        <label class="field"><span>Name</span><input id="f-name" placeholder="Harbor State" /></label>
+        <label class="field"><span>Mascot</span><input id="f-mascot" placeholder="Mariners" /></label>
+        <label class="field"><span>Primary color</span><input id="f-primaryColor" type="text" placeholder="#001d4e" /></label>
+        <label class="field"><span>Secondary color</span><input id="f-secondaryColor" type="text" placeholder="#FFCE00" /></label>
+        <label class="field"><span>Accent color</span><input id="f-accentColor" type="text" placeholder="#b1babf" /></label>
+        <label class="field"><span>Primary logo path</span><input id="f-primaryLogo" placeholder="C:\...\logo.png" /></label>
+        <label class="field"><span>Secondary logo path</span><input id="f-secondaryLogo" placeholder="C:\...\logo-alt.png" /></label>
+      </div>
+      <div id="modalStatus" class="modal-status"></div>
+      <div class="modal-actions">
+        <button id="modalCancelBtn" class="btn btn-ghost">Cancel</button>
+        <button id="modalSaveBtn" class="btn btn-live">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="settingsModal" class="modal-backdrop" style="display:none;">
+    <div class="modal">
+      <h2>Settings</h2>
+      <label class="field">
+        <span>Base path (this machine)</span>
+        <input id="s-basePath" placeholder="C:\Users\...\Dropbox" />
+      </label>
+      <p class="hint">Logo paths that aren't absolute (no drive letter) are resolved against this
+        folder in every <code>/out</code> feed. On a new machine, change only this.</p>
+      <label class="field">
+        <span>Headshots folder</span>
+        <input id="s-headshotRoot" placeholder="Production Assets\Headshots" />
+      </label>
+      <label class="field">
+        <span>Headshot file type</span>
+        <input id="s-headshotExt" placeholder=".png" />
+      </label>
+      <p class="hint">Headshots are found at <code>&lt;folder&gt;\&lt;Team name&gt;\&lt;Sport&gt;\&lt;Number&gt;&lt;file type&gt;</code>,
+        e.g. <code>Headshots\Brookfield\Men's Basketball\23.png</code>. The folder can be relative to the base path.</p>
+      <div id="settingsStatus" class="modal-status"></div>
+      <div class="modal-actions">
+        <button id="settingsCancelBtn" class="btn btn-ghost">Cancel</button>
+        <button id="settingsSaveBtn" class="btn btn-live">Save</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="importModal" class="modal-backdrop" style="display:none;">
+    <div class="modal modal-wide">
+      <h2>Import games from PrestoSports</h2>
+      <div class="import-toolbar">
+        <label class="toggle"><input type="checkbox" id="importShowAll" /> Show all games (not just games with a team in Teams)</label>
+        <span id="importInfo" class="save-status"></span>
+      </div>
+      <div id="importList" class="table-wrap import-list">Loading…</div>
+      <p class="hint">Selected games fill empty game slots in order, set to Relay so they auto-update.</p>
+      <div class="modal-actions">
+        <button id="importCancelBtn" class="btn btn-ghost">Cancel</button>
+        <button id="importAddBtn" class="btn btn-live">Add selected</button>
+      </div>
+    </div>
+  </div>
+
+  <datalist id="teamList"></datalist>
+  <datalist id="officialRoles">
+    <option value="Referee"></option>
+    <option value="Umpire"></option>
+    <option value="Head Linesman"></option>
+    <option value="Line Judge"></option>
+    <option value="Back Judge"></option>
+    <option value="Field Judge"></option>
+    <option value="Side Judge"></option>
+    <option value="Center Referee"></option>
+    <option value="Assistant Referee"></option>
+    <option value="Fourth Official"></option>
+    <option value="First Referee"></option>
+    <option value="Second Referee"></option>
+  </datalist>
+  <datalist id="statsMoments">
+    <option value="HALFTIME"></option>
+    <option value="FINAL"></option>
+    <option value="END OF 1ST QUARTER"></option>
+    <option value="END OF 3RD QUARTER"></option>
+    <option value="END OF 1ST SET"></option>
+    <option value="END OF 2ND SET"></option>
+    <option value="END OF 3RD SET"></option>
+  </datalist>
+  <datalist id="statLabels">
+    <option value="FG%"></option>
+    <option value="3PT%"></option>
+    <option value="FT%"></option>
+    <option value="REBOUNDS"></option>
+    <option value="ASSISTS"></option>
+    <option value="TURNOVERS"></option>
+    <option value="STEALS"></option>
+    <option value="BLOCKS"></option>
+    <option value="PTS IN PAINT"></option>
+    <option value="BENCH PTS"></option>
+    <option value="2ND CHANCE PTS"></option>
+    <option value="KILLS"></option>
+    <option value="HITTING %"></option>
+    <option value="ACES"></option>
+    <option value="DIGS"></option>
+    <option value="SHOTS"></option>
+    <option value="SHOTS ON GOAL"></option>
+    <option value="CORNERS"></option>
+    <option value="SAVES"></option>
+    <option value="FOULS"></option>
+    <option value="TOTAL YARDS"></option>
+    <option value="RUSHING YARDS"></option>
+    <option value="PASSING YARDS"></option>
+    <option value="FIRST DOWNS"></option>
+    <option value="TIME OF POSS."></option>
+  </datalist>
+  <datalist id="periodList">
+    <option value="1st Half"></option>
+    <option value="Half"></option>
+    <option value="2nd Half"></option>
+    <option value="1st"></option>
+    <option value="2nd"></option>
+    <option value="3rd"></option>
+    <option value="4th"></option>
+    <option value="OT"></option>
+    <option value="Final"></option>
+    <option value="Final/OT"></option>
+  </datalist>
+
+  <script src="app.js"></script>
+  <script src="scores.js"></script>
+  <script src="game.js"></script>
+  <script src="impact.js"></script>
+  <script src="keys.js"></script>
+  <script src="stats.js"></script>
+</body>
+</html>

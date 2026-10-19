@@ -1,0 +1,178 @@
+[
+  {
+    "abbv": "BU",
+    "nameUppercase": "BAYPORT",
+    "name": "Bayport",
+    "mascot": "Wildcats",
+    "primaryColor": "#F4761D",
+    "secondaryColor": "#1E2D50",
+    "accentColor": "#F9F9F9",
+    "primaryLogo": "Logos\\Schools\\Bayport\\Bayport.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "BC",
+    "nameUppercase": "BROOKFIELD",
+    "name": "Brookfield",
+    "mascot": "Ravens",
+    "primaryColor": "#272727",
+    "secondaryColor": "#a32638",
+    "accentColor": "#969491",
+    "primaryLogo": "Logos\\Schools\\Brookfield\\Raven Mascot.png",
+    "secondaryLogo": "Logos\\Schools\\Brookfield\\Brookfield.png"
+  },
+  {
+    "abbv": "CMU",
+    "nameUppercase": "CEDAR MILL",
+    "name": "Cedar Mill",
+    "mascot": "Eagles",
+    "primaryColor": "#00704a",
+    "secondaryColor": "#000000",
+    "accentColor": "#F0F0F0",
+    "primaryLogo": "Logos\\Schools\\Cedar Mill\\Cedar Mill.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "CU",
+    "nameUppercase": "CLEARWATER",
+    "name": "Clearwater",
+    "mascot": "Herons",
+    "primaryColor": "#000033",
+    "secondaryColor": "#FFCC00",
+    "accentColor": "#F9F9F9",
+    "primaryLogo": "Logos\\Schools\\Clearwater\\Clearwater.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "C-SC",
+    "nameUppercase": "CARTER-STONE",
+    "name": "Carter-Stone",
+    "mascot": "Rams",
+    "primaryColor": "#2B338E",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#000000",
+    "primaryLogo": "Logos\\Schools\\Carter-Stone\\Carter-Stone.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "GU",
+    "nameUppercase": "GLENWOOD",
+    "name": "Glenwood",
+    "mascot": "Lions",
+    "primaryColor": "#061F5C",
+    "secondaryColor": "#F5C303",
+    "accentColor": "#F9F9F9",
+    "primaryLogo": "Logos\\Schools\\Glenwood\\Glenwood.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "GVU",
+    "nameUppercase": "GREEN VALLEY",
+    "name": "Green Valley",
+    "mascot": "Vikings",
+    "primaryColor": "#D02B35",
+    "secondaryColor": "#585858",
+    "accentColor": "#000000",
+    "primaryLogo": "Logos\\Schools\\Green Valley\\Green Valley.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "MNU",
+    "nameUppercase": "MAPLE NORTH",
+    "name": "Maple North",
+    "mascot": "Pioneers",
+    "primaryColor": "#8D0E3D",
+    "secondaryColor": "#071D48",
+    "accentColor": "#C5C6C8",
+    "primaryLogo": "Logos\\Schools\\Maple North\\Maple North.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "MBU",
+    "nameUppercase": "MILL BROOK",
+    "name": "Mill Brook",
+    "mascot": "Spartans",
+    "primaryColor": "#002144",
+    "secondaryColor": "#A5ACB0",
+    "accentColor": "#A5ACB0",
+    "primaryLogo": "Logos\\Schools\\Mill Brook\\Mill Brook.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "MVC",
+    "nameUppercase": "MEADOW VALLEY",
+    "name": "Meadow Valley",
+    "mascot": "Bison",
+    "primaryColor": "#531E53",
+    "secondaryColor": "#FE6734",
+    "accentColor": "#FFFFFF",
+    "primaryLogo": "Logos\\Schools\\Meadow Valley\\Meadow Valley.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "MMU",
+    "nameUppercase": "MOUNT MORRIS",
+    "name": "Mount Morris",
+    "mascot": "Mustangs",
+    "primaryColor": "#903153",
+    "secondaryColor": "#FFD100",
+    "accentColor": "#F9F9F9",
+    "primaryLogo": "Logos\\Schools\\Mount Morris\\Mount Morris.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "PARK",
+    "nameUppercase": "PARKSIDE",
+    "name": "Parkside",
+    "mascot": "Pirates",
+    "primaryColor": "#9E2135",
+    "secondaryColor": "#F1A900",
+    "accentColor": "#000000",
+    "primaryLogo": "Logos\\Schools\\Parkside\\Parkside.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "PSC",
+    "nameUppercase": "PINE STATE",
+    "name": "Pine State",
+    "mascot": "Bobcats",
+    "primaryColor": "#013CA4",
+    "secondaryColor": "#CCCCCC",
+    "accentColor": "#000000",
+    "primaryLogo": "Logos\\Schools\\Pine State\\Pine State.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "HSU",
+    "nameUppercase": "HARBOR STATE",
+    "name": "Harbor State",
+    "mascot": "Mariners",
+    "primaryColor": "#0B3D91",
+    "secondaryColor": "#F2A900",
+    "accentColor": "#B0B7BC",
+    "primaryLogo": "Logos\\Schools\\Harbor State\\Harbor State.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "WWU",
+    "nameUppercase": "WESTWOOD",
+    "name": "Westwood",
+    "mascot": "Owls",
+    "primaryColor": "#014634",
+    "secondaryColor": "#000000",
+    "accentColor": "#F9F9F9",
+    "primaryLogo": "Logos\\Schools\\Westwood\\Westwood.png",
+    "secondaryLogo": ""
+  },
+  {
+    "abbv": "NCC",
+    "nameUppercase": "NORTHGATE",
+    "name": "Northgate",
+    "mascot": "Rangers",
+    "primaryColor": "#003366",
+    "secondaryColor": "#FFFFFF",
+    "accentColor": "#FFFFFF",
+    "primaryLogo": "Logos\\Schools\\Northgate\\Northgate.png",
+    "secondaryLogo": ""
+  }
+]

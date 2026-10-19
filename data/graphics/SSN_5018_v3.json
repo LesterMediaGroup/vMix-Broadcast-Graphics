@@ -1,0 +1,156 @@
+{
+  "nameFormat": "nameUppercase",
+  "live": "Men's Basketball",
+  "presets": [
+    {
+      "name": "Men's Basketball",
+      "sportLabel": "COLLEGE BASKETBALL",
+      "heading": "AROUND THE CONFERENCE",
+      "conferenceAbbv": "PVAC",
+      "prestoUrl": "",
+      "autoUpdate": false,
+      "pollSeconds": 30,
+      "games": [
+        {
+          "visible": true,
+          "t1Abbv": "WWU",
+          "t2Abbv": "MNU",
+          "t1Score": "23",
+          "t2Score": "76",
+          "period": "1st Half",
+          "time": "37:45",
+          "source": "manual"
+        },
+        {
+          "visible": true,
+          "t1Abbv": "HSU",
+          "t2Abbv": "CMU",
+          "t1Score": "87",
+          "t2Score": "34",
+          "period": "Half",
+          "time": "",
+          "source": "manual"
+        },
+        {
+          "visible": true,
+          "t1Abbv": "",
+          "t2Abbv": "",
+          "t1Score": "",
+          "t2Score": "",
+          "period": "",
+          "time": "",
+          "source": "manual"
+        },
+        {
+          "visible": true,
+          "t1Abbv": "",
+          "t2Abbv": "",
+          "t1Score": "",
+          "t2Score": "",
+          "period": "",
+          "time": "",
+          "source": "manual"
+        },
+        {
+          "visible": true,
+          "t1Abbv": "",
+          "t2Abbv": "",
+          "t1Score": "",
+          "t2Score": "",
+          "period": "",
+          "time": "",
+          "source": "manual"
+        },
+        {
+          "visible": false,
+          "t1Abbv": "",
+          "t2Abbv": "",
+          "t1Score": "",
+          "t2Score": "",
+          "period": "",
+          "time": "",
+          "source": "manual"
+        }
+      ]
+    }
+  ],
+  "relayUpdatedAt": "",
+  "sendMode": "auto",
+  "sent": {
+    "nameFormat": "nameUppercase",
+    "live": "Men's Basketball",
+    "presets": [
+      {
+        "name": "Men's Basketball",
+        "sportLabel": "COLLEGE BASKETBALL",
+        "heading": "AROUND THE CONFERENCE",
+        "conferenceAbbv": "PVAC",
+        "prestoUrl": "",
+        "autoUpdate": false,
+        "pollSeconds": 30,
+        "games": [
+          {
+            "visible": true,
+            "t1Abbv": "WWU",
+            "t2Abbv": "MNU",
+            "t1Score": "23",
+            "t2Score": "76",
+            "period": "1st Half",
+            "time": "37:45",
+            "source": "manual"
+          },
+          {
+            "visible": true,
+            "t1Abbv": "HSU",
+            "t2Abbv": "CMU",
+            "t1Score": "87",
+            "t2Score": "34",
+            "period": "Half",
+            "time": "",
+            "source": "manual"
+          },
+          {
+            "visible": true,
+            "t1Abbv": "",
+            "t2Abbv": "",
+            "t1Score": "",
+            "t2Score": "",
+            "period": "",
+            "time": "",
+            "source": "manual"
+          },
+          {
+            "visible": true,
+            "t1Abbv": "",
+            "t2Abbv": "",
+            "t1Score": "",
+            "t2Score": "",
+            "period": "",
+            "time": "",
+            "source": "manual"
+          },
+          {
+            "visible": true,
+            "t1Abbv": "",
+            "t2Abbv": "",
+            "t1Score": "",
+            "t2Score": "",
+            "period": "",
+            "time": "",
+            "source": "manual"
+          },
+          {
+            "visible": false,
+            "t1Abbv": "",
+            "t2Abbv": "",
+            "t1Score": "",
+            "t2Score": "",
+            "period": "",
+            "time": "",
+            "source": "manual"
+          }
+        ]
+      }
+    ]
+  }
+}

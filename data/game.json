@@ -1,0 +1,41 @@
+{
+  "sport": "Women's Soccer",
+  "date": "2026-10-13",
+  "time": "5:00 PM",
+  "broadcastStart": "4:45 PM",
+  "venue": "Harbor Field",
+  "location": "Harbor City",
+  "event": "",
+  "series": "",
+  "lastMeeting": "",
+  "attendance": "",
+  "conferenceGame": false,
+  "away": {
+    "teamAbbv": "",
+    "rank": "",
+    "record": "",
+    "confRecord": "",
+    "coach": "",
+    "coachTitle": "Head Coach",
+    "coachRecord": "",
+    "coachConfRecord": "",
+    "coachSeason": "",
+    "colorKey": "primaryColor",
+    "logoKey": "primaryLogo"
+  },
+  "home": {
+    "teamAbbv": "",
+    "rank": "",
+    "record": "",
+    "confRecord": "",
+    "coach": "",
+    "coachTitle": "Head Coach",
+    "coachRecord": "",
+    "coachConfRecord": "",
+    "coachSeason": "",
+    "colorKey": "primaryColor",
+    "logoKey": "primaryLogo"
+  },
+  "crew": [],
+  "officials": []
+}
