@@ -1,5 +1,20 @@
 # Changelog
 
+## 1.1.0
+
+- **Football stats** tab and feed, `/out/football.json` (one row), read from a
+  PrestoSports StatsEntry football XML.
+  - Score and quarters, game status (`2nd 05:32`, `HALFTIME`, `FINAL`),
+    possession, down & distance, ball on, timeouts, last play and last score;
+    17 team stats per side; passing, rushing, receiving and tackle leaders.
+  - The XML comes from a PrestoSports URL or a file path, with auto-update
+    every 5–60 seconds, or from **Load file…** for an XML downloaded in the
+    browser (PrestoSports' Cloudflare check can block automatic downloads,
+    and the tab says when it does).
+  - Away/home follow Game setup; XML teams are matched to Teams by id or name.
+- **Team Stats** rows and scores can take their values from the football stats
+  (**From** column), filled live each time vMix reads the feed.
+
 ## 1.0.0
 
 First stable starting point: the dashboard and every feed below are ready for

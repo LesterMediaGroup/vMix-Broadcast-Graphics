@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Hand-made stand-in for a pregame StatsEntry XML: the same layout as
+     Football-final.xml with no plays and no stats. Replace with a real
+     pregame download when there is one. -->
+<fbgame source="PrestoSports" version="7.24.0" generated="10/24/2026" platformId="statsentry">
+  <venue gameid="" visid="WPU" visname="William Penn (IA)" homeid="CSC" homename="Culver-Stockton (MO)" date="10/31/2026" location="Oskaloosa, Iowa" stadium="Penn Stadium" start="1:00 PM" attend="" leaguegame="Y" neutralgame="N" postseason="N">
+    <officials ref="" ump="" line="" lj="" bj="" fj="" sj=""></officials>
+    <rules qtrs="4" mins="15" downs="4" yds="10" field="100" toh="3"></rules>
+  </venue>
+  <status complete="N" running="F" period="1"></status>
+  <team vh="V" code="NAIA2312" id="WPU" name="William Penn (IA)" record="5-2" conf-record="2-1" abb="V">
+    <linescore prds="0" line="" score="0"></linescore>
+    <totals></totals>
+    <player uni="1B" name="Christian Benning" checkname="BENNING,CHRISTIAN" gp="0" code="1B"></player>
+  </team>
+  <team vh="H" code="NAIA329" id="CSC" name="Culver-Stockton (MO)" record="2-5" conf-record="1-2" abb="H">
+    <linescore prds="0" line="" score="0"></linescore>
+    <totals></totals>
+  </team>
+  <scores></scores>
+  <plays format="summary">
+    <downtogo hasball="" id="" down="0" togo="0" spot="" context="" qtr="1" clock="15:00" vtoh="3" htoh="3" lastplay=""></downtogo>
+  </plays>
+  <message text=""></message>
+</fbgame>

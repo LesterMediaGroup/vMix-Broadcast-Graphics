@@ -1,6 +1,6 @@
 {
   "name": "broadcast-graphics",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "UI-driven replacement for the HSU Athletics vMix broadcast graphics spreadsheet - team/conference database, game setup, rosters, and JSON feeds for vMix.",
   "type": "module",
   "main": "server.js",

@@ -2,7 +2,8 @@ import express from "express";
 import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
-import { fetchScoreboard, baseTeamName } from "./presto.js";
+import { fetchScoreboard, fetchPage, baseTeamName } from "./presto.js";
+import { parseFootball, footballRow, TEAM_STATS, statField } from "./football.js";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 // DATA_DIR / PORT can be overridden (the tests run on a scratch copy of the data).
@@ -400,11 +401,14 @@ const TEAM_STAT_ROWS = 5;
 // (V SCHOOL, vSCORE, V NAME, V LOGO, V Stat 1-5, V TEAM COLOR / colorbars);
 // Center Logo; and the middle labels, which are numbered bottom-up in the
 // title: row 1 = STAT9, row 2 = STAT8, ... row 5 = STAT5. Teams come from
-// Game setup; scores and stats are typed in the tab. centerLogo is "home",
-// "away", "none", or a conference abbv.
+// Game setup. Scores and stats are typed in the tab, or come from the loaded
+// football stats: a row whose `source` is a TEAM_STATS key (football.js), and
+// the scores when scoreSource is "football", are read from the football feed
+// each time this feed is read, so they follow every auto-update. centerLogo
+// is "home", "away", "none", or a conference abbv.
 GRAPHICS.SSN_9120_v1 = {
   label: "Team Stats",
-  defaults: () => ({ header: "TEAM STATS", subHeader: "", hScore: "", vScore: "", centerLogo: "home", rows: [] }),
+  defaults: () => ({ header: "TEAM STATS", subHeader: "", hScore: "", vScore: "", scoreSource: "typed", centerLogo: "home", rows: [] }),
   normalize: (body) => {
     const rows = Array.isArray(body.rows) ? body.rows : [];
     return {
@@ -412,10 +416,12 @@ GRAPHICS.SSN_9120_v1 = {
       subHeader: str(body.subHeader),
       hScore: str(body.hScore),
       vScore: str(body.vScore),
+      scoreSource: body.scoreSource === "football" ? "football" : "typed",
       centerLogo: typeof body.centerLogo === "string" ? body.centerLogo.trim() || "home" : "home",
       rows: Array.from({ length: TEAM_STAT_ROWS }, (_, i) => {
         const r = rows[i] || {};
-        return { label: str(r.label), home: str(r.home), away: str(r.away) };
+        const source = TEAM_STATS.some(([key]) => key === r.source) ? r.source : "";
+        return { label: str(r.label), home: str(r.home), away: str(r.away), source };
       }),
     };
   },
@@ -425,6 +431,9 @@ GRAPHICS.SSN_9120_v1 = {
     const conf = conferences.find((c) => c.abbv === state.centerLogo);
     const centerLogo =
       { home: g.homeLogo, away: g.awayLogo, none: "" }[state.centerLogo] ?? (conf ? resolveAssetPath(conf.primaryLogo) : "");
+    const fb = footballFeed();
+    const fromFootball = (field) => (fb.loaded ? String(fb[field] ?? "") : "");
+    const scoresFromFootball = state.scoreSource === "football";
     const row = {
       header: state.header,
       subHeader: state.subHeader,
@@ -432,8 +441,8 @@ GRAPHICS.SSN_9120_v1 = {
       vSchool: g.awayNameUppercase,
       hName: g.homeMascot,
       vName: g.awayMascot,
-      hScore: state.hScore,
-      vScore: state.vScore,
+      hScore: scoresFromFootball ? fromFootball("homeScore") : state.hScore,
+      vScore: scoresFromFootball ? fromFootball("awayScore") : state.vScore,
       hLogo: g.homeLogo,
       vLogo: g.awayLogo,
       centerLogo,
@@ -443,9 +452,10 @@ GRAPHICS.SSN_9120_v1 = {
       vSecondaryColor: g.awaySecondaryColor,
     };
     state.rows.forEach((r, i) => {
-      row[`label${i + 1}`] = r.label;
-      row[`hStat${i + 1}`] = r.home;
-      row[`vStat${i + 1}`] = r.away;
+      const stat = TEAM_STATS.find(([key]) => key === r.source);
+      row[`label${i + 1}`] = r.label || (stat ? stat[1] : "");
+      row[`hStat${i + 1}`] = stat ? fromFootball(statField("home", r.source)) : r.home;
+      row[`vStat${i + 1}`] = stat ? fromFootball(statField("away", r.source)) : r.away;
     });
     return [row];
   },
@@ -816,6 +826,117 @@ function gameFeed(game) {
   return [row];
 }
 
+// --- Football stats: a PrestoSports StatsEntry XML (see football.js) ---
+// The XML comes from a URL or a file path, read every pollSeconds while
+// autoUpdate is on, or is uploaded from the dashboard. data/football.json
+// keeps the settings and the last stats read (`game`, already parsed), and is
+// only rewritten when the stats change. The last check's result is kept in
+// memory only.
+
+const FOOTBALL_PATH = path.join(DATA_DIR, "football.json");
+const FOOTBALL_POLL_OPTIONS = [5, 10, 15, 30, 60];
+let footballStatus = null; // { at, ok, error? }
+let footballLastPoll = 0;
+let footballInFlight = false;
+
+function normalizeFootball(body, prev) {
+  return {
+    source: str(body.source),
+    autoUpdate: body.autoUpdate === true,
+    pollSeconds: FOOTBALL_POLL_OPTIONS.includes(Number(body.pollSeconds)) ? Number(body.pollSeconds) : 10,
+    // Only loading an XML changes the stats; a settings save keeps them.
+    game: prev ? prev.game : body.game && typeof body.game === "object" ? body.game : null,
+    updatedAt: prev ? prev.updatedAt : str(body.updatedAt),
+    loadedFrom: prev ? prev.loadedFrom : str(body.loadedFrom),
+  };
+}
+
+const loadFootball = () => normalizeFootball(loadJson(FOOTBALL_PATH, {}));
+
+// The abbv in Teams for an XML team (id "CSC", name "Culver-Stockton (MO)"), or "".
+function xmlTeamAbbv(t) {
+  const team = findTeam(t.id) || findTeam(t.name) || findTeam(baseTeamName(t.name));
+  return team ? team.abbv : "";
+}
+
+// Which XML team (V/H) is away and which is home: the XML's visitor and home,
+// unless Game setup has the same two teams the other way round.
+function footballSides(fbGame, g) {
+  const [v, h] = [xmlTeamAbbv(fbGame.teams.V), xmlTeamAbbv(fbGame.teams.H)];
+  const reversed = v && h && g.awayAbbv === h && g.homeAbbv === v;
+  return reversed ? { away: "H", home: "V" } : { away: "V", home: "H" };
+}
+
+function footballFeed(state = loadFootball()) {
+  if (!state.game) return { loaded: false };
+  const fbGame = state.game;
+  const abbvOf = (vh) => xmlTeamAbbv(fbGame.teams[vh]) || fbGame.teams[vh].id;
+  return { ...footballRow(fbGame, footballSides(fbGame, gameFeed(loadGame())[0]), abbvOf), updatedAt: state.updatedAt };
+}
+
+// Mismatches worth flagging on the Football tab.
+function footballWarnings(state) {
+  if (!state.game) return [];
+  const { V, H } = state.game.teams;
+  const out = [];
+  for (const t of [V, H]) {
+    if (!xmlTeamAbbv(t)) out.push(`"${t.name}" (${t.id}) from the XML isn't in Teams, so it goes out by its XML id.`);
+  }
+  const g = gameFeed(loadGame())[0];
+  const xml = [xmlTeamAbbv(V), xmlTeamAbbv(H)];
+  if (g.awayAbbv && g.homeAbbv && !(xml.includes(g.awayAbbv) && xml.includes(g.homeAbbv))) {
+    out.push(`The XML is ${V.name} at ${H.name}, but Game setup is ${g.awayAbbv} at ${g.homeAbbv}.`);
+  }
+  return out;
+}
+
+// Parses `text` and saves it if the stats changed. Throws on a bad file.
+function storeFootballXml(text, from) {
+  const game = parseFootball(text);
+  const state = loadFootball(); // reloaded so a settings save made meanwhile is kept
+  if (JSON.stringify(game) !== JSON.stringify(state.game)) {
+    Object.assign(state, { game, updatedAt: new Date().toISOString(), loadedFrom: from });
+    saveJson(FOOTBALL_PATH, state);
+  }
+}
+
+async function readFootballSource(source) {
+  if (/^https?:\/\//i.test(source)) return (await fetchPage(source, "Stats XML")).body;
+  try {
+    return fs.readFileSync(source, "utf8");
+  } catch (e) {
+    throw new Error(e.code === "ENOENT" ? `No file at ${source}` : `Can't read ${source}: ${e.message}`);
+  }
+}
+
+async function checkFootball(source) {
+  const at = new Date().toISOString();
+  try {
+    storeFootballXml(await readFootballSource(source), source);
+    footballStatus = { at, ok: true };
+  } catch (e) {
+    footballStatus = { at, ok: false, error: e.message };
+  }
+  return footballStatus;
+}
+
+function pollFootball() {
+  let state;
+  try {
+    state = loadFootball();
+  } catch (e) {
+    console.error(`Football auto-update skipped: ${e.message}`);
+    return;
+  }
+  if (!state.autoUpdate || !state.source || footballInFlight) return;
+  if (Date.now() - footballLastPoll < state.pollSeconds * 1000) return;
+  footballInFlight = true;
+  footballLastPoll = Date.now();
+  checkFootball(state.source).finally(() => (footballInFlight = false));
+}
+
+setInterval(pollFootball, 1000);
+
 const app = express();
 app.use(express.json());
 
@@ -981,6 +1102,61 @@ app.get(`/api/graphics/${SCORES_TITLE}/presto`, (req, res) => {
   res.json(prestoStatus);
 });
 
+// --- Football stats ---
+
+const footballView = (state) => ({
+  source: state.source,
+  autoUpdate: state.autoUpdate,
+  pollSeconds: state.pollSeconds,
+  updatedAt: state.updatedAt,
+  loadedFrom: state.loadedFrom,
+  status: footballStatus,
+  warnings: footballWarnings(state),
+  row: footballFeed(state),
+  statOptions: TEAM_STATS.map(([key, label]) => ({ key, label })),
+});
+
+app.get("/api/football", (req, res) => {
+  res.json(footballView(loadFootball()));
+});
+
+// Settings only: { source, autoUpdate, pollSeconds }.
+app.post("/api/football", (req, res) => {
+  const prev = loadFootball();
+  const state = normalizeFootball(req.body || {}, prev);
+  saveJson(FOOTBALL_PATH, state);
+  // A new source, or auto-update just turned on, is read on the next tick.
+  if (state.source !== prev.source || (state.autoUpdate && !prev.autoUpdate)) footballLastPoll = 0;
+  res.json({ ok: true, ...footballView(state) });
+});
+
+app.post("/api/football/check", async (req, res) => {
+  const state = loadFootball();
+  if (!state.source) return res.status(400).json({ ok: false, error: "Enter a stats URL or file path first." });
+  footballLastPoll = Date.now();
+  const status = await checkFootball(state.source);
+  res.json({ ...footballView(loadFootball()), ok: status.ok, error: status.error });
+});
+
+// The XML itself is the request body (the dashboard's Load file button).
+app.post("/api/football/xml", express.text({ type: () => true, limit: "20mb" }), (req, res) => {
+  try {
+    storeFootballXml(typeof req.body === "string" ? req.body : "", `Uploaded file: ${str(req.query.name) || "XML"}`);
+  } catch (e) {
+    return res.status(400).json({ ok: false, error: e.message });
+  }
+  footballStatus = { at: new Date().toISOString(), ok: true };
+  res.json({ ok: true, ...footballView(loadFootball()) });
+});
+
+// Clears the loaded stats for a new game; the source settings are kept.
+app.post("/api/football/clear", (req, res) => {
+  const state = { ...loadFootball(), game: null, updatedAt: "", loadedFrom: "" };
+  saveJson(FOOTBALL_PATH, state);
+  footballStatus = null;
+  res.json({ ok: true, ...footballView(state) });
+});
+
 // --- Public feeds, for vMix or any other tool to read ---
 
 app.get("/out/teams.json", (req, res) => {
@@ -993,6 +1169,10 @@ app.get("/out/conferences.json", (req, res) => {
 
 app.get("/out/game.json", (req, res) => {
   res.json(gameFeed(loadGame()));
+});
+
+app.get("/out/football.json", (req, res) => {
+  res.json([footballFeed()]);
 });
 
 app.get("/out/graphics/:title.json", (req, res) => {

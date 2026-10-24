@@ -1,0 +1,1325 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fbgame source="PrestoSports" version="7.24.0" generated="10/24/2026" platformId="statsentry"> 
+  <venue gameid="" visid="WPU" visname="William Penn (IA)" homeid="CSC" homename="Culver-Stockton (MO)" date="10/17/2026" location="Canton, Mo." stadium="Poulton Srtadium" start="12:30 PM" end="03:37 PM" duration="3:07" delay="" attend="1171" temp="55 deg." weather="Sunny" wind="3 mph W" schednote="" leaguegame="Y" neutralgame="N" postseason="N"> 
+    <officials ref="Martin Wood" ump="David Villnueva" line="D. Grossnickle" lj="Tyler Eason" bj="Mark Zarybinick" fj="Randy Reimdl" sj="Brad Doling" sc="John Schild" cj="Mitch Driscoll"></officials>  
+    <rules qtrs="4" mins="15" downs="4" yds="10" kospot="35" kotbspot="25" tbspot="20" patspot="3" safspot="20" td="6" fg="3" pat="1" patx="2" saf="2" defpat="2" rouge="0" field="100" toh="3" sackrush="Y" fgaplay="Y" netpunttb="Y"></rules> 
+  </venue>  
+  <status complete="Y" running="F" period="4"></status>  
+  <team vh="V" code="NAIA2312" id="WPU" name="William Penn (IA)" record="5-2" conf-record="2-1" abb="V"> 
+    <linescore prds="4" line="7,14,7,0" score="28"> 
+      <lineprd prd="1" score="7"></lineprd>  
+      <lineprd prd="2" score="14"></lineprd>  
+      <lineprd prd="3" score="7"></lineprd>  
+      <lineprd prd="4" score="0"></lineprd> 
+    </linescore>  
+    <totals totoff_plays="60" totoff_yards="472" totoff_avg="7.9"> 
+      <firstdowns no="21" rush="11" pass="10" penalty="0"></firstdowns>  
+      <penalties no="4" yds="45"></penalties>  
+      <conversions thirdconv="3" thirdatt="9" fourthconv="0" fourthatt="2"></conversions>  
+      <fumbles no="1" lost="1"></fumbles>  
+      <misc top="28:09" ona="0" onm="0" yds="0"></misc>  
+      <redzone att="1" scores="1" points="6" tdrush="1" tdpass="0" fgmade="0" endfga="0" enddowns="0" endint="0" endfumb="0" endhalf="0" endgame="0"></redzone>  
+      <rush att="33" td="2" long="44" loss="12" yds="239" gain="251"></rush>  
+      <pass att="27" td="2" long="37" yds="233" comp="16" sacks="2" sackyds="12" int="3"></pass>  
+      <rcv long="37" no="16" td="2" yds="233"></rcv>  
+      <punt avg="40.3" blkd="0" fc="1" inside20="0" long="48" no="3" plus50="0" tb="0" yds="121"></punt>  
+      <ko no="5" ob="1" tb="1" yds="281"></ko>  
+      <pat kickatt="4" kickmade="4" retkatt="2" rushmade="0" dropkickatt="0" dropkickmade="0"></pat>  
+      <defense blkd="2" brup="5" fr="0" fryds="0" qbh="1" sacks="1" sackyds="2" sacksa="0" sacksua="1" tacka="30" tackua="43" tot_tack="73" tflua="4" tflyds="15"></defense>  
+      <kr long="23" no="2" td="0" yds="41"></kr>  
+      <pr long="2" no="2" td="0" yds="3"></pr>  
+      <scoring td="4" patkick="4"></scoring> 
+    </totals>  
+    <player uni="0D" name="Quincey Classeus" checkname="CLASSEUS,QUINCEY" shortname="Quincey Classeus" gp="1" code="0D" playerId="wryinpfdmjdhz5bo"> 
+      <rush att="1" td="0" long="5" loss="0" yds="5" gain="5"></rush> 
+    </player>  
+    <player uni="0O" name="Keithon Davis" checkname="DAVIS,KEITHON" shortname="Keithon Davis" gp="1" code="0O" playerId="1utaflyhe35nkzir"> 
+      <rush att="1" td="0" long="19" loss="0" yds="19" gain="19"></rush>  
+      <rcv long="26" no="4" td="1" yds="70"></rcv>  
+      <scoring td="1"></scoring> 
+    </player>  
+    <player uni="1B" name="Christian Benning" checkname="BENNING,CHRISTIAN" shortname="Christian Benning" gp="1" gs="1" opos="QB" code="1B" playerId="8at1hj6ygtp9icgb"> 
+      <rush att="2" td="0" long="0" loss="12" yds="-12" gain="0"></rush>  
+      <pass att="15" td="0" long="35" yds="123" comp="10" sacks="2" sackyds="12" int="1"></pass>  
+      <defense tacka="0" tackua="1" tot_tack="1"></defense> 
+    </player>  
+    <player uni="1H" name="Shane Helmick" checkname="HELMICK,SHANE" shortname="Shane Helmick" gp="1" gs="1" opos="TE" code="1H" playerId="vvi9t66jyzv5eoae"> 
+      <rcv long="11" no="1" td="0" yds="11"></rcv> 
+    </player>  
+    <player uni="1J" name="Anthony Jones Jr." checkname="JR,ANTHONY JONES" shortname="Anthony Jones Jr." gp="1" gs="1" opos="WR" code="1J" playerId="chwsfouo40p8nv80"> 
+      <rcv long="7" no="2" td="0" yds="1"></rcv> 
+    </player>  
+    <player uni="1O" name="Emery Floyd" checkname="FLOYD,EMERY" shortname="Emery Floyd" gp="1" code="1O" playerId="eqq4tsy8ucwdmdbm"> 
+      <rush att="10" td="1" long="14" loss="0" yds="66" gain="66"></rush>  
+      <pass att="12" td="2" long="37" yds="110" comp="6" sacks="0" sackyds="0" int="2"></pass>  
+      <fumbles no="1" lost="1"></fumbles>  
+      <scoring td="1"></scoring> 
+    </player>  
+    <player uni="1S" name="Semaj Smith" checkname="SMITH,SEMAJ" shortname="Semaj Smith" gp="1" code="1S" playerId="yk7w4hnv8ztk4j1i"> 
+      <defense tacka="0" tackua="1" tot_tack="1"></defense> 
+    </player>  
+    <player uni="1T" name="Brian Thomas" checkname="THOMAS,BRIAN" shortname="Brian Thomas" gp="1" code="1T" playerId="wmh4ut4577hfe9oi"> 
+      <defense tacka="1" tackua="0" tot_tack="1"></defense> 
+    </player>  
+    <player uni="2" name="Omari Campbell" checkname="CAMPBELL,OMARI" shortname="Omari Campbell" gp="1" gs="1" dpos="CB" code="2" playerId="yuw9n1zjb2rdsme6"> 
+      <defense tacka="3" tackua="4" tot_tack="7"></defense> 
+    </player>  
+    <player uni="3D" name="Jeremiah Dennard" checkname="DENNARD,JEREMIAH" shortname="Jeremiah Dennard" gp="1" gs="1" dpos="SS" code="3D" playerId="pqqmg82nb0sshd1u"> 
+      <defense brup="1" tacka="3" tackua="4" tot_tack="7"></defense> 
+    </player>  
+    <player uni="4D" name="Donavin Brewer" checkname="BREWER,DONAVIN" shortname="Donavin Brewer" gp="1" code="4D" playerId="vfv1r87i27nogaas"> 
+      <defense tacka="1" tackua="0" tot_tack="1"></defense> 
+    </player>  
+    <player uni="4O" name="Branden Powell" checkname="POWELL,BRANDEN" shortname="Branden Powell" gp="1" gs="1" opos="FB" code="4O" playerId="koiqmz5e8rmjx0ox"> 
+      <rcv long="35" no="3" td="1" yds="43"></rcv>  
+      <defense tacka="0" tackua="1" tot_tack="1"></defense>  
+      <kr long="23" no="1" td="0" yds="23"></kr>  
+      <scoring td="1"></scoring> 
+    </player>  
+    <player uni="5" name="Kendrick Canon" checkname="CANON,KENDRICK" shortname="Kendrick Canon" gp="1" gs="1" opos="WR" code="5" playerId="gjjl2g3zup5qfhd4"> 
+      <rcv long="37" no="5" td="0" yds="100"></rcv> 
+    </player>  
+    <player uni="6" name="Kameron Cummings" checkname="CUMMINGS,KAMERON" shortname="Kameron Cummings" gp="1" gs="1" dpos="LB" code="6" playerId="kebhna11scxbjzmy"> 
+      <defense tacka="1" tackua="6" tot_tack="7" tfla="0" tflua="1" tflyds="1"></defense> 
+    </player>  
+    <player uni="7D" name="Willie Page" checkname="PAGE,WILLIE" shortname="Willie Page" gp="1" gs="1" dpos="FS" code="7D" playerId="zdsz4k4j0x9vc2uv"> 
+      <defense tacka="0" tackua="1" tot_tack="1"></defense> 
+    </player>  
+    <player uni="8D" name="Brian Weatherspoon" checkname="WEATHERSPOON,BRIAN" shortname="Brian Weatherspoon" gp="1" gs="1" dpos="LB" code="8D" playerId="9e2s17mvhzu6p42v"> 
+      <defense sacka="0" sackua="1" sackyds="2" tacka="4" tackua="3" tot_tack="7" tfla="0" tflua="1" tflyds="2"></defense> 
+    </player>  
+    <player uni="8O" name="Nasear Cumberbatch" checkname="CUMBERBATCH,NASEAR" shortname="Nasear Cumberbatch" gp="1" code="8O" playerId="n5o66zi300pzpf00"> 
+      <kr long="18" no="1" td="0" yds="18"></kr> 
+    </player>  
+    <player uni="9" name="Michael Johnson III" checkname="III,MICHAEL JOHNSON" shortname="Michael Johnson III" gp="1" gs="1" dpos="CB" code="9" playerId="lye7p3ina0c9qafa"> 
+      <defense brup="1" tacka="1" tackua="4" tot_tack="5"></defense> 
+    </player>  
+    <player uni="13" name="Rhyan Sewell" checkname="SEWELL,RHYAN" shortname="Rhyan Sewell" gp="1" gs="1" dpos="DE" code="13" playerId="d25r0fe9osbuddjb"> 
+      <defense brup="2" tacka="2" tackua="1" tot_tack="3"></defense> 
+    </player>  
+    <player uni="14" name="Henry Hypolite III" checkname="III,HENRY HYPOLITE" shortname="Henry Hypolite III" gp="1" code="14" playerId="e4of0uz8y4idn24p"> 
+      <pr long="2" no="2" td="0" yds="3"></pr> 
+    </player>  
+    <player uni="16" name="Derion Morris" checkname="MORRIS,DERION" shortname="Derion Morris" gp="1" gs="1" opos="RB" code="16" playerId="nv0fqdclyimsr2ka"> 
+      <rush att="5" td="0" long="44" loss="0" yds="59" gain="59"></rush> 
+    </player>  
+    <player uni="18" name="Chidozie Mogbo Jr." checkname="JR,CHIDOZIE MOGBO" shortname="Chidozie Mogbo Jr." gp="1" code="18" playerId="qilgf487wcj7s237"> 
+      <defense tacka="1" tackua="0" tot_tack="1"></defense> 
+    </player>  
+    <player uni="22" name="Jaden Reed" checkname="REED,JADEN" shortname="Jaden Reed" gp="1" gs="1" dpos="DE" code="22" playerId="6ji0d0u5ii3pnlqq"> 
+      <defense qbh="1" tacka="3" tackua="0" tot_tack="3"></defense> 
+    </player>  
+    <player uni="23" name="Jovoni Welch" checkname="WELCH,JOVONI" shortname="Jovoni Welch" gp="1" code="23" playerId="c2aljrkjb6dn08sa"> 
+      <defense tacka="1" tackua="0" tot_tack="1"></defense> 
+    </player>  
+    <player uni="26" name="Porter Rode" checkname="RODE,PORTER" shortname="Porter Rode" gp="1" code="26" playerId="szkn0xpeepxpkbxn"></player>  
+    <player uni="27" name="Anthony Carey Jr." checkname="JR,ANTHONY CAREY" shortname="Anthony Carey Jr." gp="1" code="27" playerId="qbqgt53ngb8wmiya"> 
+      <rush att="14" td="1" long="32" loss="0" yds="102" gain="102"></rush>  
+      <rcv long="8" no="1" td="0" yds="8"></rcv>  
+      <scoring td="1"></scoring> 
+    </player>  
+    <player uni="30" name="Jamari Ritter" checkname="RITTER,JAMARI" shortname="Jamari Ritter" gp="1" code="30" playerId="uh8d7ehy7skwcjty"> 
+      <defense tacka="2" tackua="0" tot_tack="2"></defense> 
+    </player>  
+    <player uni="33" name="Tierre Butler" checkname="BUTLER,TIERRE" shortname="Tierre Butler" gp="1" gs="1" dpos="LB" code="33" playerId="kfxz6ikg0mwsg69l"> 
+      <defense tacka="1" tackua="8" tot_tack="9" tfla="0" tflua="1" tflyds="6"></defense> 
+    </player>  
+    <player uni="39" name="Kongolo Mwenemkamba" checkname="MWENEMKAMBA,KONGOLO" shortname="Kongolo Mwenemkamba" gp="1" code="39" playerId="ybo892qwhnz10jut"> 
+      <ko no="5" ob="1" tb="1" yds="281"></ko> 
+    </player>  
+    <player uni="40" name="Clay Wiren" checkname="WIREN,CLAY" shortname="Clay Wiren" gp="1" code="40" playerId="qgipj11rqc1bsgaj"> 
+      <punt avg="40.3" blkd="0" fc="1" inside20="0" long="48" no="3" plus50="0" tb="0" yds="121"></punt> 
+    </player>  
+    <player uni="44" name="Jerome Schaubert" checkname="SCHAUBERT,JEROME" shortname="Jerome Schaubert" gp="1" code="44" playerId="ekdvycs8pqv2kcwd"> 
+      <defense brup="1" tacka="1" tackua="0" tot_tack="1"></defense> 
+    </player>  
+    <player uni="45" name="Jaquarius Butler" checkname="BUTLER,JAQUARIUS" shortname="Jaquarius Butler" gp="1" code="45" playerId="nar8z266ynch9znm"> 
+      <defense tacka="2" tackua="1" tot_tack="3"></defense> 
+    </player>  
+    <player uni="46" name="Roger Guillory" checkname="GUILLORY,ROGER" shortname="Roger Guillory" gp="1" code="46" playerId="4al5vnwyr78bh0zq"> 
+      <defense tacka="1" tackua="3" tot_tack="4"></defense> 
+    </player>  
+    <player uni="48" name="Chris Paniagua" checkname="PANIAGUA,CHRIS" shortname="Chris Paniagua" gp="1" code="48" playerId="ydwwgpeqk0i3qsc3"> 
+      <pat kickatt="4" kickmade="4" passatt="0" passmade="0" rcvmade="0" retfatt="0" retfmade="0" retkatt="0" retkmade="0" rushatt="0" rushmade="0" dropkickatt="0" dropkickmade="0"></pat>  
+      <scoring patkick="4"></scoring> 
+    </player>  
+    <player uni="50" name="John McDonald" checkname="MCDONALD,JOHN" shortname="John McDonald" gp="1" gs="1" dpos="DT" code="50" playerId="48z80amggtltgi84"> 
+      <defense blkd="2" tacka="0" tackua="3" tot_tack="3"></defense> 
+    </player>  
+    <player uni="54" name="Oscar Hernandez" checkname="HERNANDEZ,OSCAR" shortname="Oscar Hernandez" gp="1" gs="1" opos="C" code="54" playerId="zv2865lqh3ax0g77"></player>  
+    <player uni="55" name="King Morgan" checkname="MORGAN,KING" shortname="King Morgan" gp="1" gs="1" opos="LG" code="55" playerId="2cvmft85bcgiwp2r"></player>  
+    <player uni="58" name="Brandon Latimore" checkname="LATIMORE,BRANDON" shortname="Brandon Latimore" gp="1" code="58" playerId="hjauqbwtv0i3x766"> 
+      <defense tacka="2" tackua="1" tot_tack="3" tfla="0" tflua="1" tflyds="6"></defense> 
+    </player>  
+    <player uni="66" name="James Johnson III" checkname="III,JAMES JOHNSON" shortname="James Johnson III" gp="1" gs="1" opos="LT" code="66" playerId="243rzz6h0as8es90"></player>  
+    <player uni="70" name="Sincere Williams" checkname="WILLIAMS,SINCERE" shortname="Sincere Williams" gp="1" gs="1" opos="LT" code="70" playerId="jwygjea3ach3dgr0"></player>  
+    <player uni="73" name="Jordan JeanBaptiste" checkname="JEANBAPTISTE,JORDAN" shortname="Jordan JeanBaptiste" gp="1" gs="1" opos="RG" code="73" playerId="298tc2jgodv74rg9"></player>  
+    <player uni="94" name="Byron Jackson" checkname="JACKSON,BYRON" shortname="Byron Jackson" gp="1" gs="1" dpos="DT" code="94" playerId="cspdjrdqykkkywmm"></player>  
+    <player uni="96" name="Travis Chinamhora" checkname="CHINAMHORA,TRAVIS" shortname="Travis Chinamhora" gp="1" code="96" playerId="gi1lx1976e9r9nn0"> 
+      <defense tacka="0" tackua="1" tot_tack="1"></defense> 
+    </player>  
+    <player uni="TM" name="Team" checkname="TEAM" shortname="Team" gp="1" code="198" playerId=""> 
+      <pat kickatt="0" kickmade="0" passatt="0" passmade="0" rcvmade="0" retfatt="0" retfmade="0" retkatt="2" retkmade="0" rushatt="0" rushmade="0" dropkickatt="0" dropkickmade="0"></pat> 
+    </player> 
+  </team>  
+  <team vh="H" code="NAIA329" id="CSC" name="Culver-Stockton (MO)" record="2-5" conf-record="1-2" abb="H"> 
+    <linescore prds="4" line="3,6,13,7" score="29"> 
+      <lineprd prd="1" score="3"></lineprd>  
+      <lineprd prd="2" score="6"></lineprd>  
+      <lineprd prd="3" score="13"></lineprd>  
+      <lineprd prd="4" score="7"></lineprd> 
+    </linescore>  
+    <totals totoff_plays="72" totoff_yards="462" totoff_avg="6.4"> 
+      <firstdowns no="23" rush="12" pass="10" penalty="1"></firstdowns>  
+      <penalties no="7" yds="62"></penalties>  
+      <conversions thirdconv="3" thirdatt="15" fourthconv="1" fourthatt="3"></conversions>  
+      <fumbles no="0" lost="0"></fumbles>  
+      <misc top="31:51" ona="0" onm="0" yds="0"></misc>  
+      <redzone att="8" scores="5" points="21" tdrush="3" tdpass="1" fgmade="1" endfga="1" enddowns="2" endint="0" endfumb="0" endhalf="0" endgame="0"></redzone>  
+      <rush att="40" td="3" long="26" loss="14" yds="229" gain="243"></rush>  
+      <pass att="32" td="1" long="37" yds="233" comp="20" sacks="1" sackyds="2" int="0"></pass>  
+      <rcv long="37" no="20" td="1" yds="233"></rcv>  
+      <punt avg="35.5" blkd="0" fc="2" inside20="2" long="39" no="4" plus50="0" tb="0" yds="142"></punt>  
+      <ko no="6" ob="0" tb="1" yds="284"></ko>  
+      <fg att="2" blkd="0" long="20" made="1" dropkickatt="0" dropkickmade="0"></fg>  
+      <pat kickatt="4" kickmade="2" rushmade="0" dropkickatt="0" dropkickmade="0"></pat>  
+      <defense brup="3" ff="1" fr="1" fryds="0" int="3" intyds="102" qbh="1" sacks="2" sackyds="12" sacksa="0" sacksua="2" tacka="26" tackua="35" tot_tack="61" tflua="3" tflyds="18"></defense>  
+      <kr long="26" no="3" td="0" yds="46"></kr>  
+      <pr long="0" no="1" td="0" yds="0"></pr>  
+      <ir long="54" no="3" td="0" yds="102"></ir>  
+      <scoring td="4" fg="1" patkick="2"></scoring> 
+    </totals>  
+    <player uni="0D" name="Marqui Henry" checkname="HENRY,MARQUI" shortname="Marqui Henry" gp="1" code="0D" playerId="r56z4wnojxi4sfc5"> 
+      <defense tacka="0" tackua="3" tot_tack="3"></defense> 
+    </player>  
+    <player uni="1" name="Jason Davenport" checkname="DAVENPORT,JASON" shortname="Jason Davenport" gp="1" gs="1" opos="WR" code="1" playerId="xfehrf8gc4devkll"> 
+      <rcv long="37" no="2" td="0" yds="67"></rcv> 
+    </player>  
+    <player uni="1A" name="Dawson Pelech" checkname="PELECH,DAWSON" shortname="Dawson Pelech" gp="1" code="1A" playerId="c2tipczkyj1qns4w"> 
+      <defense ff="1" tacka="2" tackua="2" tot_tack="4"></defense> 
+    </player>  
+    <player uni="1B" name="Caleb Johnson" checkname="JOHNSON,CALEB" shortname="Caleb Johnson" gp="1" gs="1" dpos="CB" code="1B" playerId="kjdkt9n3426a4uiu"> 
+      <defense tacka="1" tackua="1" tot_tack="2"></defense> 
+    </player>  
+    <player uni="1D" name="Sean Usery" checkname="USERY,SEAN" shortname="Sean Usery" gp="1" gs="1" dpos="LB" code="1D" playerId="9ji40nod2tjtehg8"> 
+      <defense fr="1" fryds="0" int="1" intyds="35" tacka="3" tackua="0" tot_tack="3"></defense>  
+      <ir long="35" no="1" td="0" yds="35"></ir> 
+    </player>  
+    <player uni="1F" name="Braden Fann" checkname="FANN,BRADEN" shortname="Braden Fann" gp="1" code="1F" playerId="ti8idaxjbc3aasjk"> 
+      <punt avg="35.5" blkd="0" fc="2" inside20="2" long="39" no="4" plus50="0" tb="0" yds="142"></punt>  
+      <defense sacka="0" sackua="1" sackyds="9" tacka="3" tackua="3" tot_tack="6" tfla="0" tflua="1" tflyds="9"></defense> 
+    </player>  
+    <player uni="1G" name="Rommarrus Hinson" checkname="HINSON,ROMMARRUS" shortname="Rommarrus Hinson" gp="1" code="1G" playerId="z4huqk593vbklu9t"> 
+      <defense tacka="2" tackua="1" tot_tack="3" tfla="0" tflua="1" tflyds="6"></defense> 
+    </player>  
+    <player uni="1H" name="Brooklyn Hyman" checkname="HYMAN,BROOKLYN" shortname="Brooklyn Hyman" gp="1" gs="1" dpos="LB" code="1H" playerId="q9iogdh8bgz9n54d"></player>  
+    <player uni="1K" name="Josh Winston" checkname="WINSTON,JOSH" shortname="Josh Winston" gp="1" code="1K" playerId="od2yv88gga4a7uom"> 
+      <defense sacka="0" sackua="1" sackyds="3" tacka="1" tackua="3" tot_tack="4" tfla="0" tflua="1" tflyds="3"></defense> 
+    </player>  
+    <player uni="2" name="Liam Thornton" checkname="THORNTON,LIAM" shortname="Liam Thornton" gp="1" gs="1" opos="QB" code="2" playerId="ltupvql8am5mu0al"> 
+      <rush att="15" td="3" long="11" loss="7" yds="61" gain="68"></rush>  
+      <pass att="32" td="1" long="37" yds="233" comp="20" sacks="1" sackyds="2" int="0"></pass>  
+      <scoring td="3"></scoring> 
+    </player>  
+    <player uni="2B" name="Tristan Taylor" checkname="TAYLOR,TRISTAN" shortname="Tristan Taylor" gp="1" code="2B" playerId="dtrz3jhtkdmz41fg"> 
+      <defense tacka="2" tackua="1" tot_tack="3"></defense> 
+    </player>  
+    <player uni="2D" name="Aaron Barr" checkname="BARR,AARON" shortname="Aaron Barr" gp="1" gs="1" dpos="FS" code="2D" playerId="e77t13282466au3x"> 
+      <defense brup="1" int="1" intyds="54" tacka="1" tackua="2" tot_tack="3"></defense>  
+      <pr long="0" no="1" td="0" yds="0"></pr>  
+      <ir long="54" no="1" td="0" yds="54"></ir> 
+    </player>  
+    <player uni="2E" name="Mason Leu" checkname="LEU,MASON" shortname="Mason Leu" gp="1" gs="1" dpos="LB" code="2E" playerId="vcs3h18q3ho63770"> 
+      <defense tacka="1" tackua="4" tot_tack="5"></defense> 
+    </player>  
+    <player uni="3B" name="Jake Richards" checkname="RICHARDS,JAKE" shortname="Jake Richards" gp="1" code="3B" playerId="fqszi5bsgu099khw"> 
+      <defense tacka="3" tackua="0" tot_tack="3"></defense> 
+    </player>  
+    <player uni="3D" name="Robert Jones" checkname="JONES,ROBERT" shortname="Robert Jones" gp="1" gs="1" dpos="SS" code="3D" playerId="59u4088bzirvyc37"> 
+      <defense brup="1" int="1" intyds="13" tacka="1" tackua="3" tot_tack="4"></defense>  
+      <ir long="13" no="1" td="0" yds="13"></ir> 
+    </player>  
+    <player uni="4" name="Jaqorian Wiggles" checkname="WIGGLES,JAQORIAN" shortname="Jaqorian Wiggles" gp="1" gs="1" opos="WR" code="4" playerId="g10yl0dom8dv48si"> 
+      <rcv long="11" no="2" td="1" yds="20"></rcv>  
+      <scoring td="1"></scoring> 
+    </player>  
+    <player uni="4F" name="Elijah Meadows" checkname="MEADOWS,ELIJAH" shortname="Elijah Meadows" gp="1" code="4F" playerId="h07inkisyrqu4g6z"> 
+      <defense tacka="0" tackua="1" tot_tack="1"></defense> 
+    </player>  
+    <player uni="4G" name="Brody Gates" checkname="GATES,BRODY" shortname="Brody Gates" gp="1" gs="1" dpos="DE" code="4G" playerId="73flqepzud5st20f"></player>  
+    <player uni="5D" name="Jayvius Smith" checkname="SMITH,JAYVIUS" shortname="Jayvius Smith" gp="1" gs="1" dpos="CB" code="5D" playerId="j3i7vryychc2zugp"></player>  
+    <player uni="7" name="Damian Blankenship" checkname="BLANKENSHIP,DAMIAN" shortname="Damian Blankenship" gp="1" gs="1" opos="RB" code="7" playerId="gjebxsxzdpgey07j"> 
+      <rush att="8" td="0" long="22" loss="7" yds="28" gain="35"></rush>  
+      <rcv long="7" no="4" td="0" yds="17"></rcv> 
+    </player>  
+    <player uni="8" name="Andrew Litke" checkname="LITKE,ANDREW" shortname="Andrew Litke" gp="1" code="8" playerId="4gv3p2lafminngjm"> 
+      <defense tacka="0" tackua="1" tot_tack="1"></defense> 
+    </player>  
+    <player uni="8C" name="Treyvon Louis" checkname="LOUIS,TREYVON" shortname="Treyvon Louis" gp="1" code="8C" playerId="pj2ipxte9d4rfks6"> 
+      <defense brup="1" tacka="1" tackua="3" tot_tack="4"></defense> 
+    </player>  
+    <player uni="8D" name="Noah Loyd" checkname="LOYD,NOAH" shortname="Noah Loyd" gp="1" gs="1" dpos="LB" code="8D" playerId="u2cue6xqjbana2y7"> 
+      <defense qbh="1" tacka="3" tackua="3" tot_tack="6"></defense> 
+    </player>  
+    <player uni="8G" name="Stetson Koenig" checkname="KOENIG,STETSON" shortname="Stetson Koenig" gp="1" code="8G" playerId="vr9zlr436rghahrs"> 
+      <defense tacka="0" tackua="1" tot_tack="1"></defense> 
+    </player>  
+    <player uni="9D" name="Nicholas Luster" checkname="LUSTER,NICHOLAS" shortname="Nicholas Luster" gp="1" gs="1" dpos="DE" code="9D" playerId="o7rhbzy4xpll156u"> 
+      <defense tacka="1" tackua="0" tot_tack="1"></defense> 
+    </player>  
+    <player uni="9G" name="Connor Harris" checkname="HARRIS,CONNOR" shortname="Connor Harris" gp="1" gs="1" dpos="DT" code="9G" playerId="tfemd7mznae1wa91"></player>  
+    <player uni="11" name="Antonio Reasby" checkname="REASBY,ANTONIO" shortname="Antonio Reasby" gp="1" code="11" playerId="g8fpar7jo2x7esmi"> 
+      <rcv long="26" no="3" td="0" yds="49"></rcv> 
+    </player>  
+    <player uni="13" name="AJ Harris" checkname="HARRIS,AJ" shortname="AJ Harris" gp="1" gs="1" opos="WR" code="13" playerId="t23a5aj6tb04qv37"> 
+      <rcv long="22" no="5" td="0" yds="65"></rcv> 
+    </player>  
+    <player uni="18" name="Street Smith" checkname="SMITH,STREET" shortname="Street Smith" gp="1" code="18" playerId="hg1sg3nhd9vyzg4a"> 
+      <defense tacka="1" tackua="0" tot_tack="1"></defense> 
+    </player>  
+    <player uni="28" name="Logan Hillman" checkname="HILLMAN,LOGAN" shortname="Logan Hillman" gp="1" code="28" playerId="ume99qbatuwf9ax1"> 
+      <rcv long="13" no="1" td="0" yds="13"></rcv>  
+      <kr long="26" no="2" td="0" yds="46"></kr> 
+    </player>  
+    <player uni="32" name="Elijah Sustaita" checkname="SUSTAITA,ELIJAH" shortname="Elijah Sustaita" gp="1" code="32" playerId="p9v5pdaupjlca0wl"> 
+      <kr long="0" no="1" td="0" yds="0"></kr> 
+    </player>  
+    <player uni="47" name="Peyton Hill" checkname="HILL,PEYTON" shortname="Peyton Hill" gp="1" code="47" playerId="glcwu79pgrkgafl5"> 
+      <rush att="17" td="0" long="26" loss="0" yds="140" gain="140"></rush>  
+      <rcv long="5" no="1" td="0" yds="5"></rcv> 
+    </player>  
+    <player uni="50" name="Aaron Murphy" checkname="MURPHY,AARON" shortname="Aaron Murphy" gp="1" code="50" playerId="ma3myq8j95nhj1l5"></player>  
+    <player uni="55" name="Collin Howe" checkname="HOWE,COLLIN" shortname="Collin Howe" gp="1" gs="1" opos="RG" code="55" playerId="asjljosfwf76sky0"></player>  
+    <player uni="68" name="Cameron Del Rey" checkname="REY,CAMERON DEL" shortname="Cameron Del Rey" gp="1" gs="1" opos="LG" code="68" playerId="w39y9zsus01vncp9"></player>  
+    <player uni="71" name="Jayden Ferdinand" checkname="FERDINAND,JAYDEN" shortname="Jayden Ferdinand" gp="1" gs="1" opos="RT" code="71" playerId="rmj4f9jh4fogp3n0"> 
+      <rcv long="0" no="1" td="0" yds="-6"></rcv> 
+    </player>  
+    <player uni="74" name="Ryan Yabi" checkname="YABI,RYAN" shortname="Ryan Yabi" gp="1" gs="1" opos="C" code="74" playerId="mihcxxbph4t5uc5g"></player>  
+    <player uni="76" name="Cedric Conner" checkname="CONNER,CEDRIC" shortname="Cedric Conner" gp="1" gs="1" opos="LT" code="76" playerId="nghi67xe343j93jh"></player>  
+    <player uni="82" name="Aiden Benda" checkname="BENDA,AIDEN" shortname="Aiden Benda" gp="1" code="82" playerId="rl5uzfl77uela4u1"></player>  
+    <player uni="88" name="Aiden Sutherland" checkname="SUTHERLAND,AIDEN" shortname="Aiden Sutherland" gp="1" gs="1" opos="TE" code="88" playerId="26o9hjga8rlqd6g6"> 
+      <rcv long="3" no="1" td="0" yds="3"></rcv> 
+    </player>  
+    <player uni="94" name="Diego Lopez" checkname="LOPEZ,DIEGO" shortname="Diego Lopez" gp="1" code="94" playerId="wx5pilr314j2etsn"> 
+      <ko no="6" ob="0" tb="1" yds="284"></ko>  
+      <fg att="2" blkd="0" long="20" made="1" dropkickatt="0" dropkickmade="0"></fg>  
+      <pat kickatt="4" kickmade="2" passatt="0" passmade="0" rcvmade="0" retfatt="0" retfmade="0" retkatt="0" retkmade="0" rushatt="0" rushmade="0" dropkickatt="0" dropkickmade="0"></pat>  
+      <scoring fg="1" patkick="2"></scoring> 
+    </player>  
+    <player uni="TM" name="Team" checkname="TEAM" shortname="Team" gp="1" code="198" playerId=""> 
+      <defense tacka="0" tackua="3" tot_tack="3"></defense> 
+    </player> 
+  </team>  
+  <scores> 
+    <score how="RUSH" patby="Chris Paniagua" qtr="1" team="WPU" scorer="Anthony Carey Jr." vh="V" type="TD" clock="12:35" driveindex="1" hscore="0" vscore="7" yds="32" top="2:25" plays="6" drive="68" patres="GOOD" pattype="KICK"></score>  
+    <score qtr="1" team="CSC" scorer="Diego Lopez" vh="H" type="FG" clock="09:18" driveindex="2" hscore="3" vscore="7" yds="20" top="3:17" plays="8" drive="70"></score>  
+    <score how="RUSH" patby="Chris Paniagua" qtr="2" team="WPU" scorer="Emery Floyd" vh="V" type="TD" clock="07:06" driveindex="9" hscore="3" vscore="14" yds="8" top="6:24" plays="12" drive="91" patres="GOOD" pattype="KICK"></score>  
+    <score how="RUSH" patby="Diego Lopez" qtr="2" team="CSC" scorer="Liam Thornton" vh="H" type="TD" clock="03:45" driveindex="10" hscore="9" vscore="14" yds="1" top="3:21" plays="10" drive="75" patres="FAIL" pattype="KICK"></score>  
+    <score how="PASS" patby="Chris Paniagua" qtr="2" team="WPU" scorer="Branden Powell" passer="Emery Floyd" vh="V" type="TD" clock="00:10" driveindex="13" hscore="9" vscore="21" yds="35" top="2:31" plays="4" drive="88" patres="GOOD" pattype="KICK"></score>  
+    <score how="PASS" patby="Diego Lopez" qtr="3" team="CSC" scorer="Jaqorian Wiggles" passer="Liam Thornton" vh="H" type="TD" clock="11:42" driveindex="15" hscore="16" vscore="21" yds="11" top="3:18" plays="7" drive="65" patres="GOOD" pattype="KICK"></score>  
+    <score how="PASS" patby="Chris Paniagua" qtr="3" team="WPU" scorer="Keithon Davis" passer="Emery Floyd" vh="V" type="TD" clock="10:28" driveindex="16" hscore="16" vscore="28" yds="26" top="1:14" plays="3" drive="74" patres="GOOD" pattype="KICK"></score>  
+    <score how="RUSH" patby="Diego Lopez" qtr="3" team="CSC" scorer="Liam Thornton" vh="H" type="TD" clock="00:38" driveindex="19" hscore="22" vscore="28" yds="11" top="5:24" plays="11" drive="71" patres="FAIL" pattype="KICK"></score>  
+    <score how="RUSH" patby="Diego Lopez" qtr="4" team="CSC" scorer="Liam Thornton" vh="H" type="TD" clock="06:44" driveindex="23" hscore="29" vscore="28" yds="11" top="2:39" plays="6" drive="60" patres="GOOD" pattype="KICK"></score> 
+  </scores>  
+  <fgas> 
+    <fga distance="20" clock="09:18" qtr="1" result="good" team="CSC" vh="H" kicker="Diego Lopez"></fga>  
+    <fga distance="22" clock="01:40" qtr="1" result="missed" team="CSC" vh="H" kicker="Diego Lopez"></fga> 
+  </fgas>  
+  <drives> 
+    <drive driveindex="1" vh="V" yards="68" top="02:25" end="TD,1,12:35,0" end_how="TD" end_qtr="1" end_time="12:35" end_spot="WPU00" start="KO,1,15:00,32" start_how="KO" start_qtr="1" start_time="15:00" start_spot="WPU32" plays="6" team="WPU"></drive>  
+    <drive driveindex="2" vh="H" yards="70" top="03:17" end="FGA,1,09:18,35" end_how="FGA" end_qtr="1" end_time="09:18" end_spot="WPU35" start="KO,1,12:35,73" start_how="KO" start_qtr="1" start_time="12:35" start_spot="CSC27" plays="8" team="CSC" rz="1"></drive>  
+    <drive driveindex="3" vh="V" yards="25" top="03:08" end="DOWNS,1,06:10,50" end_how="DOWNS" end_qtr="1" end_time="06:10" end_spot="WPU50" start="KO,1,09:18,25" start_how="KO" start_qtr="1" start_time="09:18" start_spot="WPU25" plays="6" team="WPU"></drive>  
+    <drive driveindex="4" vh="H" yards="0" top="01:22" end="PUNT,1,04:48,12" end_how="PUNT" end_qtr="1" end_time="04:48" end_spot="WPU12" start="DOWNS,1,06:10,50" start_how="DOWNS" start_qtr="1" start_time="06:10" start_spot="WPU50" plays="3" team="CSC"></drive>  
+    <drive driveindex="5" vh="V" yards="33" top="01:58" end="INT,1,02:50,8" end_how="INT" end_qtr="1" end_time="02:50" end_spot="WPU08" start="PUNT,1,04:48,12" start_how="PUNT" start_qtr="1" start_time="04:48" start_spot="WPU12" plays="6" team="WPU"></drive>  
+    <drive driveindex="6" vh="H" yards="3" top="01:13" end="FGA,1,01:37,20" end_how="FGA" end_qtr="1" end_time="01:37" end_spot="WPU20" start="INT,1,02:50,8" start_how="INT" start_qtr="1" start_time="02:50" start_spot="WPU08" plays="4" team="CSC" rz="1"></drive>  
+    <drive driveindex="7" vh="V" yards="48" top="01:49" end="DOWNS,2,14:48,32" end_how="DOWNS" end_qtr="2" end_time="14:48" end_spot="WPU32" start="FGA,1,01:37,20" start_how="FGA" start_qtr="1" start_time="01:37" start_spot="WPU20" plays="6" team="WPU"></drive>  
+    <drive driveindex="8" vh="H" yards="26" top="01:18" end="PUNT,2,13:30,9" end_how="PUNT" end_qtr="2" end_time="13:30" end_spot="WPU09" start="DOWNS,2,14:48,68" start_how="DOWNS" start_qtr="2" start_time="14:48" start_spot="CSC32" plays="5" team="CSC"></drive>  
+    <drive driveindex="9" vh="V" yards="91" top="06:24" end="TD,2,07:06,0" end_how="TD" end_qtr="2" end_time="07:06" end_spot="WPU00" start="PUNT,2,13:30,9" start_how="PUNT" start_qtr="2" start_time="13:30" start_spot="WPU09" plays="12" team="WPU" rz="1"></drive>  
+    <drive driveindex="10" vh="H" yards="75" top="03:21" end="TD,2,03:45,0" end_how="TD" end_qtr="2" end_time="03:45" end_spot="WPU00" start="KO,2,07:06,75" start_how="KO" start_qtr="2" start_time="07:06" start_spot="CSC25" plays="10" team="CSC" rz="1"></drive>  
+    <drive driveindex="11" vh="V" yards="-3" top="01:04" end="INT,2,02:41,11" end_how="INT" end_qtr="2" end_time="02:41" end_spot="WPU11" start="KO,2,03:45,31" start_how="KO" start_qtr="2" start_time="03:45" start_spot="WPU31" plays="2" team="WPU"></drive>  
+    <drive driveindex="12" vh="H" yards="-1" top="00:00" end="DOWNS,2,02:41,12" end_how="DOWNS" end_qtr="2" end_time="02:41" end_spot="WPU12" start="INT,2,02:41,11" start_how="INT" start_qtr="2" start_time="02:41" start_spot="WPU11" plays="4" team="CSC" rz="1"></drive>  
+    <drive driveindex="13" vh="V" yards="88" top="02:31" end="TD,2,00:10,0" end_how="TD" end_qtr="2" end_time="00:10" end_spot="WPU00" start="DOWNS,2,02:41,12" start_how="DOWNS" start_qtr="2" start_time="02:41" start_spot="WPU12" plays="4" team="WPU"></drive>  
+    <drive driveindex="14" vh="H" yards="4" top="00:10" end="HALF,3,00:00,35" end_how="HALF" end_qtr="3" end_time="00:00" end_spot="WPU35" start="KO,2,00:10,75" start_how="KO" start_qtr="2" start_time="00:10" start_spot="CSC25" plays="2" team="CSC"></drive>  
+    <drive driveindex="15" vh="H" yards="65" top="03:18" end="TD,3,11:42,0" end_how="TD" end_qtr="3" end_time="11:42" end_spot="WPU00" start="KO,3,15:00,65" start_how="KO" start_qtr="3" start_time="15:00" start_spot="CSC35" plays="7" team="CSC" rz="1"></drive>  
+    <drive driveindex="16" vh="V" yards="74" top="01:14" end="TD,3,10:28,0" end_how="TD" end_qtr="3" end_time="10:28" end_spot="WPU00" start="KO,3,11:42,26" start_how="KO" start_qtr="3" start_time="11:42" start_spot="WPU26" plays="3" team="WPU"></drive>  
+    <drive driveindex="17" vh="H" yards="4" top="02:13" end="PUNT,3,08:15,31" end_how="PUNT" end_qtr="3" end_time="08:15" end_spot="WPU31" start="KO,3,10:28,70" start_how="KO" start_qtr="3" start_time="10:28" start_spot="CSC30" plays="3" team="CSC"></drive>  
+    <drive driveindex="18" vh="V" yards="3" top="02:13" end="PUNT,3,06:02,29" end_how="PUNT" end_qtr="3" end_time="06:02" end_spot="WPU29" start="PUNT,3,08:15,31" start_how="PUNT" start_qtr="3" start_time="08:15" start_spot="WPU31" plays="3" team="WPU"></drive>  
+    <drive driveindex="19" vh="H" yards="71" top="05:24" end="TD,3,00:38,0" end_how="TD" end_qtr="3" end_time="00:38" end_spot="WPU00" start="PUNT,3,06:02,71" start_how="PUNT" start_qtr="3" start_time="06:02" start_spot="CSC29" plays="11" team="CSC" rz="1"></drive>  
+    <drive driveindex="20" vh="V" yards="7" top="01:02" end="FUMB,4,14:36,40" end_how="FUMB" end_qtr="4" end_time="14:36" end_spot="WPU40" start="KO,3,00:38,33" start_how="KO" start_qtr="3" start_time="00:38" start_spot="WPU33" plays="2" team="WPU"></drive>  
+    <drive driveindex="21" vh="H" yards="34" top="02:22" end="DOWNS,4,12:14,6" end_how="DOWNS" end_qtr="4" end_time="12:14" end_spot="WPU06" start="FUMB,4,14:36,40" start_how="FUMB" start_qtr="4" start_time="14:36" start_spot="WPU40" plays="5" team="CSC" rz="1"></drive>  
+    <drive driveindex="22" vh="V" yards="18" top="02:51" end="PUNT,4,09:23,40" end_how="PUNT" end_qtr="4" end_time="09:23" end_spot="WPU40" start="DOWNS,4,12:14,6" start_how="DOWNS" start_qtr="4" start_time="12:14" start_spot="WPU06" plays="4" team="WPU"></drive>  
+    <drive driveindex="23" vh="H" yards="60" top="02:39" end="TD,4,06:44,0" end_how="TD" end_qtr="4" end_time="06:44" end_spot="WPU00" start="PUNT,4,09:23,60" start_how="PUNT" start_qtr="4" start_time="09:23" start_spot="CSC40" plays="6" team="CSC" rz="1"></drive>  
+    <drive driveindex="24" vh="V" yards="1" top="00:53" end="PUNT,4,05:51,26" end_how="PUNT" end_qtr="4" end_time="05:51" end_spot="WPU26" start="KO,4,06:44,25" start_how="KO" start_qtr="4" start_time="06:44" start_spot="WPU25" plays="3" team="WPU"></drive>  
+    <drive driveindex="25" vh="H" yards="9" top="04:41" end="PUNT,4,01:10,32" end_how="PUNT" end_qtr="4" end_time="01:10" end_spot="WPU32" start="PUNT,4,05:51,74" start_how="PUNT" start_qtr="4" start_time="05:51" start_spot="CSC26" plays="5" team="CSC"></drive>  
+    <drive driveindex="26" vh="V" yards="14" top="00:37" end="INT,4,00:33,48" end_how="INT" end_qtr="4" end_time="00:33" end_spot="WPU48" start="PUNT,4,01:10,32" start_how="PUNT" start_qtr="4" start_time="01:10" start_spot="WPU32" plays="3" team="WPU"></drive>  
+    <drive driveindex="27" vh="H" yards="20" top="00:33" end="HALF,4,00:00,37" end_how="HALF" end_qtr="4" end_time="00:00" end_spot="WPU37" start="INT,4,00:33,52" start_how="INT" start_qtr="4" start_time="00:33" start_spot="CSC48" plays="1" team="CSC"></drive> 
+  </drives>  
+  <plays format="summary"> 
+    <qtr number="1" text="1st"> 
+      <play context="V,1,10,V35" spot="WPU35" down="1" togo="10" hasball="WPU" text="CSC ball on CSC35, clock 15:00." newcontext="H,1,10,H35" clock="15:00" playid="0,1,0"></play>  
+      <play context="H,1,10,H35" spot="CSC35" down="1" togo="10" hasball="CSC" text="Diego Lopez kickoff 33 yards to the WPU32, fair catch by Shane Hopmann." newcontext="V,1,10,V32" type="K" playid="0,2,1"> 
+        <p_ko gain="33" vh="H" name="Diego Lopez"></p_ko> 
+      </play>  
+      <drivestart driveindex="1,2" spot="V32" vh="V" clock="15:00" poss="V,V32,15:00"></drivestart>  
+      <play context="V,1,10,V32" spot="WPU32" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 15:00." newcontext="V,1,10,V32" clock="15:00" playid="1,1,2"></play>  
+      <play context="V,1,10,V32" spot="WPU32" down="1" togo="10" hasball="WPU" text="Anthony Carey Jr. rush for 8 yards to the WPU40 (Aaron Barr; Noah Loyd)." newcontext="V,2,2,V40" type="R" playid="1,2,3"> 
+        <p_ru gain="8" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Aaron Barr"></p_tk>  
+        <p_tk vh="H" name="Noah Loyd" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,2,2,V40" spot="WPU40" down="2" togo="2" hasball="WPU" text="Anthony Carey Jr. rush for 3 yards to the WPU43 (Noah Loyd)." newcontext="V,1,10,V43" type="R" playid="1,3,4"> 
+        <p_ru gain="3" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Noah Loyd"></p_tk> 
+      </play>  
+      <play context="V,1,10,V43" spot="WPU43" down="1" togo="10" hasball="WPU" text="Anthony Carey Jr. rush for 1 yard to the WPU44 (Sean Usery; Nicholas Luster)." newcontext="V,2,9,V44" type="R" playid="1,4,5"> 
+        <p_ru gain="1" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Sean Usery"></p_tk>  
+        <p_tk vh="H" name="Nicholas Luster" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,2,9,V44" spot="WPU44" down="2" togo="9" hasball="WPU" text="Christian Benning pass complete to Keithon Davis for 18 yards to the CSC38 (Andrew Litke), out-of-bounds." newcontext="V,1,10,H38" type="P" ob="y" playid="1,5,6"> 
+        <p_pa gain="18" rcv="0O" vh="V" qb="Christian Benning" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Andrew Litke"></p_tk> 
+      </play>  
+      <play context="V,1,10,H38" spot="CSC38" down="1" togo="10" hasball="WPU" text="Christian Benning pass complete to Kendrick Canon for 6 yards to the CSC32 (Caleb Johnson)." newcontext="V,2,4,H32" type="P" playid="1,6,7"> 
+        <p_pa gain="6" rcv="5" vh="V" qb="Christian Benning" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Caleb Johnson"></p_tk> 
+      </play>  
+      <play context="V,2,4,H32" spot="CSC32" down="2" togo="4" hasball="WPU" text="Anthony Carey Jr. rush for 32 yards to the CSC00, TOUCHDOWN, clock 12:35." newcontext="V,1,0,H03" type="R" clock="12:35" score="Y" playid="1,7,8"> 
+        <p_ru gain="32" vh="V" name="Anthony Carey Jr."></p_ru> 
+      </play>  
+      <play context="V,1,0,H03" spot="CSC03" down="1" togo="0" hasball="WPU" text="Chris Paniagua kick attempt good." newcontext="V,1,0,V35" type="X" score="Y" playid="1,8,9"> 
+        <p_pat vh="V" qb="Chris Paniagua" type="K" result="GOOD" score="Y" name="Chris Paniagua"></p_pat> 
+      </play>  
+      <score V="7" H="0"></score>  
+      <drivesum driveindex="1" complete="Y" plays="6" yards="68" top="02:25"></drivesum>  
+      <play context="V,1,10,V35" spot="WPU35" down="1" togo="10" hasball="WPU" text="Kongolo Mwenemkamba kickoff 58 yards to the CSC07, Logan Hillman return 20 yards to the CSC27 (Michael Johnson III)." newcontext="H,1,10,H27" type="K" playid="1,9,10"> 
+        <p_ko gain="58" vh="V" name="Kongolo Mwenemkamba"></p_ko>  
+        <p_kr gain="20" vh="H" name="Logan Hillman"></p_kr>  
+        <p_tk vh="V" name="Michael Johnson III"></p_tk> 
+      </play>  
+      <drivestart driveindex="2,11" spot="H27" vh="H" clock="12:35" poss="H,H27,12:35"></drivestart>  
+      <play context="H,1,10,H27" spot="CSC27" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 12:35." newcontext="H,1,10,H27" clock="12:35" playid="2,1,11"></play>  
+      <play context="H,1,10,H27" spot="CSC27" down="1" togo="10" hasball="CSC" text="Damian Blankenship rush for 1 yard to the CSC28 (Jeremiah Dennard; Brian Weatherspoon)." newcontext="H,2,9,H28" type="R" playid="2,2,12"> 
+        <p_ru gain="1" vh="H" name="Damian Blankenship"></p_ru>  
+        <p_tk vh="V" name="Jeremiah Dennard"></p_tk>  
+        <p_tk vh="V" name="Brian Weatherspoon" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,2,9,H28" spot="CSC28" down="2" togo="9" hasball="CSC" text="Liam Thornton pass complete to AJ Harris for 11 yards to the CSC39 (Rhyan Sewell; Michael Johnson III)." newcontext="H,1,10,H39" type="P" playid="2,3,13"> 
+        <p_pa gain="11" rcv="13" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Rhyan Sewell"></p_tk>  
+        <p_tk vh="V" name="Michael Johnson III" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,1,10,H39" spot="CSC39" down="1" togo="10" hasball="CSC" text="Liam Thornton pass complete to Jason Davenport for 37 yards to the WPU24 (Omari Campbell)." newcontext="H,1,10,V24" type="P" playid="2,4,14"> 
+        <p_pa gain="37" rcv="1" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Omari Campbell"></p_tk> 
+      </play>  
+      <play context="H,1,10,V24" spot="WPU24" down="1" togo="10" hasball="CSC" text="Damian Blankenship rush for 22 yards to the WPU02 (Brian Weatherspoon; Brian Thomas)." newcontext="H,1,0,V02" type="R" playid="2,5,15"> 
+        <p_ru gain="22" vh="H" name="Damian Blankenship"></p_ru>  
+        <p_tk vh="V" name="Brian Weatherspoon"></p_tk>  
+        <p_tk vh="V" name="Brian Thomas" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,1,0,V02" spot="WPU02" down="1" togo="0" hasball="CSC" text="Damian Blankenship rush for loss of 1 yard to the WPU03 (Kameron Cummings)." newcontext="H,2,0,V03" type="R" playid="2,6,16"> 
+        <p_ru gain="-1" vh="H" name="Damian Blankenship"></p_ru>  
+        <p_tk vh="V" name="Kameron Cummings"></p_tk> 
+      </play>  
+      <play context="H,2,0,V03" spot="WPU03" down="2" togo="0" hasball="CSC" text="Liam Thornton pass incomplete to Damian Blankenship." newcontext="H,3,0,V03" type="P" playid="2,7,17"> 
+        <p_pa rcv="7" vh="H" qb="Liam Thornton" result="INC"></p_pa> 
+      </play>  
+      <play context="H,3,0,V03" spot="WPU03" down="3" togo="0" hasball="CSC" text="Liam Thornton rush for no gain to the WPU03 (Jaquarius Butler)." newcontext="H,4,0,V03" type="R" playid="2,8,18"> 
+        <p_ru gain="0" vh="H" name="Liam Thornton"></p_ru>  
+        <p_tk vh="V" name="Jaquarius Butler"></p_tk> 
+      </play>  
+      <play context="H,4,0,V03" spot="WPU03" down="4" togo="0" hasball="CSC" text="Diego Lopez field goal attempt from 20 GOOD, clock 09:18." newcontext="H,1,10,H35" type="F" clock="09:18" score="Y" playid="2,9,19"> 
+        <p_fg vh="H" name="Diego Lopez" distance="20" result="GOOD" score="Y"></p_fg> 
+      </play>  
+      <score V="7" H="3"></score>  
+      <drivesum driveindex="2" complete="Y" plays="8" yards="70" top="03:17"></drivesum>  
+      <play context="H,1,10,H35" spot="CSC35" down="1" togo="10" hasball="CSC" text="Diego Lopez kickoff 65 yards to the WPU00, touchback." newcontext="V,1,10,V25" type="K" playid="2,10,20"> 
+        <p_ko gain="65" vh="H" name="Diego Lopez"></p_ko> 
+      </play>  
+      <drivestart driveindex="3,21" spot="V25" vh="V" clock="09:18" poss="V,V25,09:18"></drivestart>  
+      <play context="V,1,10,V25" spot="WPU25" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 09:18." newcontext="V,1,10,V25" clock="09:18" playid="3,1,21"></play>  
+      <play context="V,1,10,V25" spot="WPU25" down="1" togo="10" hasball="WPU" text="Anthony Carey Jr. rush for 14 yards to the WPU39 (Treyvon Louis; Josh Winston)." newcontext="V,1,10,V39" type="R" playid="3,2,22"> 
+        <p_ru gain="14" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Treyvon Louis"></p_tk>  
+        <p_tk vh="H" name="Josh Winston" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,1,10,V39" spot="WPU39" down="1" togo="10" hasball="WPU" text="Christian Benning pass complete to Keithon Davis for 13 yards to the CSC48 (Josh Winston)." newcontext="V,1,10,H48" type="P" playid="3,3,23"> 
+        <p_pa gain="13" rcv="0O" vh="V" qb="Christian Benning" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Josh Winston"></p_tk> 
+      </play>  
+      <play context="V,1,10,H48" spot="CSC48" down="1" togo="10" hasball="WPU" text="Anthony Carey Jr. rush for 1 yard to the CSC47 (Noah Loyd; Braden Fann)." newcontext="V,2,9,H47" type="R" playid="3,4,24"> 
+        <p_ru gain="1" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Noah Loyd"></p_tk>  
+        <p_tk vh="H" name="Braden Fann" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,2,9,H47" spot="CSC47" down="2" togo="9" hasball="WPU" text="Christian Benning pass incomplete to Anthony Carey Jr.." newcontext="V,3,9,H47" type="P" playid="3,5,25"> 
+        <p_pa rcv="27" vh="V" qb="Christian Benning" result="INC"></p_pa> 
+      </play>  
+      <play context="V,3,9,H47" spot="CSC47" down="3" togo="9" hasball="WPU" text="Anthony Carey Jr. rush for 6 yards to the CSC41 (Tristan Taylor)." newcontext="V,4,3,H41" type="R" playid="3,6,26"> 
+        <p_ru gain="6" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Tristan Taylor"></p_tk> 
+      </play>  
+      <play context="V,4,3,H41" spot="CSC41" down="4" togo="3" hasball="WPU" text="Christian Benning sacked for loss of 9 yards to the 50 yardline (Braden Fann)." newcontext="H,1,10,V50" type="P" playid="3,7,27"> 
+        <p_pa gain="-9" vh="V" qb="Christian Benning" result="SACK"></p_pa>  
+        <p_tk sack="Y" vh="H" name="Braden Fann"></p_tk> 
+      </play>  
+      <drivesum driveindex="3" complete="Y" plays="6" yards="25" top="03:08"></drivesum>  
+      <drivestart driveindex="4,28" spot="H50" vh="H" clock="06:10" poss="H,H50,06:10"></drivestart>  
+      <play context="H,1,10,V50" spot="WPU50" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 06:10." newcontext="H,1,10,H50" clock="06:10" playid="4,1,28"></play>  
+      <play context="H,1,10,H50" spot="CSC50" down="1" togo="10" hasball="CSC" text="Liam Thornton pass complete to Aiden Sutherland for 3 yards to the WPU47 (Omari Campbell)." newcontext="H,2,7,V47" type="P" playid="4,2,29"> 
+        <p_pa gain="3" rcv="88" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Omari Campbell"></p_tk> 
+      </play>  
+      <play context="H,2,7,V47" spot="WPU47" down="2" togo="7" hasball="CSC" text="Liam Thornton pass complete to Damian Blankenship for 2 yards to the WPU45 (Jeremiah Dennard)." newcontext="H,3,5,V45" type="P" playid="4,3,30"> 
+        <p_pa gain="2" rcv="7" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Jeremiah Dennard"></p_tk> 
+      </play>  
+      <play context="H,3,5,V45" spot="WPU45" down="3" togo="5" hasball="CSC" text="Liam Thornton pass incomplete to Jason Davenport." newcontext="H,4,5,V45" type="P" playid="4,4,31"> 
+        <p_pa rcv="1" vh="H" qb="Liam Thornton" result="INC"></p_pa> 
+      </play>  
+      <play context="H,4,5,V45" spot="WPU45" down="4" togo="5" hasball="CSC" text="PENALTY CSC delay of game 5 yards to the 50 yardline." newcontext="H,4,10,H50" type="E" playid="4,5,32"> 
+        <p_pn code="DG" vh="H" result="ACCEPT" at="V45" yards="5" type="Delay of Game"></p_pn> 
+      </play>  
+      <play context="H,4,10,H50" spot="CSC50" down="4" togo="10" hasball="CSC" text="Braden Fann punt 39 yards to the WPU11, Henry Hypolite III return 1 yards to the WPU12 (Marqui Henry)." newcontext="V,1,10,V12" type="U" playid="4,6,33"> 
+        <p_pu gain="39" vh="H" name="Braden Fann"></p_pu>  
+        <p_pr gain="1" vh="V" name="Henry Hypolite III"></p_pr>  
+        <p_tk vh="H" name="Marqui Henry"></p_tk> 
+      </play>  
+      <drivesum driveindex="4" complete="Y" plays="3" yards="0" top="01:22"></drivesum>  
+      <drivestart driveindex="5,34" spot="V12" vh="V" clock="04:48" poss="V,V12,04:48"></drivestart>  
+      <play context="V,1,10,V12" spot="WPU12" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 04:48." newcontext="V,1,10,V12" clock="04:48" playid="5,1,34"></play>  
+      <play context="V,1,10,V12" spot="WPU12" down="1" togo="10" hasball="WPU" text="Quincey Classeus rush for 5 yards to the WPU17 (Dawson Pelech; Sean Usery)." newcontext="V,2,5,V17" type="R" playid="5,2,35"> 
+        <p_ru gain="5" vh="V" name="Quincey Classeus"></p_ru>  
+        <p_tk vh="H" name="Dawson Pelech"></p_tk>  
+        <p_tk vh="H" name="Sean Usery" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,2,5,V17" spot="WPU17" down="2" togo="5" hasball="WPU" text="Derion Morris rush for 4 yards to the WPU21 (Jake Richards; Dawson Pelech)." newcontext="V,3,1,V21" type="R" playid="5,3,36"> 
+        <p_ru gain="4" vh="V" name="Derion Morris"></p_ru>  
+        <p_tk vh="H" name="Jake Richards"></p_tk>  
+        <p_tk vh="H" name="Dawson Pelech" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,3,1,V21" spot="WPU21" down="3" togo="1" hasball="WPU" text="Emery Floyd rush for 9 yards to the WPU30 (Aaron Barr), out-of-bounds, PENALTY CSC face mask (Aaron Barr) 15 yards to the WPU45." newcontext="V,1,10,V45" type="R" ob="y" playid="5,4,37"> 
+        <p_ru gain="9" vh="V" name="Emery Floyd"></p_ru>  
+        <p_tk vh="H" name="Aaron Barr"></p_tk>  
+        <p_pn code="FM" vh="H" result="ACCEPT" at="V30" yards="15" type="Face Mask"></p_pn> 
+      </play>  
+      <play context="V,1,10,V45" spot="WPU45" down="1" togo="10" hasball="WPU" text="Emery Floyd pass incomplete to Keithon Davis (Treyvon Louis)." newcontext="V,2,10,V45" type="P" playid="5,5,38"> 
+        <p_pa rcv="0O" vh="V" qb="Emery Floyd" result="BRUP"></p_pa>  
+        <p_bu vh="H" name="Treyvon Louis"></p_bu> 
+      </play>  
+      <play context="V,2,10,V45" spot="WPU45" down="2" togo="10" hasball="WPU" text="Emery Floyd rush for no gain to the WPU45 (Caleb Johnson; Sean Usery), out-of-bounds." newcontext="V,3,10,V45" type="R" ob="y" playid="5,6,39"> 
+        <p_ru gain="0" vh="V" name="Emery Floyd"></p_ru>  
+        <p_tk vh="H" name="Caleb Johnson"></p_tk>  
+        <p_tk vh="H" name="Sean Usery" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,3,10,V45" spot="WPU45" down="3" togo="10" hasball="WPU" text="Emery Floyd pass intercepted by Sean Usery at the WPU43, Sean Usery return 35 yards to the WPU08 (Christian Benning)." newcontext="H,1,0,V08" type="P" turnover="I" playid="5,7,40"> 
+        <p_pa vh="V" qb="Emery Floyd" result="INT"></p_pa>  
+        <p_ir at="V08" gain="35" vh="H" name="Sean Usery"></p_ir>  
+        <p_tk vh="V" name="Christian Benning"></p_tk> 
+      </play>  
+      <drivesum driveindex="5" complete="Y" plays="6" yards="33" top="01:58"></drivesum>  
+      <drivestart driveindex="6,41" spot="V08" vh="H" clock="02:50" poss="H,V08,02:50"></drivestart>  
+      <play context="H,1,0,V08" spot="WPU08" down="1" togo="0" hasball="CSC" text="Culver-Stockton (MO) drive start at 02:50." newcontext="H,1,0,V08" clock="02:50" playid="6,1,41"></play>  
+      <play context="H,1,0,V08" spot="WPU08" down="1" togo="0" hasball="CSC" text="Liam Thornton pass incomplete, QB hurry by Jaden Reed." newcontext="H,2,0,V08" type="P" playid="6,2,42"> 
+        <p_pa vh="H" qb="Liam Thornton" result="INC"></p_pa>  
+        <p_qbh vh="V" name="Jaden Reed"></p_qbh> 
+      </play>  
+      <play context="H,2,0,V08" spot="WPU08" down="2" togo="0" hasball="CSC" text="Peyton Hill rush for 2 yards to the WPU06 (Jaden Reed; Rhyan Sewell)." newcontext="H,3,0,V06" type="R" playid="6,3,43"> 
+        <p_ru gain="2" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Jaden Reed"></p_tk>  
+        <p_tk vh="V" name="Rhyan Sewell" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,3,0,V06" spot="WPU06" down="3" togo="0" hasball="CSC" text="Liam Thornton rush for 1 yard to the WPU05 (Jaden Reed; Jeremiah Dennard), out-of-bounds." newcontext="H,4,0,V05" type="R" ob="y" playid="6,4,44"> 
+        <p_ru gain="1" vh="H" name="Liam Thornton"></p_ru>  
+        <p_tk vh="V" name="Jaden Reed"></p_tk>  
+        <p_tk vh="V" name="Jeremiah Dennard" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,4,0,V05" spot="WPU05" down="4" togo="0" hasball="CSC" text="Timeout Culver-Stockton (MO), clock 01:40." newcontext="H,4,0,V05" clock="01:40" playid="6,5,45"> 
+        <p_to vh="H" team="Culver-Stockton (MO)"></p_to> 
+      </play>  
+      <play context="H,4,0,V05" spot="WPU05" down="4" togo="0" hasball="CSC" text="Diego Lopez field goal attempt from 22 MISSED - wide right, spot at WPU20." newcontext="V,1,10,V20" type="F" playid="6,6,46"> 
+        <p_fg vh="H" name="Diego Lopez" distance="22" result="MISSED"></p_fg> 
+      </play>  
+      <drivesum driveindex="6" complete="Y" plays="4" yards="3" top="01:13"></drivesum>  
+      <drivestart driveindex="7,47" spot="V20" vh="V" clock="01:37" poss="V,V20,01:37"></drivestart>  
+      <play context="V,1,10,V20" spot="WPU20" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 01:37." newcontext="V,1,10,V20" clock="01:37" playid="7,1,47"></play>  
+      <play context="V,1,10,V20" spot="WPU20" down="1" togo="10" hasball="WPU" text="Derion Morris rush for 6 yards to the WPU26 (Marqui Henry)." newcontext="V,2,4,V26" type="R" playid="7,2,48"> 
+        <p_ru gain="6" vh="V" name="Derion Morris"></p_ru>  
+        <p_tk vh="H" name="Marqui Henry"></p_tk> 
+      </play>  
+      <play context="V,2,4,V26" spot="WPU26" down="2" togo="4" hasball="WPU" text="Christian Benning pass complete to Kendrick Canon for 35 yards to the CSC39 (Treyvon Louis)." newcontext="V,1,10,H39" type="P" playid="7,3,49"> 
+        <p_pa gain="35" rcv="5" vh="V" qb="Christian Benning" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Treyvon Louis"></p_tk> 
+      </play>  
+      <play context="V,1,10,H39" spot="CSC39" down="1" togo="10" hasball="WPU" text="Christian Benning pass complete to Kendrick Canon for 4 yards to the CSC35 (Braden Fann)." newcontext="V,2,6,H35" type="P" playid="7,4,50"> 
+        <p_pa gain="4" rcv="5" vh="V" qb="Christian Benning" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Braden Fann"></p_tk> 
+      </play>  
+      <play context="V,2,6,H35" spot="CSC35" down="2" togo="6" hasball="WPU" text="Derion Morris rush for 3 yards to the CSC32 (Noah Loyd; Rommarrus Hinson)." newcontext="V,3,3,H32" type="R" playid="7,5,51"> 
+        <p_ru gain="3" vh="V" name="Derion Morris"></p_ru>  
+        <p_tk vh="H" name="Noah Loyd"></p_tk>  
+        <p_tk vh="H" name="Rommarrus Hinson" assist="Y"></p_tk> 
+      </play>  
+      <endqtr></endqtr> 
+    </qtr>  
+    <qtr number="2" text="2nd"> 
+      <play context="V,3,3,H32" spot="CSC32" down="3" togo="3" hasball="WPU" text="Start of 2nd quarter, clock 15:00." newcontext="V,3,3,H32" type="#" clock="15:00" playid="7,6,52"></play>  
+      <play context="V,3,3,H32" spot="CSC32" down="3" togo="3" hasball="WPU" text="Christian Benning pass incomplete to Branden Powell." newcontext="V,4,3,H32" type="P" playid="7,7,53"> 
+        <p_pa rcv="4O" vh="V" qb="Christian Benning" result="INC"></p_pa> 
+      </play>  
+      <play context="V,4,3,H32" spot="CSC32" down="4" togo="3" hasball="WPU" text="Christian Benning pass incomplete to Keithon Davis." newcontext="H,1,10,H32" type="P" playid="7,8,54"> 
+        <p_pa rcv="0O" vh="V" qb="Christian Benning" result="INC"></p_pa> 
+      </play>  
+      <drivesum driveindex="7" complete="Y" plays="6" yards="48" top="01:49"></drivesum>  
+      <drivestart driveindex="8,55" spot="H32" vh="H" clock="14:48" poss="H,H32,14:48"></drivestart>  
+      <play context="H,1,10,H32" spot="CSC32" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 14:48." newcontext="H,1,10,H32" clock="14:48" playid="8,1,55"></play>  
+      <play context="H,1,10,H32" spot="CSC32" down="1" togo="10" hasball="CSC" text="Peyton Hill rush for 4 yards to the CSC36 (Omari Campbell), out-of-bounds." newcontext="H,2,6,H36" type="R" ob="y" playid="8,2,56"> 
+        <p_ru gain="4" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Omari Campbell"></p_tk> 
+      </play>  
+      <play context="H,2,6,H36" spot="CSC36" down="2" togo="6" hasball="CSC" text="Peyton Hill rush for 16 yards to the WPU48 (Jeremiah Dennard), out-of-bounds." newcontext="H,1,10,V48" type="R" ob="y" playid="8,3,57"> 
+        <p_ru gain="16" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Jeremiah Dennard"></p_tk> 
+      </play>  
+      <play context="H,1,10,V48" spot="WPU48" down="1" togo="10" hasball="CSC" text="Liam Thornton pass incomplete to Aiden Sutherland (Jerome Schaubert)." newcontext="H,2,10,V48" type="P" playid="8,4,58"> 
+        <p_pa rcv="88" vh="H" qb="Liam Thornton" result="BRUP"></p_pa>  
+        <p_bu vh="V" name="Jerome Schaubert"></p_bu> 
+      </play>  
+      <play context="H,2,10,V48" spot="WPU48" down="2" togo="10" hasball="CSC" text="Liam Thornton pass complete to AJ Harris for 6 yards to the WPU42 (Omari Campbell; Jerome Schaubert)." newcontext="H,3,4,V42" type="P" playid="8,5,59"> 
+        <p_pa gain="6" rcv="13" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Omari Campbell"></p_tk>  
+        <p_tk vh="V" name="Jerome Schaubert" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,3,4,V42" spot="WPU42" down="3" togo="4" hasball="CSC" text="Liam Thornton pass incomplete (Rhyan Sewell)." newcontext="H,4,4,V42" type="P" playid="8,6,60"> 
+        <p_pa vh="H" qb="Liam Thornton" result="INC"></p_pa>  
+        <p_bu vh="V" name="Rhyan Sewell"></p_bu> 
+      </play>  
+      <play context="H,4,4,V42" spot="WPU42" down="4" togo="4" hasball="CSC" text="Braden Fann punt 33 yards to the WPU09, fair catch by Henry Hypolite III." newcontext="V,1,10,V09" type="U" playid="8,7,61"> 
+        <p_pu gain="33" vh="H" name="Braden Fann"></p_pu> 
+      </play>  
+      <drivesum driveindex="8" complete="Y" plays="5" yards="26" top="01:18"></drivesum>  
+      <drivestart driveindex="9,62" spot="V09" vh="V" clock="13:30" poss="V,V09,13:30"></drivestart>  
+      <play context="V,1,10,V09" spot="WPU09" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 13:30." newcontext="V,1,10,V09" clock="13:30" playid="9,1,62"></play>  
+      <play context="V,1,10,V09" spot="WPU09" down="1" togo="10" hasball="WPU" text="Keithon Davis rush for 19 yards to the WPU28 (Dawson Pelech)." newcontext="V,1,10,V28" type="R" playid="9,2,63"> 
+        <p_ru gain="19" vh="V" name="Keithon Davis"></p_ru>  
+        <p_tk vh="H" name="Dawson Pelech"></p_tk> 
+      </play>  
+      <play context="V,1,10,V28" spot="WPU28" down="1" togo="10" hasball="WPU" text="Christian Benning pass complete to Anthony Carey Jr. for 8 yards to the WPU36 (Treyvon Louis)." newcontext="V,2,2,V36" type="P" playid="9,3,64"> 
+        <p_pa gain="8" rcv="27" vh="V" qb="Christian Benning" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Treyvon Louis"></p_tk> 
+      </play>  
+      <play context="V,2,2,V36" spot="WPU36" down="2" togo="2" hasball="WPU" text="Christian Benning pass complete to Branden Powell for 5 yards to the WPU41 (Robert Jones; Jake Richards)." newcontext="V,1,10,V41" type="P" playid="9,4,65"> 
+        <p_pa gain="5" rcv="4O" vh="V" qb="Christian Benning" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Robert Jones"></p_tk>  
+        <p_tk vh="H" name="Jake Richards" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,1,10,V41" spot="WPU41" down="1" togo="10" hasball="WPU" text="Anthony Carey Jr. rush for 10 yards to the CSC49 (Mason Leu; Jake Richards)." newcontext="V,1,10,H49" type="R" playid="9,5,66"> 
+        <p_ru gain="10" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Mason Leu"></p_tk>  
+        <p_tk vh="H" name="Jake Richards" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,1,10,H49" spot="CSC49" down="1" togo="10" hasball="WPU" text="Christian Benning pass incomplete to Keithon Davis." newcontext="V,2,10,H49" type="P" playid="9,6,67"> 
+        <p_pa rcv="0O" vh="V" qb="Christian Benning" result="INC"></p_pa> 
+      </play>  
+      <play context="V,2,10,H49" spot="CSC49" down="2" togo="10" hasball="WPU" text="Christian Benning pass complete to Kendrick Canon for 18 yards to the CSC31 (Aaron Barr)." newcontext="V,1,10,H31" type="P" playid="9,7,68"> 
+        <p_pa gain="18" rcv="5" vh="V" qb="Christian Benning" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Aaron Barr"></p_tk> 
+      </play>  
+      <play context="V,1,10,H31" spot="CSC31" down="1" togo="10" hasball="WPU" text="Anthony Carey Jr. rush for 2 yards to the CSC29 (Mason Leu)." newcontext="V,2,8,H29" type="R" playid="9,8,69"> 
+        <p_ru gain="2" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Mason Leu"></p_tk> 
+      </play>  
+      <play context="V,2,8,H29" spot="CSC29" down="2" togo="8" hasball="WPU" text="Anthony Carey Jr. rush for 3 yards to the CSC26 (Mason Leu)." newcontext="V,3,5,H26" type="R" playid="9,9,70"> 
+        <p_ru gain="3" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Mason Leu"></p_tk> 
+      </play>  
+      <play context="V,3,5,H26" spot="CSC26" down="3" togo="5" hasball="WPU" text="Christian Benning pass complete to Keithon Davis for 13 yards to the CSC13." newcontext="V,1,10,H13" type="P" playid="9,10,71"> 
+        <p_pa gain="13" rcv="0O" vh="V" qb="Christian Benning" result="COMP"></p_pa> 
+      </play>  
+      <play context="V,1,10,H13" spot="CSC13" down="1" togo="10" hasball="WPU" text="Derion Morris rush for 2 yards to the CSC11 (Rommarrus Hinson; Tristan Taylor)." newcontext="V,2,8,H11" type="R" playid="9,11,72"> 
+        <p_ru gain="2" vh="V" name="Derion Morris"></p_ru>  
+        <p_tk vh="H" name="Rommarrus Hinson"></p_tk>  
+        <p_tk vh="H" name="Tristan Taylor" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,2,8,H11" spot="CSC11" down="2" togo="8" hasball="WPU" text="Christian Benning pass complete to Branden Powell for 3 yards to the CSC08 (Braden Fann)." newcontext="V,3,5,H08" type="P" playid="9,12,73"> 
+        <p_pa gain="3" rcv="4O" vh="V" qb="Christian Benning" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Braden Fann"></p_tk> 
+      </play>  
+      <play context="V,3,5,H08" spot="CSC08" down="3" togo="5" hasball="WPU" text="Emery Floyd rush for 8 yards to the CSC00, TOUCHDOWN, clock 07:06." newcontext="V,1,0,H03" type="R" clock="07:06" score="Y" playid="9,13,74"> 
+        <p_ru gain="8" vh="V" name="Emery Floyd"></p_ru> 
+      </play>  
+      <play context="V,1,0,H03" spot="CSC03" down="1" togo="0" hasball="WPU" text="Chris Paniagua kick attempt good." newcontext="V,1,0,V35" type="X" score="Y" playid="9,14,75"> 
+        <p_pat vh="V" qb="Chris Paniagua" type="K" result="GOOD" score="Y" name="Chris Paniagua"></p_pat> 
+      </play>  
+      <score V="14" H="3"></score>  
+      <drivesum driveindex="9" complete="Y" plays="12" yards="91" top="06:24"></drivesum>  
+      <play context="V,1,10,V35" spot="WPU35" down="1" togo="10" hasball="WPU" text="Kongolo Mwenemkamba kickoff 65 yards to the CSC00, touchback." newcontext="H,1,10,H25" type="K" playid="9,15,76"> 
+        <p_ko gain="65" vh="V" name="Kongolo Mwenemkamba"></p_ko> 
+      </play>  
+      <drivestart driveindex="10,77" spot="H25" vh="H" clock="07:06" poss="H,H25,07:06"></drivestart>  
+      <play context="H,1,10,H25" spot="CSC25" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 07:06." newcontext="H,1,10,H25" clock="07:06" playid="10,1,77"></play>  
+      <play context="H,1,10,H25" spot="CSC25" down="1" togo="10" hasball="CSC" text="Liam Thornton rush for 6 yards to the CSC31 (John McDonald)." newcontext="H,2,4,H31" type="R" playid="10,2,78"> 
+        <p_ru gain="6" vh="H" name="Liam Thornton"></p_ru>  
+        <p_tk vh="V" name="John McDonald"></p_tk> 
+      </play>  
+      <play context="H,2,4,H31" spot="CSC31" down="2" togo="4" hasball="CSC" text="Liam Thornton pass complete to Antonio Reasby for 17 yards to the CSC48 (Roger Guillory)." newcontext="H,1,10,H48" type="P" playid="10,3,79"> 
+        <p_pa gain="17" rcv="11" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Roger Guillory"></p_tk> 
+      </play>  
+      <play context="H,1,10,H48" spot="CSC48" down="1" togo="10" hasball="CSC" text="Liam Thornton pass incomplete to Antonio Reasby." newcontext="H,2,10,H48" type="P" playid="10,4,80"> 
+        <p_pa rcv="11" vh="H" qb="Liam Thornton" result="INC"></p_pa> 
+      </play>  
+      <play context="H,2,10,H48" spot="CSC48" down="2" togo="10" hasball="CSC" text="Peyton Hill rush for 15 yards to the WPU37 (Roger Guillory)." newcontext="H,1,10,V37" type="R" playid="10,5,81"> 
+        <p_ru gain="15" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Roger Guillory"></p_tk> 
+      </play>  
+      <play context="H,1,10,V37" spot="WPU37" down="1" togo="10" hasball="CSC" text="Peyton Hill rush for 4 yards to the WPU33 (Roger Guillory; Kameron Cummings)." newcontext="H,2,6,V33" type="R" playid="10,6,82"> 
+        <p_ru gain="4" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Roger Guillory"></p_tk>  
+        <p_tk vh="V" name="Kameron Cummings" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,2,6,V33" spot="WPU33" down="2" togo="6" hasball="CSC" text="Liam Thornton pass complete to AJ Harris for 7 yards to the WPU26 (Omari Campbell)." newcontext="H,1,10,V26" type="P" playid="10,7,83"> 
+        <p_pa gain="7" rcv="13" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Omari Campbell"></p_tk> 
+      </play>  
+      <play context="H,1,10,V26" spot="WPU26" down="1" togo="10" hasball="CSC" text="Liam Thornton pass complete to Antonio Reasby for 6 yards to the WPU20 (Brian Weatherspoon), out-of-bounds." newcontext="H,2,4,V20" type="P" ob="y" playid="10,8,84"> 
+        <p_pa gain="6" rcv="11" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Brian Weatherspoon"></p_tk> 
+      </play>  
+      <play context="H,2,4,V20" spot="WPU20" down="2" togo="4" hasball="CSC" text="Liam Thornton rush for 11 yards to the WPU09 (Jeremiah Dennard; Jaden Reed)." newcontext="H,1,0,V09" type="R" playid="10,9,85"> 
+        <p_ru gain="11" vh="H" name="Liam Thornton"></p_ru>  
+        <p_tk vh="V" name="Jeremiah Dennard"></p_tk>  
+        <p_tk vh="V" name="Jaden Reed" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,1,0,V09" spot="WPU09" down="1" togo="0" hasball="CSC" text="Peyton Hill rush for 8 yards to the WPU01 (Roger Guillory), out-of-bounds." newcontext="H,2,0,V01" type="R" ob="y" playid="10,10,86"> 
+        <p_ru gain="8" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Roger Guillory"></p_tk> 
+      </play>  
+      <play context="H,2,0,V01" spot="WPU01" down="2" togo="0" hasball="CSC" text="Timeout William Penn (IA), clock 03:50." newcontext="H,2,0,V01" clock="03:50" playid="10,11,87"> 
+        <p_to vh="V" team="William Penn (IA)"></p_to> 
+      </play>  
+      <play context="H,2,0,V01" spot="WPU01" down="2" togo="0" hasball="CSC" text="Liam Thornton rush for 1 yard to the WPU00, TOUCHDOWN, clock 03:45." newcontext="H,1,0,V03" type="R" clock="03:45" score="Y" playid="10,12,88"> 
+        <p_ru gain="1" vh="H" name="Liam Thornton"></p_ru> 
+      </play>  
+      <play context="H,1,0,V03" spot="WPU03" down="1" togo="0" hasball="CSC" text="Diego Lopez kick attempt failed (blocked), returned by TEAM (blocked by John McDonald)." newcontext="H,1,0,H35" type="X" playid="10,13,89"> 
+        <p_pat vh="H" qb="Diego Lopez" type="K" result="BLOCKED" name="Diego Lopez"></p_pat> 
+      </play>  
+      <score V="14" H="9"></score>  
+      <drivesum driveindex="10" complete="Y" plays="10" yards="75" top="03:21"></drivesum>  
+      <play context="H,1,10,H35" spot="CSC35" down="1" togo="10" hasball="CSC" text="Diego Lopez kickoff 57 yards to the WPU08, Branden Powell return 23 yards to the WPU31 (Stetson Koenig)." newcontext="V,1,10,V31" type="K" playid="10,14,90"> 
+        <p_ko gain="57" vh="H" name="Diego Lopez"></p_ko>  
+        <p_kr gain="23" vh="V" name="Branden Powell"></p_kr>  
+        <p_tk vh="H" name="Stetson Koenig"></p_tk> 
+      </play>  
+      <drivestart driveindex="11,91" spot="V31" vh="V" clock="03:45" poss="V,V31,03:45"></drivestart>  
+      <play context="V,1,10,V31" spot="WPU31" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 03:45." newcontext="V,1,10,V31" clock="03:45" playid="11,1,91"></play>  
+      <play context="V,1,10,V31" spot="WPU31" down="1" togo="10" hasball="WPU" text="Christian Benning sacked for loss of 3 yards to the WPU28 (Josh Winston)." newcontext="V,2,13,V28" type="P" playid="11,2,92"> 
+        <p_pa gain="-3" vh="V" qb="Christian Benning" result="SACK"></p_pa>  
+        <p_tk sack="Y" vh="H" name="Josh Winston"></p_tk> 
+      </play>  
+      <play context="V,2,13,V28" spot="WPU28" down="2" togo="13" hasball="WPU" text="Christian Benning pass intercepted by Aaron Barr at the CSC35, Aaron Barr return 54 yards to the WPU11 (Branden Powell), out-of-bounds." newcontext="H,1,10,V11" type="P" ob="y" turnover="I" playid="11,3,93"> 
+        <p_pa vh="V" qb="Christian Benning" result="INT"></p_pa>  
+        <p_ir at="V11" gain="54" vh="H" name="Aaron Barr"></p_ir>  
+        <p_tk vh="V" name="Branden Powell"></p_tk> 
+      </play>  
+      <drivesum driveindex="11" complete="Y" plays="2" yards="-3" top="01:04"></drivesum>  
+      <drivestart driveindex="12,94" spot="V11" vh="H" clock="02:41" poss="H,V11,02:41"></drivestart>  
+      <play context="H,1,10,V11" spot="WPU11" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 02:41." newcontext="H,1,10,V11" clock="02:41" playid="12,1,94"></play>  
+      <play context="H,1,10,V11" spot="WPU11" down="1" togo="10" hasball="CSC" text="Peyton Hill rush for 1 yard to the WPU10 (Omari Campbell; Brian Weatherspoon)." newcontext="H,2,9,V10" type="R" playid="12,2,95"> 
+        <p_ru gain="1" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Omari Campbell"></p_tk>  
+        <p_tk vh="V" name="Brian Weatherspoon" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,2,9,V10" spot="WPU10" down="2" togo="9" hasball="CSC" text="Liam Thornton pass incomplete to AJ Harris (Jeremiah Dennard)." newcontext="H,3,9,V10" type="P" playid="12,3,96"> 
+        <p_pa rcv="13" vh="H" qb="Liam Thornton" result="BRUP"></p_pa>  
+        <p_bu vh="V" name="Jeremiah Dennard"></p_bu> 
+      </play>  
+      <play context="H,3,9,V10" spot="WPU10" down="3" togo="9" hasball="CSC" text="Liam Thornton pass incomplete to Aiden Sutherland (Michael Johnson III)." newcontext="H,4,9,V10" type="P" playid="12,4,97"> 
+        <p_pa rcv="88" vh="H" qb="Liam Thornton" result="BRUP"></p_pa>  
+        <p_bu vh="V" name="Michael Johnson III"></p_bu> 
+      </play>  
+      <play context="H,4,9,V10" spot="WPU10" down="4" togo="9" hasball="CSC" text="Liam Thornton pass incomplete, PENALTY CSC illegal forward pass (Liam Thornton) 2 yards to the WPU12." newcontext="V,1,10,V12" type="P" playid="12,5,98"> 
+        <p_pa vh="H" qb="Liam Thornton" result="INC"></p_pa>  
+        <p_pn code="FP" vh="H" result="ACCEPT" at="V10" yards="2" type="Illegal Forward Pass"></p_pn> 
+      </play>  
+      <drivesum driveindex="12" complete="Y" plays="4" yards="-1" top="00:00"></drivesum>  
+      <drivestart driveindex="13,99" spot="V12" vh="V" clock="02:41" poss="V,V12,02:41"></drivestart>  
+      <play context="V,1,10,V12" spot="WPU12" down="1" togo="10" hasball="WPU" text="Emery Floyd rush for 8 yards to the WPU20 (TEAM)." newcontext="V,2,2,V20" type="R" playid="13,1,99"> 
+        <p_ru gain="8" vh="V" name="Emery Floyd"></p_ru>  
+        <p_tk vh="H" name="TEAM"></p_tk> 
+      </play>  
+      <play context="V,2,2,V20" spot="WPU20" down="2" togo="2" hasball="WPU" text="Emery Floyd pass complete to Shane Helmick for 11 yards to the WPU31 (TEAM)." newcontext="V,1,10,V31" type="P" playid="13,2,100"> 
+        <p_pa gain="11" rcv="1H" vh="V" qb="Emery Floyd" result="COMP"></p_pa>  
+        <p_tk vh="H" name="TEAM"></p_tk> 
+      </play>  
+      <play context="V,1,10,V31" spot="WPU31" down="1" togo="10" hasball="WPU" text="Emery Floyd rush for 3 yards to the WPU34 (TEAM), PENALTY WPU holding 10 yards to the WPU21, NO PLAY." newcontext="V,1,20,V21" type="R" playid="13,3,101"> 
+        <p_pn code="HO" vh="V" result="ACCEPT" at="V31" yards="10" type="Holding"></p_pn> 
+      </play>  
+      <play context="V,1,20,V21" spot="WPU21" down="1" togo="20" hasball="WPU" text="Derion Morris rush for 44 yards to the CSC35 (TEAM)." newcontext="V,1,10,H35" type="R" playid="13,4,102"> 
+        <p_ru gain="44" vh="V" name="Derion Morris"></p_ru>  
+        <p_tk vh="H" name="TEAM"></p_tk> 
+      </play>  
+      <play context="V,1,10,H35" spot="CSC35" down="1" togo="10" hasball="WPU" text="Timeout William Penn (IA), clock 00:19." newcontext="V,1,10,H35" clock="00:19" playid="13,5,103"> 
+        <p_to vh="V" team="William Penn (IA)"></p_to> 
+      </play>  
+      <play context="V,1,10,H35" spot="CSC35" down="1" togo="10" hasball="WPU" text="Emery Floyd pass complete to Branden Powell for 35 yards to the CSC00, TOUCHDOWN, clock 00:10." newcontext="V,1,0,H03" type="P" clock="00:10" score="Y" playid="13,6,104"> 
+        <p_pa gain="35" rcv="4O" vh="V" qb="Emery Floyd" result="COMP"></p_pa> 
+      </play>  
+      <play context="V,1,0,H03" spot="CSC03" down="1" togo="0" hasball="WPU" text="Chris Paniagua kick attempt good." newcontext="V,1,0,V35" type="X" score="Y" playid="13,7,105"> 
+        <p_pat vh="V" qb="Chris Paniagua" type="K" result="GOOD" score="Y" name="Chris Paniagua"></p_pat> 
+      </play>  
+      <score V="21" H="9"></score>  
+      <drivesum driveindex="13" complete="Y" plays="4" yards="88" top="02:31"></drivesum>  
+      <play context="V,1,10,V35" spot="WPU35" down="1" togo="10" hasball="WPU" text="Kongolo Mwenemkamba kickoff 40 yards to the CSC25, Elijah Sustaita return 0 yards to the CSC25, out-of-bounds." newcontext="H,1,10,H25" type="K" ob="y" playid="13,8,106"> 
+        <p_ko gain="40" vh="V" name="Kongolo Mwenemkamba"></p_ko>  
+        <p_kr gain="0" vh="H" name="Elijah Sustaita"></p_kr> 
+      </play>  
+      <drivestart driveindex="14,107" spot="H25" vh="H" clock="00:10" poss="H,H25,00:10"></drivestart>  
+      <play context="H,1,10,H25" spot="CSC25" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 00:10." newcontext="H,1,10,H25" clock="00:10" playid="14,1,107"></play>  
+      <play context="H,1,10,H25" spot="CSC25" down="1" togo="10" hasball="CSC" text="Liam Thornton pass incomplete (Rhyan Sewell)." newcontext="H,2,10,H25" type="P" playid="14,2,108"> 
+        <p_pa vh="H" qb="Liam Thornton" result="BRUP"></p_pa>  
+        <p_bu vh="V" name="Rhyan Sewell"></p_bu> 
+      </play>  
+      <play context="H,2,10,H25" spot="CSC25" down="2" togo="10" hasball="CSC" text="Damian Blankenship rush for 4 yards to the CSC29 (Michael Johnson III)." newcontext="H,3,6,H29" type="R" playid="14,3,109"> 
+        <p_ru gain="4" vh="H" name="Damian Blankenship"></p_ru>  
+        <p_tk vh="V" name="Michael Johnson III"></p_tk> 
+      </play>  
+      <drivesum driveindex="14" complete="Y" plays="2" yards="4" top="00:10"></drivesum>  
+      <play context="H,3,6,H29" spot="CSC29" down="3" togo="6" hasball="CSC" text="End of half, clock 00:00." newcontext="H,1,10,H29" clock="00:00" playid="14,4,110"></play>  
+      <endqtr></endqtr> 
+    </qtr>  
+    <qtr number="3" text="3rd"> 
+      <play context="H,1,10,H29" spot="CSC29" down="1" togo="10" hasball="CSC" text="Start of 3rd quarter, clock 15:00, WPU ball on WPU35." newcontext="V,1,10,V35" type="#" clock="15:00" playid="14,5,111"></play>  
+      <play context="V,1,10,V35" spot="WPU35" down="1" togo="10" hasball="WPU" text="Kongolo Mwenemkamba kickoff 57 yards to the CSC08, out-of-bounds, CSC ball on CSC35, clock 15:00." newcontext="H,1,10,H35" type="K" clock="15:00" ob="y" playid="14,6,112"> 
+        <p_ko gain="57" vh="V" name="Kongolo Mwenemkamba"></p_ko> 
+      </play>  
+      <drivestart driveindex="15,113" spot="H35" vh="H" clock="15:00" poss="H,H35,15:00"></drivestart>  
+      <play context="H,1,10,H35" spot="CSC35" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 15:00." newcontext="H,1,10,H35" clock="15:00" playid="15,1,113"></play>  
+      <play context="H,1,10,H35" spot="CSC35" down="1" togo="10" hasball="CSC" text="Damian Blankenship rush for 2 yards to the CSC37 (Michael Johnson III)." newcontext="H,2,8,H37" type="R" playid="15,2,114"> 
+        <p_ru gain="2" vh="H" name="Damian Blankenship"></p_ru>  
+        <p_tk vh="V" name="Michael Johnson III"></p_tk> 
+      </play>  
+      <play context="H,2,8,H37" spot="CSC37" down="2" togo="8" hasball="CSC" text="Liam Thornton sacked for loss of 2 yards to the CSC35 (Brian Weatherspoon)." newcontext="H,3,10,H35" type="P" playid="15,3,115"> 
+        <p_pa gain="-2" vh="H" qb="Liam Thornton" result="SACK"></p_pa>  
+        <p_tk sack="Y" vh="V" name="Brian Weatherspoon"></p_tk> 
+      </play>  
+      <play context="H,3,10,H35" spot="CSC35" down="3" togo="10" hasball="CSC" text="Liam Thornton pass complete to AJ Harris for 22 yards to the WPU43 (Kameron Cummings)." newcontext="H,1,10,V43" type="P" playid="15,4,116"> 
+        <p_pa gain="22" rcv="13" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Kameron Cummings"></p_tk> 
+      </play>  
+      <play context="H,1,10,V43" spot="WPU43" down="1" togo="10" hasball="CSC" text="Damian Blankenship rush for 2 yards to the WPU41 (Kameron Cummings)." newcontext="H,2,8,V41" type="R" playid="15,5,117"> 
+        <p_ru gain="2" vh="H" name="Damian Blankenship"></p_ru>  
+        <p_tk vh="V" name="Kameron Cummings"></p_tk> 
+      </play>  
+      <play context="H,2,8,V41" spot="WPU41" down="2" togo="8" hasball="CSC" text="Liam Thornton pass incomplete to Jason Davenport." newcontext="H,3,8,V41" type="P" playid="15,6,118"> 
+        <p_pa rcv="1" vh="H" qb="Liam Thornton" result="INC"></p_pa> 
+      </play>  
+      <play context="H,3,8,V41" spot="WPU41" down="3" togo="8" hasball="CSC" text="Liam Thornton pass complete to Jason Davenport for 30 yards to the WPU11 (Tierre Butler)." newcontext="H,1,10,V11" type="P" playid="15,7,119"> 
+        <p_pa gain="30" rcv="1" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Tierre Butler"></p_tk> 
+      </play>  
+      <play context="H,1,10,V11" spot="WPU11" down="1" togo="10" hasball="CSC" text="Liam Thornton pass complete to Jaqorian Wiggles for 11 yards to the WPU00, TOUCHDOWN, clock 11:42." newcontext="H,1,2,V03" type="P" clock="11:42" score="Y" playid="15,8,120"> 
+        <p_pa gain="11" rcv="4" vh="H" qb="Liam Thornton" result="COMP"></p_pa> 
+      </play>  
+      <play context="H,1,0,V03" spot="WPU03" down="1" togo="0" hasball="CSC" text="Diego Lopez kick attempt good." newcontext="H,1,0,H35" type="X" score="Y" playid="15,9,121"> 
+        <p_pat vh="H" qb="Diego Lopez" type="K" result="GOOD" score="Y" name="Diego Lopez"></p_pat> 
+      </play>  
+      <score V="21" H="16"></score>  
+      <drivesum driveindex="15" complete="Y" plays="7" yards="65" top="03:18"></drivesum>  
+      <play context="H,1,10,H35" spot="CSC35" down="1" togo="10" hasball="CSC" text="Diego Lopez kickoff 39 yards to the WPU26, fair catch by Henry Hypolite III." newcontext="V,1,10,V26" type="K" playid="15,10,122"> 
+        <p_ko gain="39" vh="H" name="Diego Lopez"></p_ko> 
+      </play>  
+      <drivestart driveindex="16,123" spot="V26" vh="V" clock="11:42" poss="V,V26,11:42"></drivestart>  
+      <play context="V,1,10,V26" spot="WPU26" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 11:42." newcontext="V,1,10,V26" clock="11:42" playid="16,1,123"></play>  
+      <play context="V,1,10,V26" spot="WPU26" down="1" togo="10" hasball="WPU" text="Emery Floyd rush for 11 yards to the WPU37 (Robert Jones)." newcontext="V,1,10,V37" type="R" playid="16,2,124"> 
+        <p_ru gain="11" vh="V" name="Emery Floyd"></p_ru>  
+        <p_tk vh="H" name="Robert Jones"></p_tk> 
+      </play>  
+      <play context="V,1,10,V37" spot="WPU37" down="1" togo="10" hasball="WPU" text="Emery Floyd pass complete to Kendrick Canon for 37 yards to the CSC26 (Treyvon Louis)." newcontext="V,1,10,H26" type="P" playid="16,3,125"> 
+        <p_pa gain="37" rcv="5" vh="V" qb="Emery Floyd" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Treyvon Louis"></p_tk> 
+      </play>  
+      <play context="V,1,10,H26" spot="CSC26" down="1" togo="10" hasball="WPU" text="Emery Floyd pass complete to Keithon Davis for 26 yards to the CSC00, TOUCHDOWN, clock 10:28." newcontext="V,1,0,H03" type="P" clock="10:28" score="Y" playid="16,4,126"> 
+        <p_pa gain="26" rcv="0O" vh="V" qb="Emery Floyd" result="COMP"></p_pa> 
+      </play>  
+      <play context="V,1,0,H03" spot="CSC03" down="1" togo="0" hasball="WPU" text="Chris Paniagua kick attempt good." newcontext="V,1,0,V35" type="X" score="Y" playid="16,5,127"> 
+        <p_pat vh="V" qb="Chris Paniagua" type="K" result="GOOD" score="Y" name="Chris Paniagua"></p_pat> 
+      </play>  
+      <score V="28" H="16"></score>  
+      <drivesum driveindex="16" complete="Y" plays="3" yards="74" top="01:14"></drivesum>  
+      <play context="V,1,10,V35" spot="WPU35" down="1" togo="10" hasball="WPU" text="Kongolo Mwenemkamba kickoff 61 yards to the CSC04, Logan Hillman return 26 yards to the CSC30 (Jamari Ritter; Chidozie Mogbo Jr.)." newcontext="H,1,10,H30" type="K" playid="16,6,128"> 
+        <p_ko gain="61" vh="V" name="Kongolo Mwenemkamba"></p_ko>  
+        <p_kr gain="26" vh="H" name="Logan Hillman"></p_kr>  
+        <p_tk vh="V" name="Jamari Ritter"></p_tk>  
+        <p_tk vh="V" name="Chidozie Mogbo Jr." assist="Y"></p_tk> 
+      </play>  
+      <drivestart driveindex="17,129" spot="H30" vh="H" clock="10:28" poss="H,H30,10:28"></drivestart>  
+      <play context="H,1,10,H30" spot="CSC30" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 10:28." newcontext="H,1,10,H30" clock="10:28" playid="17,1,129"></play>  
+      <play context="H,1,10,H30" spot="CSC30" down="1" togo="10" hasball="CSC" text="Liam Thornton rush for 6 yards to the CSC36, out-of-bounds." newcontext="H,2,4,H36" type="R" ob="y" playid="17,2,130"> 
+        <p_ru gain="6" vh="H" name="Liam Thornton"></p_ru> 
+      </play>  
+      <play context="H,2,4,H36" spot="CSC36" down="2" togo="4" hasball="CSC" text="Liam Thornton rush for 2 yards to the CSC38 (Jovoni Welch; Jaquarius Butler)." newcontext="H,3,2,H38" type="R" playid="17,3,131"> 
+        <p_ru gain="2" vh="H" name="Liam Thornton"></p_ru>  
+        <p_tk vh="V" name="Jovoni Welch"></p_tk>  
+        <p_tk vh="V" name="Jaquarius Butler" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,3,2,H38" spot="CSC38" down="3" togo="2" hasball="CSC" text="Liam Thornton rush for 2 yards to the CSC40, out-of-bounds, PENALTY CSC holding (Aaron Murphy) 10 yards to the CSC28, NO PLAY." newcontext="H,3,12,H28" type="R" ob="y" playid="17,4,132"> 
+        <p_pn code="HO" vh="H" result="ACCEPT" at="H38" yards="10" type="Holding"></p_pn> 
+      </play>  
+      <play context="H,3,12,H28" spot="CSC28" down="3" togo="12" hasball="CSC" text="Liam Thornton rush for 6 yards to the CSC34 (Tierre Butler)." newcontext="H,4,6,H34" type="R" playid="17,5,133"> 
+        <p_ru gain="6" vh="H" name="Liam Thornton"></p_ru>  
+        <p_tk vh="V" name="Tierre Butler"></p_tk> 
+      </play>  
+      <play context="H,4,6,H34" spot="CSC34" down="4" togo="6" hasball="CSC" text="Braden Fann punt 37 yards to the WPU29, Henry Hypolite III return 2 yards to the WPU31 (Marqui Henry)." newcontext="V,1,10,V31" type="U" playid="17,6,134"> 
+        <p_pu gain="37" vh="H" name="Braden Fann"></p_pu>  
+        <p_pr gain="2" vh="V" name="Henry Hypolite III"></p_pr>  
+        <p_tk vh="H" name="Marqui Henry"></p_tk> 
+      </play>  
+      <drivesum driveindex="17" complete="Y" plays="3" yards="4" top="02:13"></drivesum>  
+      <drivestart driveindex="18,135" spot="V31" vh="V" clock="08:15" poss="V,V31,08:15"></drivestart>  
+      <play context="V,1,10,V31" spot="WPU31" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 08:15." newcontext="V,1,10,V31" clock="08:15" playid="18,1,135"></play>  
+      <play context="V,1,10,V31" spot="WPU31" down="1" togo="10" hasball="WPU" text="Emery Floyd rush for 2 yards to the WPU33 (Braden Fann; Street Smith)." newcontext="V,2,8,V33" type="R" playid="18,2,136"> 
+        <p_ru gain="2" vh="V" name="Emery Floyd"></p_ru>  
+        <p_tk vh="H" name="Braden Fann"></p_tk>  
+        <p_tk vh="H" name="Street Smith" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,2,8,V33" spot="WPU33" down="2" togo="8" hasball="WPU" text="Emery Floyd pass complete to Anthony Jones Jr. for loss of 6 yards to the WPU27 (Rommarrus Hinson)." newcontext="V,3,14,V27" type="P" playid="18,3,137"> 
+        <p_pa gain="-6" rcv="1J" vh="V" qb="Emery Floyd" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Rommarrus Hinson"></p_tk> 
+      </play>  
+      <play context="V,3,14,V27" spot="WPU27" down="3" togo="14" hasball="WPU" text="Emery Floyd rush for 7 yards to the WPU34 (Mason Leu)." newcontext="V,4,7,V34" type="R" playid="18,4,138"> 
+        <p_ru gain="7" vh="V" name="Emery Floyd"></p_ru>  
+        <p_tk vh="H" name="Mason Leu"></p_tk> 
+      </play>  
+      <play context="V,4,7,V34" spot="WPU34" down="4" togo="7" hasball="WPU" text="Clay Wiren punt 37 yards to the CSC29, Aaron Barr return 0 yards to the CSC29 (Donavin Brewer; Jamari Ritter)." newcontext="H,1,10,H29" type="U" playid="18,5,139"> 
+        <p_pu gain="37" vh="V" name="Clay Wiren"></p_pu>  
+        <p_pr gain="0" vh="H" name="Aaron Barr"></p_pr>  
+        <p_tk vh="V" name="Donavin Brewer"></p_tk>  
+        <p_tk vh="V" name="Jamari Ritter" assist="Y"></p_tk> 
+      </play>  
+      <drivesum driveindex="18" complete="Y" plays="3" yards="3" top="02:13"></drivesum>  
+      <drivestart driveindex="19,140" spot="H29" vh="H" clock="06:02" poss="H,H29,06:02"></drivestart>  
+      <play context="H,1,10,H29" spot="CSC29" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 06:02." newcontext="H,1,10,H29" clock="06:02" playid="19,1,140"></play>  
+      <play context="H,1,10,H29" spot="CSC29" down="1" togo="10" hasball="CSC" text="Liam Thornton pass complete to Damian Blankenship for 4 yards to the CSC33 (Tierre Butler; Brandon Latimore)." newcontext="H,2,6,H33" type="P" playid="19,2,141"> 
+        <p_pa gain="4" rcv="7" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Tierre Butler"></p_tk>  
+        <p_tk vh="V" name="Brandon Latimore" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,2,6,H33" spot="CSC33" down="2" togo="6" hasball="CSC" text="Liam Thornton rush for 6 yards to the CSC39 (Jaquarius Butler; Brandon Latimore)." newcontext="H,1,10,H39" type="R" playid="19,3,142"> 
+        <p_ru gain="6" vh="H" name="Liam Thornton"></p_ru>  
+        <p_tk vh="V" name="Jaquarius Butler"></p_tk>  
+        <p_tk vh="V" name="Brandon Latimore" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,1,10,H39" spot="CSC39" down="1" togo="10" hasball="CSC" text="Peyton Hill rush for 15 yards to the WPU46 (Brian Weatherspoon)." newcontext="H,1,10,V46" type="R" playid="19,4,143"> 
+        <p_ru gain="15" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Brian Weatherspoon"></p_tk> 
+      </play>  
+      <play context="H,1,10,V46" spot="WPU46" down="1" togo="10" hasball="CSC" text="Peyton Hill rush for 5 yards to the WPU41 (John McDonald)." newcontext="H,2,5,V41" type="R" playid="19,5,144"> 
+        <p_ru gain="5" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="John McDonald"></p_tk> 
+      </play>  
+      <play context="H,2,5,V41" spot="WPU41" down="2" togo="5" hasball="CSC" text="Liam Thornton pass complete to Peyton Hill for 5 yards to the WPU36 (Omari Campbell; Brian Weatherspoon)." newcontext="H,1,10,V36" type="P" playid="19,6,145"> 
+        <p_pa gain="5" rcv="47" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Omari Campbell"></p_tk>  
+        <p_tk vh="V" name="Brian Weatherspoon" assist="Y"></p_tk> 
+      </play>  
+      <play context="H,1,10,V36" spot="WPU36" down="1" togo="10" hasball="CSC" text="Liam Thornton rush for 7 yards to the WPU29, out-of-bounds." newcontext="H,2,3,V29" type="R" ob="y" playid="19,7,146"> 
+        <p_ru gain="7" vh="H" name="Liam Thornton"></p_ru> 
+      </play>  
+      <play context="H,2,3,V29" spot="WPU29" down="2" togo="3" hasball="CSC" text="Liam Thornton pass complete to Logan Hillman for 13 yards to the WPU16 (Jeremiah Dennard)." newcontext="H,1,10,V16" type="P" playid="19,8,147"> 
+        <p_pa gain="13" rcv="28" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Jeremiah Dennard"></p_tk> 
+      </play>  
+      <play context="H,1,10,V16" spot="WPU16" down="1" togo="10" hasball="CSC" text="Peyton Hill rush for 4 yards to the WPU12 (Travis Chinamhora)." newcontext="H,2,6,V12" type="R" playid="19,9,148"> 
+        <p_ru gain="4" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Travis Chinamhora"></p_tk> 
+      </play>  
+      <play context="H,2,6,V12" spot="WPU12" down="2" togo="6" hasball="CSC" text="Liam Thornton pass complete to Jayden Ferdinand for loss of 6 yards to the WPU18 (Brandon Latimore), PENALTY CSC illegal touching declined." newcontext="H,3,12,V18" type="P" playid="19,10,149"> 
+        <p_pa gain="-6" rcv="71" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Brandon Latimore"></p_tk>  
+        <p_pn code="TO" vh="H" result="DECLINE" type="Illegal Touching"></p_pn> 
+      </play>  
+      <play context="H,3,12,V18" spot="WPU18" down="3" togo="12" hasball="CSC" text="Liam Thornton pass complete to Damian Blankenship for 7 yards to the WPU11 (Tierre Butler), out-of-bounds." newcontext="H,4,5,V11" type="P" ob="y" playid="19,11,150"> 
+        <p_pa gain="7" rcv="7" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Tierre Butler"></p_tk> 
+      </play>  
+      <play context="H,4,5,V11" spot="WPU11" down="4" togo="5" hasball="CSC" text="Liam Thornton rush for 11 yards to the WPU00, TOUCHDOWN, clock 00:38." newcontext="H,1,0,V03" type="R" clock="00:38" score="Y" playid="19,12,151"> 
+        <p_ru gain="11" vh="H" name="Liam Thornton"></p_ru> 
+      </play>  
+      <play context="H,1,0,V03" spot="WPU03" down="1" togo="0" hasball="CSC" text="Diego Lopez kick attempt failed (blocked), returned by TEAM (blocked by John McDonald)." newcontext="H,1,0,H35" type="X" playid="19,13,152"> 
+        <p_pat vh="H" qb="Diego Lopez" type="K" result="BLOCKED" name="Diego Lopez"></p_pat> 
+      </play>  
+      <score V="28" H="22"></score>  
+      <drivesum driveindex="19" complete="Y" plays="11" yards="71" top="05:24"></drivesum>  
+      <play context="H,1,10,H35" spot="CSC35" down="1" togo="10" hasball="CSC" text="Diego Lopez kickoff 50 yards to the WPU15, Nasear Cumberbatch return 18 yards to the WPU33 (Elijah Meadows), out-of-bounds." newcontext="V,1,10,V33" type="K" ob="y" playid="19,14,153"> 
+        <p_ko gain="50" vh="H" name="Diego Lopez"></p_ko>  
+        <p_kr gain="18" vh="V" name="Nasear Cumberbatch"></p_kr>  
+        <p_tk vh="H" name="Elijah Meadows"></p_tk> 
+      </play>  
+      <drivestart driveindex="20,154" spot="V33" vh="V" clock="00:38" poss="V,V33,00:38"></drivestart>  
+      <play context="V,1,10,V33" spot="WPU33" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 00:38." newcontext="V,1,10,V33" clock="00:38" playid="20,1,154"></play>  
+      <play context="V,1,10,V33" spot="WPU33" down="1" togo="10" hasball="WPU" text="Anthony Carey Jr. rush for 2 yards to the WPU35 (Noah Loyd)." newcontext="V,2,8,V35" type="R" playid="20,2,155"> 
+        <p_ru gain="2" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Noah Loyd"></p_tk> 
+      </play>  
+      <endqtr></endqtr> 
+    </qtr>  
+    <qtr number="4" text="4th"> 
+      <play context="V,2,8,V35" spot="WPU35" down="2" togo="8" hasball="WPU" text="Start of 4th quarter, clock 15:00." newcontext="V,2,8,V35" type="#" clock="15:00" playid="20,3,156"></play>  
+      <play context="V,2,8,V35" spot="WPU35" down="2" togo="8" hasball="WPU" text="Emery Floyd rush for 14 yards to the WPU49, fumble forced by Dawson Pelech, fumble by Emery Floyd recovered by CSC Sean Usery at WPU40." newcontext="H,1,10,V40" type="R" turnover="F" playid="20,4,157"> 
+        <p_ru gain="5" vh="V" name="Emery Floyd"></p_ru>  
+        <p_fumb at="V40" frname="Sean Usery" frvh="H" name="Emery Floyd" vh="V"></p_fumb>  
+        <p_tk ff="Y" vh="V" name="Dawson Pelech"></p_tk> 
+      </play>  
+      <drivesum driveindex="20" complete="Y" plays="2" yards="7" top="01:02"></drivesum>  
+      <drivestart driveindex="21,158" spot="V40" vh="H" clock="14:36" poss="H,V40,14:36"></drivestart>  
+      <play context="H,1,10,V40" spot="WPU40" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 14:36." newcontext="H,1,10,V40" clock="14:36" playid="21,1,158"></play>  
+      <play context="H,1,10,V40" spot="WPU40" down="1" togo="10" hasball="CSC" text="Liam Thornton pass complete to Antonio Reasby for 26 yards to the WPU14 (Tierre Butler)." newcontext="H,1,10,V14" type="P" playid="21,2,159"> 
+        <p_pa gain="26" rcv="11" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Tierre Butler"></p_tk> 
+      </play>  
+      <play context="H,1,10,V14" spot="WPU14" down="1" togo="10" hasball="CSC" text="Liam Thornton pass incomplete to AJ Harris, PENALTY CSC holding (Ryan Yabi) 10 yards to the WPU24, NO PLAY." newcontext="H,1,20,V24" type="P" playid="21,3,160"> 
+        <p_pn code="HO" vh="H" result="ACCEPT" at="V14" yards="10" type="Holding"></p_pn> 
+      </play>  
+      <play context="H,1,20,V24" spot="WPU24" down="1" togo="20" hasball="CSC" text="Peyton Hill rush for no gain to the WPU24 (Jeremiah Dennard), out-of-bounds." newcontext="H,2,20,V24" type="R" ob="y" playid="21,4,161"> 
+        <p_ru gain="0" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Jeremiah Dennard"></p_tk> 
+      </play>  
+      <play context="H,2,20,V24" spot="WPU24" down="2" togo="20" hasball="CSC" text="Liam Thornton pass complete to Jaqorian Wiggles for 9 yards to the WPU15 (Semaj Smith)." newcontext="H,3,11,V15" type="P" playid="21,5,162"> 
+        <p_pa gain="9" rcv="4" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Semaj Smith"></p_tk> 
+      </play>  
+      <play context="H,3,11,V15" spot="WPU15" down="3" togo="11" hasball="CSC" text="Liam Thornton pass complete to Aiden Sutherland for 12 yards to the WPU03 (Dylan Cervantez), PENALTY CSC holding (Jayden Ferdinand) 10 yards to the WPU25, NO PLAY." newcontext="H,3,21,V25" type="P" playid="21,6,163"> 
+        <p_pn code="HO" vh="H" result="ACCEPT" at="V15" yards="10" type="Holding"></p_pn> 
+      </play>  
+      <play context="H,3,21,V25" spot="WPU25" down="3" togo="21" hasball="CSC" text="Liam Thornton pass incomplete to Jaqorian Wiggles." newcontext="H,4,21,V25" type="P" playid="21,7,164"> 
+        <p_pa rcv="4" vh="H" qb="Liam Thornton" result="INC"></p_pa> 
+      </play>  
+      <play context="H,4,21,V25" spot="WPU25" down="4" togo="21" hasball="CSC" text="Liam Thornton pass complete to AJ Harris for 19 yards to the WPU06 (Michael Johnson III)." newcontext="V,1,10,V06" type="P" playid="21,8,165"> 
+        <p_pa gain="19" rcv="13" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Michael Johnson III"></p_tk> 
+      </play>  
+      <drivesum driveindex="21" complete="Y" plays="5" yards="34" top="02:22"></drivesum>  
+      <drivestart driveindex="22,166" spot="V06" vh="V" clock="12:14" poss="V,V06,12:14"></drivestart>  
+      <play context="V,1,10,V06" spot="WPU06" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 12:14." newcontext="V,1,10,V06" clock="12:14" playid="22,1,166"></play>  
+      <play context="V,1,10,V06" spot="WPU06" down="1" togo="10" hasball="WPU" text="Anthony Carey Jr. rush for 11 yards to the WPU17 (Noah Loyd), out-of-bounds." newcontext="V,1,10,V17" type="R" ob="y" playid="22,2,167"> 
+        <p_ru gain="11" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Noah Loyd"></p_tk> 
+      </play>  
+      <play context="V,1,10,V17" spot="WPU17" down="1" togo="10" hasball="WPU" text="Anthony Carey Jr. rush for 8 yards to the WPU25 (Braden Fann; Tristan Taylor)." newcontext="V,2,2,V25" type="R" playid="22,3,168"> 
+        <p_ru gain="8" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Braden Fann"></p_tk>  
+        <p_tk vh="H" name="Tristan Taylor" assist="Y"></p_tk> 
+      </play>  
+      <play context="V,2,2,V25" spot="WPU25" down="2" togo="2" hasball="WPU" text="Anthony Carey Jr. rush for 3 yards to the WPU28 (Noah Loyd), PENALTY WPU holding (Sincere Williams) 10 yards to the WPU15, NO PLAY." newcontext="V,2,12,V15" type="R" playid="22,4,169"> 
+        <p_pn code="HO" vh="V" result="ACCEPT" at="V25" yards="10" type="Holding"></p_pn> 
+      </play>  
+      <play context="V,2,12,V15" spot="WPU15" down="2" togo="12" hasball="WPU" text="Emery Floyd rush for 2 yards to the WPU17 (Josh Winston)." newcontext="V,3,10,V17" type="R" playid="22,5,170"> 
+        <p_ru gain="2" vh="V" name="Emery Floyd"></p_ru>  
+        <p_tk vh="H" name="Josh Winston"></p_tk> 
+      </play>  
+      <play context="V,3,10,V17" spot="WPU17" down="3" togo="10" hasball="WPU" text="Emery Floyd pass complete to Anthony Jones Jr. for 7 yards to the WPU24 (Robert Jones)." newcontext="V,4,3,V24" type="P" playid="22,6,171"> 
+        <p_pa gain="7" rcv="1J" vh="V" qb="Emery Floyd" result="COMP"></p_pa>  
+        <p_tk vh="H" name="Robert Jones"></p_tk> 
+      </play>  
+      <play context="V,4,3,V24" spot="WPU24" down="4" togo="3" hasball="WPU" text="Clay Wiren punt 36 yards to the CSC40, fair catch by Aaron Barr." newcontext="H,1,10,H40" type="U" playid="22,7,172"> 
+        <p_pu gain="36" vh="V" name="Clay Wiren"></p_pu> 
+      </play>  
+      <drivesum driveindex="22" complete="Y" plays="4" yards="18" top="02:51"></drivesum>  
+      <drivestart driveindex="23,173" spot="H40" vh="H" clock="09:23" poss="H,H40,09:23"></drivestart>  
+      <play context="H,1,10,H40" spot="CSC40" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 09:23." newcontext="H,1,10,H40" clock="09:23" playid="23,1,173"></play>  
+      <play context="H,1,10,H40" spot="CSC40" down="1" togo="10" hasball="CSC" text="Peyton Hill rush for 26 yards to the WPU34 (Rhyan Sewell)." newcontext="H,1,10,V34" type="R" playid="23,2,174"> 
+        <p_ru gain="26" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Rhyan Sewell"></p_tk> 
+      </play>  
+      <play context="H,1,10,V34" spot="WPU34" down="1" togo="10" hasball="CSC" text="Peyton Hill rush for 3 yards to the WPU31 (Kameron Cummings)." newcontext="H,2,7,V31" type="R" playid="23,3,175"> 
+        <p_ru gain="3" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Kameron Cummings"></p_tk> 
+      </play>  
+      <play context="H,2,7,V31" spot="WPU31" down="2" togo="7" hasball="CSC" text="Peyton Hill rush for 12 yards to the WPU19 (Tierre Butler)." newcontext="H,1,10,V19" type="R" playid="23,4,176"> 
+        <p_ru gain="12" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Tierre Butler"></p_tk> 
+      </play>  
+      <play context="H,1,10,V19" spot="WPU19" down="1" togo="10" hasball="CSC" text="Damian Blankenship rush for 4 yards to the WPU15 (Kameron Cummings)." newcontext="H,2,6,V15" type="R" playid="23,5,177"> 
+        <p_ru gain="4" vh="H" name="Damian Blankenship"></p_ru>  
+        <p_tk vh="V" name="Kameron Cummings"></p_tk> 
+      </play>  
+      <play context="H,2,6,V15" spot="WPU15" down="2" togo="6" hasball="CSC" text="Liam Thornton pass complete to Damian Blankenship for 4 yards to the WPU11 (Tierre Butler), out-of-bounds." newcontext="H,3,2,V11" type="P" ob="y" playid="23,6,178"> 
+        <p_pa gain="4" rcv="7" vh="H" qb="Liam Thornton" result="COMP"></p_pa>  
+        <p_tk vh="V" name="Tierre Butler"></p_tk> 
+      </play>  
+      <play context="H,3,2,V11" spot="WPU11" down="3" togo="2" hasball="CSC" text="Liam Thornton rush for 11 yards to the WPU00, TOUCHDOWN, clock 06:44." newcontext="H,1,0,V03" type="R" clock="06:44" score="Y" playid="23,7,179"> 
+        <p_ru gain="11" vh="H" name="Liam Thornton"></p_ru> 
+      </play>  
+      <play context="H,1,0,V03" spot="WPU03" down="1" togo="0" hasball="CSC" text="Diego Lopez kick attempt good." newcontext="H,1,0,H35" type="X" score="Y" playid="23,8,180"> 
+        <p_pat vh="H" qb="Diego Lopez" type="K" result="GOOD" score="Y" name="Diego Lopez"></p_pat> 
+      </play>  
+      <score V="28" H="29"></score>  
+      <drivesum driveindex="23" complete="Y" plays="6" yards="60" top="02:39"></drivesum>  
+      <play context="H,1,10,H35" spot="CSC35" down="1" togo="10" hasball="CSC" text="Diego Lopez kickoff 40 yards to the WPU25, fair catch by Keithon Davis." newcontext="V,1,10,V25" type="K" playid="23,9,181"> 
+        <p_ko gain="40" vh="H" name="Diego Lopez"></p_ko> 
+      </play>  
+      <drivestart driveindex="24,182" spot="V25" vh="V" clock="06:44" poss="V,V25,06:44"></drivestart>  
+      <play context="V,1,10,V25" spot="WPU25" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 06:44." newcontext="V,1,10,V25" clock="06:44" playid="24,1,182"></play>  
+      <play context="V,1,10,V25" spot="WPU25" down="1" togo="10" hasball="WPU" text="Emery Floyd pass incomplete to Anthony Jones Jr. (Aaron Barr)." newcontext="V,2,10,V25" type="P" playid="24,2,183"> 
+        <p_pa rcv="1J" vh="V" qb="Emery Floyd" result="BRUP"></p_pa>  
+        <p_bu vh="H" name="Aaron Barr"></p_bu> 
+      </play>  
+      <play context="V,2,10,V25" spot="WPU25" down="2" togo="10" hasball="WPU" text="Anthony Carey Jr. rush for 1 yard to the WPU26 (Mason Leu)." newcontext="V,3,9,V26" type="R" playid="24,3,184"> 
+        <p_ru gain="1" vh="V" name="Anthony Carey Jr."></p_ru>  
+        <p_tk vh="H" name="Mason Leu"></p_tk> 
+      </play>  
+      <play context="V,3,9,V26" spot="WPU26" down="3" togo="9" hasball="WPU" text="Emery Floyd pass incomplete to Branden Powell (Robert Jones)." newcontext="V,4,9,V26" type="P" playid="24,4,185"> 
+        <p_pa rcv="4O" vh="V" qb="Emery Floyd" result="BRUP"></p_pa>  
+        <p_bu vh="H" name="Robert Jones"></p_bu> 
+      </play>  
+      <play context="V,4,9,V26" spot="WPU26" down="4" togo="9" hasball="WPU" text="Clay Wiren punt 48 yards to the CSC26, downed." newcontext="H,1,10,H26" type="U" playid="24,5,186"> 
+        <p_pu gain="48" vh="V" name="Clay Wiren"></p_pu> 
+      </play>  
+      <drivesum driveindex="24" complete="Y" plays="3" yards="1" top="00:53"></drivesum>  
+      <drivestart driveindex="25,187" spot="H26" vh="H" clock="05:51" poss="H,H26,05:51"></drivestart>  
+      <play context="H,1,10,H26" spot="CSC26" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 05:51." newcontext="H,1,10,H26" clock="05:51" playid="25,1,187"></play>  
+      <play context="H,1,10,H26" spot="CSC26" down="1" togo="10" hasball="CSC" text="Peyton Hill rush for 1 yard to the CSC27 (John McDonald)." newcontext="H,2,9,H27" type="R" playid="25,2,188"> 
+        <p_ru gain="1" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="John McDonald"></p_tk> 
+      </play>  
+      <play context="H,2,9,H27" spot="CSC27" down="2" togo="9" hasball="CSC" text="Peyton Hill rush for 17 yards to the CSC44 (Kameron Cummings)." newcontext="H,1,10,H44" type="R" playid="25,3,189"> 
+        <p_ru gain="17" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Kameron Cummings"></p_tk> 
+      </play>  
+      <play context="H,1,10,H44" spot="CSC44" down="1" togo="10" hasball="CSC" text="Peyton Hill rush for 7 yards to the WPU49 (Willie Page)." newcontext="H,2,3,V49" type="R" playid="25,4,190"> 
+        <p_ru gain="7" vh="H" name="Peyton Hill"></p_ru>  
+        <p_tk vh="V" name="Willie Page"></p_tk> 
+      </play>  
+      <play context="H,2,3,V49" spot="WPU49" down="2" togo="3" hasball="CSC" text="Damian Blankenship rush for loss of 6 yards to the CSC45 (Tierre Butler)." newcontext="H,3,9,H45" type="R" playid="25,5,191"> 
+        <p_ru gain="-6" vh="H" name="Damian Blankenship"></p_ru>  
+        <p_tk vh="V" name="Tierre Butler"></p_tk> 
+      </play>  
+      <play context="H,3,9,H45" spot="CSC45" down="3" togo="9" hasball="CSC" text="Timeout William Penn (IA), clock 02:02." newcontext="H,3,9,H45" clock="02:02" playid="25,6,192"> 
+        <p_to vh="V" team="William Penn (IA)"></p_to> 
+      </play>  
+      <play context="H,3,9,H45" spot="CSC45" down="3" togo="9" hasball="CSC" text="Liam Thornton rush for 10 yards to the WPU45 (Michael Johnson III), PENALTY CSC holding (Aiden Benda) 10 yards to the CSC35, NO PLAY." newcontext="H,3,19,H35" type="R" playid="25,7,193"> 
+        <p_pn code="HO" vh="H" result="ACCEPT" at="H45" yards="10" type="Holding"></p_pn> 
+      </play>  
+      <play context="H,3,19,H35" spot="CSC35" down="3" togo="19" hasball="CSC" text="Liam Thornton rush for no gain to the CSC35 (Tierre Butler)." newcontext="H,4,19,H35" type="R" playid="25,8,194"> 
+        <p_ru gain="0" vh="H" name="Liam Thornton"></p_ru>  
+        <p_tk vh="V" name="Tierre Butler"></p_tk> 
+      </play>  
+      <play context="H,4,19,H35" spot="CSC35" down="4" togo="19" hasball="CSC" text="Timeout Culver-Stockton (MO), clock 01:18." newcontext="H,4,19,H35" clock="01:18" playid="25,9,195"> 
+        <p_to vh="H" team="Culver-Stockton (MO)"></p_to> 
+      </play>  
+      <play context="H,4,19,H35" spot="CSC35" down="4" togo="19" hasball="CSC" text="Braden Fann punt 33 yards to the WPU32, fair catch by Henry Hypolite III." newcontext="V,1,10,V32" type="U" playid="25,10,196"> 
+        <p_pu gain="33" vh="H" name="Braden Fann"></p_pu> 
+      </play>  
+      <drivesum driveindex="25" complete="Y" plays="5" yards="9" top="04:41"></drivesum>  
+      <drivestart driveindex="26,197" spot="V32" vh="V" clock="01:10" poss="V,V32,01:10"></drivestart>  
+      <play context="V,1,10,V32" spot="WPU32" down="1" togo="10" hasball="WPU" text="William Penn (IA) drive start at 01:10." newcontext="V,1,10,V32" clock="01:10" playid="26,1,197"></play>  
+      <play context="V,1,10,V32" spot="WPU32" down="1" togo="10" hasball="WPU" text="Emery Floyd pass incomplete, QB hurry by Noah Loyd." newcontext="V,2,10,V32" type="P" playid="26,2,198"> 
+        <p_pa vh="V" qb="Emery Floyd" result="INC"></p_pa>  
+        <p_qbh vh="H" name="Noah Loyd"></p_qbh> 
+      </play>  
+      <play context="V,2,10,V32" spot="WPU32" down="2" togo="10" hasball="WPU" text="Emery Floyd rush for 14 yards to the WPU46 (Robert Jones)." newcontext="V,1,10,V46" type="R" playid="26,3,199"> 
+        <p_ru gain="14" vh="V" name="Emery Floyd"></p_ru>  
+        <p_tk vh="H" name="Robert Jones"></p_tk> 
+      </play>  
+      <play context="V,1,10,V46" spot="WPU46" down="1" togo="10" hasball="WPU" text="Emery Floyd pass intercepted by Robert Jones at the CSC35, Robert Jones return 13 yards to the CSC48, out-of-bounds." newcontext="H,1,10,H48" type="P" ob="y" turnover="I" playid="26,4,200"> 
+        <p_pa vh="V" qb="Emery Floyd" result="INT"></p_pa>  
+        <p_ir at="H48" gain="13" vh="H" name="Robert Jones"></p_ir> 
+      </play>  
+      <drivesum driveindex="26" complete="Y" plays="3" yards="14" top="00:37"></drivesum>  
+      <drivestart driveindex="27,201" spot="H48" vh="H" clock="00:33" poss="H,H48,00:33"></drivestart>  
+      <play context="H,1,10,H48" spot="CSC48" down="1" togo="10" hasball="CSC" text="Culver-Stockton (MO) drive start at 00:33." newcontext="H,1,10,H48" clock="00:33" playid="27,1,201"></play>  
+      <play context="H,1,10,H48" spot="CSC48" down="1" togo="10" hasball="CSC" text="Liam Thornton rush for loss of 3 yards to the CSC45, PENALTY WPU substitution infraction 5 yards to the WPU47, NO PLAY, PENALTY WPU unsportmanlike conduct (Brian Weatherspoon) 20 yards to the WPU32, NO PLAY." newcontext="H,1,10,V32" type="R" playid="27,2,202"> 
+        <p_pn code="SU" vh="V" result="ACCEPT" at="H48" yards="5" type="Substitution Infraction"></p_pn>  
+        <p_pn code="UC" vh="V" result="ACCEPT" at="H48" yards="20" type="Unsportmanlike Conduct"></p_pn> 
+      </play>  
+      <play context="H,1,10,V32" spot="WPU32" down="1" togo="10" hasball="CSC" text="Liam Thornton rush for loss of 5 yards to the WPU37." newcontext="H,2,15,V37" type="R" playid="27,3,203"> 
+        <p_ru gain="-5" vh="H" name="Liam Thornton"></p_ru> 
+      </play>  
+      <drivesum driveindex="27" complete="Y" plays="1" yards="20" top="00:33"></drivesum>  
+      <play context="H,2,15,V37" spot="WPU37" down="2" togo="15" hasball="CSC" text="End of game, clock 00:00." newcontext="H,1,10,V37" clock="00:00" playid="27,4,204"></play>  
+      <score V="28" H="29" final="Y"></score>  
+      <endqtr></endqtr> 
+    </qtr>  
+    <downtogo hasball="H" id="" down="1" togo="10" spot="V37" context="H,1,10,V37" qtr="4" clock="00:00" vtoh="1" htoh="1" lastplay="End of game, clock 00:00."></downtogo> 
+  </plays>  
+  <message text=""></message>  
+  <dnp id="WPU" vh="V"> 
+    <player checkname="SWANK,AUSTIN" code="15" name="Austin Swank" uni="15" gp="0"></player>  
+    <player checkname="HOPMANN,SHANE" code="17" name="Shane Hopmann" uni="17" gp="0"></player>  
+    <player checkname="COLQUITT,RODRICK" code="19" name="Rodrick Colquitt" uni="19" gp="0"></player>  
+    <player checkname="HARRY,MARQUIS" code="1D" name="Marquis Harry" uni="1D" gp="0"></player>  
+    <player checkname="WATTS,CHRISTIAN" code="1W" name="Christian Watts" uni="1W" gp="0"></player>  
+    <player checkname="CERVANTEZ,DYLAN" code="21" name="Dylan Cervantez" uni="21" gp="0"></player>  
+    <player checkname="CARTER,MARQUIS" code="25" name="Marquis Carter" uni="25" gp="0"></player>  
+    <player checkname="IGBONAGWAM,EMMANUEL" code="28" name="Emmanuel Igbonagwam" uni="28" gp="0"></player>  
+    <player checkname="CRUMP,ZACH" code="29" name="Zach Crump" uni="29" gp="0"></player>  
+    <player checkname="JORDAN,ANTHONY" code="31" name="Anthony Jordan" uni="31" gp="0"></player>  
+    <player checkname="ADEBODUN,SETONJI" code="34" name="Setonji Adebodun" uni="34" gp="0"></player>  
+    <player checkname="WEATHERTON,QUINTON" code="35" name="Quinton Weatherton" uni="35" gp="0"></player>  
+    <player checkname="STEPP,AYDEN" code="37" name="Ayden Stepp" uni="37" gp="0"></player>  
+    <player checkname="GIBBONS,AIDEN" code="41" name="Aiden Gibbons" uni="41" gp="0"></player>  
+    <player checkname="PRYOR,MOSES" code="42" name="Moses Pryor" uni="42" gp="0"></player>  
+    <player checkname="VANDENBERG,HAYDEN" code="49" name="Hayden Vandenberg" uni="49" gp="0"></player>  
+    <player checkname="SMITH,TYLER" code="51" name="Tyler Smith" uni="51" gp="0"></player>  
+    <player checkname="OKORAFOR,JAYDEN" code="52" name="Jayden Okorafor" uni="52" gp="0"></player>  
+    <player checkname="BROCK,JAYDEN" code="56" name="Jayden Brock" uni="56" gp="0"></player>  
+    <player checkname="DUGUE,CJ" code="60" name="CJ Dugue" uni="60" gp="0"></player>  
+    <player checkname="STEELE,CALEB" code="61" name="Caleb Steele" uni="61" gp="0"></player>  
+    <player checkname="ALFORD,DAKOTA" code="62" name="Dakota Alford" uni="62" gp="0"></player>  
+    <player checkname="GARRETT,JACKSON" code="63" name="Jackson Garrett" uni="63" gp="0"></player>  
+    <player checkname="PROVOST,CHASE" code="64" name="Chase Provost" uni="64" gp="0"></player>  
+    <player checkname="MANSHACK,OWEN" code="65" name="Owen Manshack" uni="65" gp="0"></player>  
+    <player checkname="FLORES,JAIDEN" code="67" name="Jaiden Flores" uni="67" gp="0"></player>  
+    <player checkname="YOUNG,SKYLER" code="68" name="Skyler Young" uni="68" gp="0"></player>  
+    <player checkname="OWENS,LOMONT" code="79" name="Lomont Owens" uni="79" gp="0"></player>  
+    <player checkname="GRAYSON,BRAYLON" code="7O" name="Braylon Grayson" uni="7O" gp="0"></player>  
+    <player checkname="JOHNSON,TRE" code="80" name="Tre Johnson" uni="80" gp="0"></player>  
+    <player checkname="KNOX,HEAVON" code="82" name="Heavon Knox" uni="82" gp="0"></player>  
+    <player checkname="GLOVER,DATHAN" code="83" name="Dathan Glover" uni="83" gp="0"></player>  
+    <player checkname="SHED,BRENDYN" code="84" name="Brendyn Shed" uni="84" gp="0"></player>  
+    <player checkname="SMITH,TY" code="85" name="Ty Smith" uni="85" gp="0"></player>  
+    <player checkname="ABSHIRE,ADDISON" code="86" name="Addison Abshire" uni="86" gp="0"></player>  
+    <player checkname="MONTGOMERY,MADEN" code="87" name="Maden Montgomery" uni="87" gp="0"></player>  
+    <player checkname="III,MICHAEL HOLMES" code="88" name="Michael Holmes III" uni="88" gp="0"></player>  
+    <player checkname="ROCKETT,RICKEY" code="90" name="Rickey Rockett" uni="90" gp="0"></player>  
+    <player checkname="THOMAS,SHANNON" code="92" name="Shannon Thomas" uni="92" gp="0"></player>  
+    <player checkname="III,OLIVER BELIZAIRE" code="93" name="Oliver Belizaire III" uni="93" gp="0"></player>  
+    <player checkname="KUYKENDALL,DAEJON" code="95" name="Daejon Kuykendall" uni="95" gp="0"></player>  
+    <player checkname="SIERRA,JUAN" code="98" name="Juan Sierra" uni="98" gp="0"></player> 
+  </dnp>  
+  <dnp id="CSC" vh="H"> 
+    <player checkname="FERRANTO,LUKE ANTHONY" code="0" name="Luke Anthony Ferranto" uni="0" gp="0"></player>  
+    <player checkname="PERRY,HUNTER" code="3" name="Hunter Perry" uni="3" gp="0"></player>  
+    <player checkname="II,DARYL COOPER" code="6" name="Daryl Cooper II" uni="6" gp="0"></player>  
+    <player checkname="TROSCLAIR,ADAM" code="10" name="Adam Trosclair" uni="10" gp="0"></player>  
+    <player checkname="SPILLER-DAVIDSON,JOSEPH" code="12" name="Joseph Spiller-Davidson" uni="12" gp="0"></player>  
+    <player checkname="FORD,GAVIN" code="16" name="Gavin Ford" uni="16" gp="0"></player>  
+    <player checkname="ROBINSON,BRADY" code="17" name="Brady Robinson" uni="17" gp="0"></player>  
+    <player checkname="BILLINGSLEY,WILLIAM" code="19" name="William Billingsley" uni="19" gp="0"></player>  
+    <player checkname="FULLMORE,JARVIS" code="1C" name="Jarvis Fullmore" uni="1C" gp="0"></player>  
+    <player checkname="GOODEN,EVERETTE" code="1E" name="Everette Gooden" uni="1E" gp="0"></player>  
+    <player checkname="SMITH,STREET" code="1J" name="Street Smith" uni="1J" gp="0"></player>  
+    <player checkname="COMBS,ADRIAN" code="1Q" name="Adrian Combs" uni="1Q" gp="0"></player>  
+    <player checkname="WISE,GAVIN" code="1X" name="Gavin Wise" uni="1X" gp="0"></player>  
+    <player checkname="MULLEN,BRADY" code="1Z" name="Brady Mullen" uni="1Z" gp="0"></player>  
+    <player checkname="LYONS,MANSA" code="20" name="Mansa Lyons" uni="20" gp="0"></player>  
+    <player checkname="KEARNEY,DEKLEN" code="23" name="Deklen Kearney" uni="23" gp="0"></player>  
+    <player checkname="SMITH,JAKOBE" code="24" name="Jakobe Smith" uni="24" gp="0"></player>  
+    <player checkname="COLBURN,JORDAN" code="25" name="Jordan Colburn" uni="25" gp="0"></player>  
+    <player checkname="MAYES,ISAIAH" code="26" name="Isaiah Mayes" uni="26" gp="0"></player>  
+    <player checkname="LOGAN,DANIEL" code="27" name="Daniel Logan" uni="27" gp="0"></player>  
+    <player checkname="GLICKMMAN,BRODY" code="29" name="Brody Glickmman" uni="29" gp="0"></player>  
+    <player checkname="JEFFRIES,AARON" code="2A" name="Aaron Jeffries" uni="2A" gp="0"></player>  
+    <player checkname="SHEETS,AARRON" code="2C" name="Aarron Sheets" uni="2C" gp="0"></player>  
+    <player checkname="DAVIN SIRMONS,JR" code="2F" name="Davin Sirmons, Jr." uni="2F" gp="0"></player>  
+    <player checkname="PETERS,ANTONIUS" code="2H" name="Antonius Peters" uni="2H" gp="0"></player>  
+    <player checkname="JONES,ISHMAEL" code="2X" name="Ishmael Jones" uni="2X" gp="0"></player>  
+    <player checkname="WILSON,KYRON" code="2Z" name="Kyron Wilson" uni="2Z" gp="0"></player>  
+    <player checkname="PATERSON,SHANE" code="30" name="Shane Paterson" uni="30" gp="0"></player>  
+    <player checkname="DRESSLER,JAMES" code="31" name="James Dressler" uni="31" gp="0"></player>  
+    <player checkname="PAGAN,EMMANUEL" code="33" name="Emmanuel Pagan" uni="33" gp="0"></player>  
+    <player checkname="HART,AARON" code="34" name="Aaron Hart" uni="34" gp="0"></player>  
+    <player checkname="BENFORD,JAMYIUS" code="35" name="Jamyius Benford" uni="35" gp="0"></player>  
+    <player checkname="RALSTON,AIDEN" code="36" name="Aiden Ralston" uni="36" gp="0"></player>  
+    <player checkname="MINTER,JULIAN" code="37" name="Julian Minter" uni="37" gp="0"></player>  
+    <player checkname="GIBSON,JA'CHARY" code="38" name="Ja'Chary Gibson" uni="38" gp="0"></player>  
+    <player checkname="MCGEE,TYRONE" code="39" name="Tyrone McGee" uni="39" gp="0"></player>  
+    <player checkname="TECK,MARCO" code="3A" name="Marco Teck" uni="3A" gp="0"></player>  
+    <player checkname="NELSON,NASIR" code="3C" name="Nasir Nelson" uni="3C" gp="0"></player>  
+    <player checkname="VICARY,MASON" code="3E" name="Mason Vicary" uni="3E" gp="0"></player>  
+    <player checkname="THOMAS,ZION" code="3G" name="Zion Thomas" uni="3G" gp="0"></player>  
+    <player checkname="JACKSON,TRE'MILLIAN" code="3H" name="Tre'Millian Jackson" uni="3H" gp="0"></player>  
+    <player checkname="ROY,STEPHANE" code="3I" name="Stephane Roy" uni="3I" gp="0"></player>  
+    <player checkname="HARRIS,LANDEN" code="3J" name="Landen Harris" uni="3J" gp="0"></player>  
+    <player checkname="III,JOHN BLACKBURN" code="3K" name="John Blackburn III" uni="3K" gp="0"></player>  
+    <player checkname="RODHOUSE,RYDOR" code="40" name="Rydor Rodhouse" uni="40" gp="0"></player>  
+    <player checkname="MITCHELL,BRAYLON" code="41" name="Braylon Mitchell" uni="41" gp="0"></player>  
+    <player checkname="ARRINGTON,MASARATI" code="42" name="Masarati Arrington" uni="42" gp="0"></player>  
+    <player checkname="HARRISON,CONNER" code="43" name="Conner Harrison" uni="43" gp="0"></player>  
+    <player checkname="CASE,KINGSTON" code="46" name="Kingston Case" uni="46" gp="0"></player>  
+    <player checkname="MARTIN,CARSON" code="48" name="Carson Martin" uni="48" gp="0"></player>  
+    <player checkname="WARD,PATRICK" code="4A" name="Patrick Ward" uni="4A" gp="0"></player>  
+    <player checkname="JOHNSON,TYLER" code="4B" name="Tyler Johnson" uni="4B" gp="0"></player>  
+    <player checkname="TRAYLOR,MIQUAN" code="4D" name="Miquan Traylor" uni="4D" gp="0"></player>  
+    <player checkname="BARKER,JAYLEN" code="4E" name="Jaylen Barker" uni="4E" gp="0"></player>  
+    <player checkname="RODRIGUEZ,JULIAN" code="4H" name="Julian Rodriguez" uni="4H" gp="0"></player>  
+    <player checkname="DERRICK,STUART" code="4J" name="Stuart Derrick" uni="4J" gp="0"></player>  
+    <player checkname="SNAPE,KINGSTON" code="4K" name="Kingston Snape" uni="4K" gp="0"></player>  
+    <player checkname="WILLIAMS,IVAN" code="4Z" name="Ivan Williams" uni="4Z" gp="0"></player>  
+    <player checkname="WORLEY,BRENNAN" code="51" name="Brennan Worley" uni="51" gp="0"></player>  
+    <player checkname="ACOSTA,NICK" code="52" name="Nick Acosta" uni="52" gp="0"></player>  
+    <player checkname="LING,TOMMY" code="54" name="Tommy Ling" uni="54" gp="0"></player>  
+    <player checkname="HAYNES,WILLIAM" code="56" name="William Haynes" uni="56" gp="0"></player>  
+    <player checkname="CONNER,DAKARI" code="57" name="Dakari Conner" uni="57" gp="0"></player>  
+    <player checkname="MEAFOOU,SIAOSI" code="58" name="Siaosi Meafoou" uni="58" gp="0"></player>  
+    <player checkname="II,FRED MILLICAN" code="59" name="Fred Millican II" uni="59" gp="0"></player>  
+    <player checkname="LUCAS,REECE" code="5A" name="Reece Lucas" uni="5A" gp="0"></player>  
+    <player checkname="HAWKINS,CADE" code="5C" name="Cade Hawkins" uni="5C" gp="0"></player>  
+    <player checkname="MEADOWS,JAYDEN" code="5E" name="Jayden Meadows" uni="5E" gp="0"></player>  
+    <player checkname="AUSTIN,CODY" code="5F" name="Cody Austin" uni="5F" gp="0"></player>  
+    <player checkname="ARNEY,JOSH" code="5G" name="Josh Arney" uni="5G" gp="0"></player>  
+    <player checkname="GIBBS-FLEMING,DESTINI" code="5H" name="Destini Gibbs-Fleming" uni="5H" gp="0"></player>  
+    <player checkname="KEITA,KALIL" code="5J" name="Kalil Keita" uni="5J" gp="0"></player>  
+    <player checkname="BRAGG,LARRY" code="60" name="Larry Bragg" uni="60" gp="0"></player>  
+    <player checkname="RICKETT,BEAU" code="61" name="Beau Rickett" uni="61" gp="0"></player>  
+    <player checkname="RIEDESEL,KAIDEN" code="62" name="Kaiden Riedesel" uni="62" gp="0"></player>  
+    <player checkname="FORD,XAVIER" code="63" name="Xavier Ford" uni="63" gp="0"></player>  
+    <player checkname="MITCHELL,KEGAN" code="64" name="Kegan Mitchell" uni="64" gp="0"></player>  
+    <player checkname="LIRA,GREGORIO" code="65" name="Gregorio Lira" uni="65" gp="0"></player>  
+    <player checkname="HAYDEN,ISAIAH" code="66" name="Isaiah Hayden" uni="66" gp="0"></player>  
+    <player checkname="MLOTKOWSKI,LANDON" code="67" name="Landon Mlotkowski" uni="67" gp="0"></player>  
+    <player checkname="DOUGLAS,COLLIN" code="69" name="Collin Douglas" uni="69" gp="0"></player>  
+    <player checkname="II,NICHOLAS NORTON" code="6A" name="Nicholas Norton II" uni="6A" gp="0"></player>  
+    <player checkname="BEARDEN,ISAAC" code="6B" name="Isaac Bearden" uni="6B" gp="0"></player>  
+    <player checkname="HUNOLT,ALIOUS" code="6C" name="Alious Hunolt" uni="6C" gp="0"></player>  
+    <player checkname="MICHAEL AGYEMANG,JR" code="6D" name="Michael Agyemang, Jr." uni="6D" gp="0"></player>  
+    <player checkname="RUSSELL,ADRIAN" code="6E" name="Adrian Russell" uni="6E" gp="0"></player>  
+    <player checkname="MILLER,KEAMERON" code="6F" name="Keameron Miller" uni="6F" gp="0"></player>  
+    <player checkname="BRINSON,DARION" code="6G" name="Darion Brinson" uni="6G" gp="0"></player>  
+    <player checkname="GORDON,DOMINIC" code="6H" name="Dominic Gordon" uni="6H" gp="0"></player>  
+    <player checkname="DAVIS,DONTE" code="6J" name="Donte Davis" uni="6J" gp="0"></player>  
+    <player checkname="BROWN,BRANDON" code="70" name="Brandon Brown" uni="70" gp="0"></player>  
+    <player checkname="IV,JAMES MARSHALL" code="73" name="James Marshall IV" uni="73" gp="0"></player>  
+    <player checkname="GUTIERREZ,ANTHONY" code="75" name="Anthony Gutierrez" uni="75" gp="0"></player>  
+    <player checkname="RINKUS,DYLAN" code="77" name="Dylan Rinkus" uni="77" gp="0"></player>  
+    <player checkname="HARRIS,GRAYSON" code="79" name="Grayson Harris" uni="79" gp="0"></player>  
+    <player checkname="CARBAHAL,MARCOS" code="7A" name="Marcos Carbahal" uni="7A" gp="0"></player>  
+    <player checkname="SHUBERT,AUSTIN" code="7B" name="Austin Shubert" uni="7B" gp="0"></player>  
+    <player checkname="CURLEY,JJ" code="7C" name="JJ Curley" uni="7C" gp="0"></player>  
+    <player checkname="MEGGS,JOSIAH" code="7D" name="Josiah Meggs" uni="7D" gp="0"></player>  
+    <player checkname="THOMAS,JAYLIN" code="7E" name="Jaylin Thomas" uni="7E" gp="0"></player>  
+    <player checkname="CALLOWAY,KAMARI" code="7G" name="Kamari Calloway" uni="7G" gp="0"></player>  
+    <player checkname="BOYETT,JUSTIN" code="7H" name="Justin Boyett" uni="7H" gp="0"></player>  
+    <player checkname="RODRIGUEZ-AVERY,ADRIAN" code="7J" name="Adrian Rodriguez-Avery" uni="7J" gp="0"></player>  
+    <player checkname="PECK,MICHAEL" code="80" name="Michael Peck" uni="80" gp="0"></player>  
+    <player checkname="WHITE,DEION" code="81" name="Deion White" uni="81" gp="0"></player>  
+    <player checkname="DALE-MALLETT,RUSSELL" code="83" name="Russell Dale-Mallett" uni="83" gp="0"></player>  
+    <player checkname="STIRK,POE" code="84" name="Poe Stirk" uni="84" gp="0"></player>  
+    <player checkname="SHEPHERD,LANDON" code="86" name="Landon Shepherd" uni="86" gp="0"></player>  
+    <player checkname="WELCH,ARIC" code="87" name="Aric Welch" uni="87" gp="0"></player>  
+    <player checkname="BROWN,CAMRON" code="89" name="Camron Brown" uni="89" gp="0"></player>  
+    <player checkname="KIRVEN,JALENCE" code="8A" name="Jalence Kirven" uni="8A" gp="0"></player>  
+    <player checkname="TALKISH,ISAIAH" code="8B" name="Isaiah Talkish" uni="8B" gp="0"></player>  
+    <player checkname="MICHAEL PUTNAM,JR" code="8E" name="Michael Putnam, Jr." uni="8E" gp="0"></player>  
+    <player checkname="SNODERLY,AUSTIN" code="8J" name="Austin Snoderly" uni="8J" gp="0"></player>  
+    <player checkname="ARGO,GARY" code="90" name="Gary Argo" uni="90" gp="0"></player>  
+    <player checkname="BETRES,JAMES" code="91" name="James Betres" uni="91" gp="0"></player>  
+    <player checkname="ESTADO ALTIDOR,JR" code="92" name="Estado Altidor, Jr." uni="92" gp="0"></player>  
+    <player checkname="DAVIS,KYRAN" code="93" name="Kyran Davis" uni="93" gp="0"></player>  
+    <player checkname="GREENLAW,GAVEN" code="95" name="Gaven Greenlaw" uni="95" gp="0"></player>  
+    <player checkname="MORRISON,CHASE" code="9A" name="Chase Morrison" uni="9A" gp="0"></player>  
+    <player checkname="CRAWFORD,LLOYD" code="9B" name="Lloyd Crawford" uni="9B" gp="0"></player>  
+    <player checkname="GOWER,JACE" code="9C" name="Jace Gower" uni="9C" gp="0"></player>  
+    <player checkname="TATE,NYLES" code="9E" name="Nyles Tate" uni="9E" gp="0"></player>  
+    <player checkname="DIXON,AARON" code="9H" name="Aaron Dixon" uni="9H" gp="0"></player>  
+    <player checkname="KWARTENG,KWAME" code="9J" name="Kwame Kwarteng" uni="9J" gp="0"></player>  
+    <player checkname="PAICHAK,JACOB" code="9K" name="Jacob Paichak" uni="9K" gp="0"></player>  
+    <player checkname="LEWIS,ANTHONY" code="9L" name="Anthony Lewis" uni="9L" gp="0"></player>  
+    <player checkname="OLGUIN,EVER" code="9P" name="Ever Olguin" uni="9P" gp="0"></player>  
+    <player checkname="BROCK,GAVIN" code="9Z" name="Gavin Brock" uni="9Z" gp="0"></player> 
+  </dnp> 
+</fbgame>
+

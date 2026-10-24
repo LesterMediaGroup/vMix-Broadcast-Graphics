@@ -13,7 +13,7 @@ const USER_AGENT ="Mozilla/5.0 (Windows NT 10.0; Win64; x64) Broadcast-Graphics"
 
 const ENTITIES = { amp: "&", lt: "<", gt: ">", quot: '"', apos: "'", nbsp: " " };
 
-function decode(text) {
+export function decode(text) {
   return text.replace(/&(#x?[0-9a-f]+|\w+);/gi, (m, e) => {
     if (e[0] === "#") return String.fromCodePoint(e[1].toLowerCase() === "x" ? parseInt(e.slice(2), 16) : parseInt(e.slice(1), 10));
     return ENTITIES[e.toLowerCase()] ?? m;
@@ -86,16 +86,25 @@ async function nodeGet(url) {
   return { status: res.status, body: await res.text() };
 }
 
-export async function fetchScoreboard(url) {
+// GET a PrestoSports page as { status, body }. `what` names it in errors.
+export async function fetchPage(url, what) {
   const parsed = new URL(url);
-  if (!/^https?:$/.test(parsed.protocol)) throw new Error("Scoreboard URL must start with http:// or https://");
+  if (!/^https?:$/.test(parsed.protocol)) throw new Error(`${what} URL must start with http:// or https://`);
   let res;
   try {
     res = await curlGet(parsed.href);
   } catch (e) {
-    if (e.code !== "ENOENT") throw new Error(`Couldn't reach the scoreboard: ${e.message}`);
+    if (e.code !== "ENOENT") throw new Error(`Couldn't reach the ${what.toLowerCase()}: ${e.message}`);
     res = await nodeGet(parsed.href);
   }
-  if (res.status !== 200) throw new Error(`Scoreboard returned HTTP ${res.status}`);
-  return parseScoreboard(res.body);
+  // Cloudflare's "Just a moment..." browser check can't be passed outside a browser.
+  if (res.status === 403 && /Just a moment|challenge-platform|_cf_chl/.test(res.body)) {
+    throw new Error(`PrestoSports blocked the request with a Cloudflare browser check (HTTP 403)`);
+  }
+  if (res.status !== 200) throw new Error(`${what} returned HTTP ${res.status}`);
+  return res;
+}
+
+export async function fetchScoreboard(url) {
+  return parseScoreboard((await fetchPage(url, "Scoreboard")).body);
 }

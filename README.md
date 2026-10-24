@@ -11,8 +11,9 @@ teams on the Teams tab, or by editing the files in `data/`.
 
 **What's built:** Teams and Conferences, Game setup (`/out/game.json`, for
 anything single-game), and five graphic feeds: Top 25, Conference Scores,
-Impact Players, Keys to the Game, and Team Stats. See [Roadmap](#roadmap) for
-what's next.
+Impact Players, Keys to the Game, and Team Stats, plus Football stats
+(`/out/football.json`, read from a PrestoSports stats XML). See
+[Roadmap](#roadmap) for what's next.
 
 ## Starting it
 
@@ -40,6 +41,7 @@ on **Auto Refresh** (every 1–2 seconds).
 | Impact Players | `/out/graphics/SSN_9048_v3.json` |
 | Keys to the Game | `/out/graphics/SSN_5006_v01.json` |
 | Team Stats | `/out/graphics/SSN_9120_v1.json` |
+| Football stats | `/out/football.json` |
 | Teams / Conferences | `/out/teams.json`, `/out/conferences.json` |
 
 Put the dashboard computer's address in front of the path:
@@ -251,6 +253,59 @@ Teams come from Game setup; scores and up to 5 stat rows are typed on the tab.
 
 Stat labels suggest common stats per sport and are sent uppercase.
 
+Each row's **From** picks where its numbers come from: **Typed**, or a football
+team stat from the Football tab (Total Yards, Comp-Att-Int, 3rd Down, ...).
+Football rows are filled every time vMix reads the feed, so they follow the
+live stats; a blank label uses the stat's name. The score row's **From** works
+the same way.
+
+### Football stats — `/out/football.json`
+
+One row, read from a PrestoSports StatsEntry football XML (the file behind
+the box score's **Download XML** link, `downloadXML.jsp?event_id=...`). On
+the Football tab:
+
+- **URL or file path**: the XML's PrestoSports URL, or a path to a saved copy.
+  **Auto-update** reads it every 5 to 60 seconds; **Check now** reads it once.
+- **Load file…** loads an XML you downloaded in the browser. Use it when
+  PrestoSports blocks automatic downloads: Cloudflare sometimes answers the
+  dashboard with a "Just a moment..." browser check (HTTP 403), and the tab
+  says so.
+- **Clear stats** empties the feed for the next game and keeps the settings.
+
+Away and home follow Game setup: the XML's visitor and home, unless Game setup
+has the same two teams the other way round. XML teams are matched to Teams by
+id (`WPU`) or name (`William Penn (IA)`, also without the `(IA)`); the tab
+warns about a team that isn't in Teams or doesn't match Game setup.
+
+Game fields:
+
+- `loaded` (false until an XML is loaded), `pregame`, `final`
+- `gameStatus`: `2nd 05:32`, `HALFTIME`, `END OF 3RD`, `FINAL`, `FINAL/OT`
+  (blank before kickoff); `period` (`1st`…`4th`, `OT`, `FINAL`), `clock`
+- `possession` (`away` / `home` / blank), `downDistance` (`3rd & 7`,
+  `1st & Goal`), `down`, `togo`, `ballOn` (`CSC 40`); blank when no play is
+  live
+- `lastPlay`, `lastScore` (`Liam Thornton 11 yd run (Diego Lopez kick)`),
+  `lastScoreTeam`, `lastScoreSide`
+- `venue`, `location`, `attendance`, `weather`, `updatedAt`
+
+Each side has the same fields, prefixed `away` or `home`:
+
+- `Abbv`, `XmlName`, `Score`, `Q1`–`Q4`, `OT`, `Record`, `ConfRecord`,
+  `Timeouts`, `HasBall`
+- Team stats: `FirstDowns`, `TotalYards`, `TotalPlays`, `YardsPerPlay`,
+  `RushYards`, `Rushing` (`33-239`), `YardsPerRush`, `PassYards`, `Passing`
+  (`16-27-3`), `ThirdDown` (`3-9`), `FourthDown`, `Turnovers`, `Penalties`
+  (`4-45`), `TimeOfPossession`, `Sacks`, `RedZone` (`1-1`), `Punting`
+  (`3-40.3`)
+- Leaders, for `Passing`, `Rushing`, `Receiving` and `Tackles`: `…Name`,
+  `…First`, `…Last`, `…Number`, `…Pos`, and `…Line`
+  (`10-15, 123 YDS, 1 INT`), e.g. `awayPassingName`, `homeTacklesLine`
+
+Jersey numbers drop the letter PrestoSports adds when two players share a
+number (`1B` → `1`).
+
 ### Known issues in the title files
 
 Fix these in GT Designer when convenient; until then, bind them by hand.
@@ -279,7 +334,8 @@ The **Settings** button (top right) holds per-computer settings, stored in
 ## Data and backups
 
 Everything lives in the `data/` folder as JSON: `teams.json`,
-`conferences.json`, `game.json`, `settings.json`, and one file per graphic in
+`conferences.json`, `game.json`, `settings.json`, `football.json` (the
+Football tab's settings and last stats read), and one file per graphic in
 `data/graphics/`.
 
 - Each save keeps the previous version next to the file as `<name>.bak`.

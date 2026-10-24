@@ -575,3 +575,9 @@ td.team-color-cell { border-left: 4px solid var(--team-color, transparent); }
 #statsTable .stat-value { width: 90px; text-align: center; font-size: 15px; }
 #statsTable .stat-label { width: 200px; text-align: center; text-transform: uppercase; }
 #statsTable tr.score-row td { border-bottom: 2px solid var(--line); }
+
+/* Football tab */
+.fb-table { margin-bottom: 12px; }
+.fb-table .dim, .fb-table td .dim { color: var(--text-dim); font-size: 12px; }
+.fb-situation { font-family: var(--font-mono); font-size: 13px; margin: 0 0 12px; }
+.fb-columns { display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 16px; align-items: start; }

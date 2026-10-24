@@ -31,6 +31,7 @@
       <button class="tab" data-tab="impact">Impact Players</button>
       <button class="tab" data-tab="keys">Keys to the Game</button>
       <button class="tab" data-tab="stats">Team Stats</button>
+      <button class="tab" data-tab="football">Football</button>
     </nav>
 
     <section id="teamsPanel" class="panel-view">
@@ -296,6 +297,54 @@
       <div id="statsWarnings" class="warnings"></div>
       <div id="statsTable" class="table-wrap">Loading…</div>
     </section>
+
+    <!-- Football stats from a PrestoSports StatsEntry XML; served at /out/football.json -->
+    <section id="footballPanel" class="panel-view" style="display:none;">
+      <div class="panel-header">
+        <h2>Football stats</h2>
+        <div class="header-actions">
+          <span id="footballSaveStatus" class="save-status"></span>
+          <button id="footballClearBtn" class="btn btn-danger btn-sm" title="Clears the loaded stats; the URL / file settings are kept">Clear stats</button>
+        </div>
+      </div>
+      <div class="graphic-meta presto-row">
+        <label class="field presto-url">
+          <span>Stats XML: PrestoSports URL or file path</span>
+          <input id="footballSource" placeholder="https://….prestosports.com/action/stats/downloadXML.jsp?event_id=…  or  C:\Stats\game.xml" />
+        </label>
+        <label class="field">
+          <span>Check every</span>
+          <select id="footballPollSeconds">
+            <option value="5">5 sec</option>
+            <option value="10">10 sec</option>
+            <option value="15">15 sec</option>
+            <option value="30">30 sec</option>
+            <option value="60">1 min</option>
+          </select>
+        </label>
+        <label class="toggle" title="Saves immediately">
+          <input type="checkbox" id="footballAutoUpdate" /> Auto-update
+        </label>
+        <div class="meta-actions">
+          <button id="footballCheckBtn" class="btn btn-ghost btn-sm" title="Read the URL or file once now">Check now</button>
+          <button id="footballFileBtn" class="btn btn-live btn-sm" title="Load an XML you downloaded in the browser">Load file…</button>
+          <input type="file" id="footballFile" accept=".xml,text/xml,application/xml" style="display:none;" />
+        </div>
+      </div>
+      <div class="graphic-meta">
+        <div class="feed-link">
+          <span>vMix feed (one row)</span>
+          <a href="/out/football.json" target="_blank">/out/football.json</a>
+        </div>
+        <div class="feed-link">
+          <span>Stats last changed</span>
+          <code id="footballUpdatedAt">never</code>
+        </div>
+      </div>
+      <div id="footballStatus" class="presto-status"></div>
+      <div id="footballWarnings" class="warnings"></div>
+      <div id="footballSummary" class="table-wrap">Loading…</div>
+    </section>
   </div>
 
   <!-- Edit/add modal, shared by teams and conferences -->
@@ -434,5 +483,6 @@
   <script src="impact.js"></script>
   <script src="keys.js"></script>
   <script src="stats.js"></script>
+  <script src="football.js"></script>
 </body>
 </html>
